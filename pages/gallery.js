@@ -1,0 +1,80 @@
+import React from 'react'
+import MenuTabs from '@/components/menuTab'
+import GallBreadcrumbBanner from '@/components/gallBreadcrum'
+import Link from 'next/link'
+import Footer from '@/components/Footer'
+
+const Gallery = () => {
+  return (
+    <div>
+        <GallBreadcrumbBanner/>
+      <>
+
+  {/* Section Gallery */}
+  <section className="section kf-gallery py-16">
+    <div className="container">
+      <div className="kf-titles align-center">
+        <div
+          className="kf-subtitle  scroll-animate"
+          data-animate="active"
+        >
+          Gallery
+        </div>
+        <h3
+          className="kf-title "
+        >
+          Looks Our Some Item
+        </h3>
+         <MenuTabs/>
+      </div>
+    
+  
+
+    </div>
+  </section>
+  {/* Section CTA */}
+  <section
+    className="section kf-cta kf-parallax"
+    style={{ backgroundImage: "url(/assets/images/gall_bg.png)" }}
+  >
+    <div className="container">
+      <div className="row">
+        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+          <div className="kf-titles">
+            <div
+              className="kf-subtitle  scroll-animate"
+              data-animate="active"
+            >
+              Need a Table On Awatar Cafe
+            </div>
+            <h3
+              className="kf-title  scroll-animate"
+              data-animate="active"
+            >
+              Booking Table For Your &amp; Family Members
+            </h3>
+          </div>
+        </div>
+        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 align-self-center align-right">
+          <Link
+            href="booking-table"
+            className="kf-btn"
+          >
+            <span>booking table</span>
+            <i className="fas fa-chevron-right" />
+          </Link>
+        </div>
+      </div>
+    </div>
+  </section>
+  {/* Section Brands */}
+  <Footer/>
+  
+</>
+
+    </div>
+  )
+}
+
+export default Gallery
+

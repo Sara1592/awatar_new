@@ -1,115 +1,450 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+import React from 'react'
+import HeroSlider from '@/components/HeroSlider'
+import gsap from 'gsap';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay, Navigation, Pagination, EffectFade } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/effect-fade'
+import Counters from '@/components/CounterItem';
+import Testimonials from '@/components/Testimonial';
+import FlipCardSlider from '@/components/Flipslider';
+import ZigZagGallery from '@/components/zigzag';
+import WhyChooseUs from '@/components/choose';
+import { useEffect, useRef } from "react";
+import Ambiance from '@/components/Ambiance';
+import Footer from '@/components/Footer';
+import CounterSection from '@/components/aboutcount';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const Home = () => {
+  // const { locale, locales, asPath } = useRouter();
+  // const translations = {
+  //   en: {
+  //     welcome: "Welcome to our website",
+  //     about: "About Us",
+  //     contact: "Contact",
+  //   },
+  //   ar: {
+  //     welcome: "مرحبا بكم في موقعنا",
+  //     about: "معلومات عنا",
+  //     contact: "اتصل بنا",
+  //   },
+  // };
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+  //  const t = translations[locale] || translations.en;
+  
+let xPos = 0;
+  const subtitleRef = useRef(null);
+  const titleRef = useRef(null);
+  const descRef = useRef(null);
+  const buttRef = useRef(null);
+const about1Ref = useRef(null);
+  const about2Ref = useRef(null);
+  const about3Ref = useRef(null);
+  const about4Ref = useRef(null);
 
-export default function Home() {
+   const smokeRef = useRef(null);
+  
+
+  useEffect(() => {
+    const loadAnimation = async () => {
+      // const { Draggable }  = await import("gsap/Draggable");
+      const { ScrollTrigger } = await import("gsap/ScrollTrigger");
+      const SplitType = (await import("split-type")).default;
+
+      gsap.registerPlugin(ScrollTrigger);
+      // gsap.registerPlugin(Draggable);
+
+
+// function getBgPos(i){ //returns the background-position string to create parallax movement in each image
+//   return ( -gsap.utils.wrap(0,360,gsap.getProperty(ring, 'rotationY')-180-i*36)/360*400 )+'px 0px';
+// }
+
+      // Split text for subtitle and title
+      const subtitleSplit = new SplitType(subtitleRef.current, { types: "words, chars" });
+      const titleSplit = new SplitType(titleRef.current, { types: "words, chars" });
+
+       gsap.to(smokeRef.current, {
+      x: 100,
+      y: -50,
+      scale: 1.2,
+      opacity: 0.7,
+      duration: 10,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+    });
+
+      // Animate subtitle (letters one by one)
+      gsap.from(subtitleSplit.chars, {
+        y: 30,
+        opacity: 0,
+        stagger: 0.05, // delay between letters
+        duration: 0.6,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: subtitleRef.current,
+          start: "top 85%",
+          toggleActions: "play reverse play reverse",
+        },
+      });
+
+      // Animate title (letters one by one)
+      gsap.from(titleSplit.chars, {
+        y: 50,
+        opacity: 0,
+        stagger: 0.04,
+        duration: 0.8,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: titleRef.current,
+          start: "top 85%",
+          toggleActions: "play reverse play reverse",
+        },
+      });
+
+      // Animate description normally (not split)
+      gsap.fromTo(
+        descRef.current,
+        { y: 40, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.9,
+          delay: 0.2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: descRef.current,
+            start: "top 85%",
+            toggleActions: "play reverse play reverse",
+          },
+        }
+      );
+
+
+
+       gsap.fromTo(
+        buttRef.current,
+        { y: 40, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.9,
+          delay: 0.2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: descRef.current,
+            start: "top 85%",
+            toggleActions: "play reverse play reverse",
+          },
+        }
+      );
+    
+
+
+       gsap.fromTo(
+        about1Ref.current,
+        { x: -100, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 1.2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: about1Ref.current,
+            start: "top 85%",
+            toggleActions: "play reverse play reverse",
+          },
+        }
+      );
+
+      gsap.fromTo(
+        about4Ref.current,
+        { x: -100, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 1.2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: about4Ref.current,
+            start: "top 85%",
+            toggleActions: "play reverse play reverse",
+          },
+        }
+      );
+
+
+       gsap.fromTo(
+        about3Ref.current,
+        { x: 100, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 1.2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: about3Ref.current,
+            start: "top 85%",
+            toggleActions: "play reverse play reverse",
+          },
+        }
+      );
+
+      gsap.fromTo(
+        about2Ref.current,
+        { x: 100, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 1.2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: about2Ref.current,
+            start: "top 85%",
+            toggleActions: "play reverse play reverse",
+          },
+        }
+      );
+
+    }
+
+    
+    loadAnimation();
+  }, []);
+
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20`}
-    >
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              pages/index.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div>
+      <HeroSlider/>
+       <section
+  className="section kf-category"
+  style={{ backgroundImage: "url('assets/images/category_bg.jpg')" }}
+>
+
+    <div className="container">
+      <div className="flex flex-wrap gap-2 mb-20 ">
+        <div className="w-full sm:w-[45%] mt-30">
+ <div className="kf-category-items" ref={about1Ref}>
+          <div className="kf-category-item" >
+            <div className="image kf-image-hover" >
+             <Image src="/assets/images/about1.png" alt="Awatar" width={1000} height={1000}/>
+            </div>
+        
+          </div>
+          <div className="kf-category-item">
+            <div className="image kf-image-hover">
+              <Image src="/assets/images/about3.png" alt="Awatar" width={1000} height={1000}/>
+            </div>
+           
+          </div>
+          <div className="kf-category-item" >
+            <div className="image kf-image-hover">
+            <Image src="/assets/images/about4.png" alt="Awatar" width={1000} height={1000}/>
+
+            </div>
+           
+          </div>
+          <div className="kf-category-item">
+            <div className="image kf-image-hover">
+            <Image src="/assets/images/about2.png" alt="Awatar" width={1000} height={1000}/>
+
+            </div>
+          
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        </div>
+          <div className="w-full sm:w-[5%] mt-30">
+       
+      </div>
+      <div className="w-full sm:w-[40%] mt-0 md:mt-50">
+       <div className="kf-titles">
+          <div
+            className="kf-subtitle " ref={subtitleRef} >
+            About Us
+          </div>
+          <h3
+            className="kf-title" ref={titleRef}
+          
+          >
+            Awtar Café’s Story
+          </h3>
+        </div>
+        <div className="kf-text" ref={descRef}>
+          <p>
+            At a cozy corner of Al Muraqqabat, there’s a place where the scent of coffee pulls you in before you even see the door. That corner was once just a dream — today, it’s Awtar.
+          </p>
+          <p>We named it Awtar because every sip, every moment here plays like a note on the strings of your mood.</p>
+<p>We wanted to bring back the old rituals — the warmth of Arabic coffee, the calm of a fresh mint tea, the comfort of tradition.</p>
+        </div>
+        <Link
+          href="about"
+          className="kf-btn "
+         ref={buttRef}
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <span >Read More</span>
+          <i className="fas fa-chevron-right" />
+        </Link>
+      </div>
+      </div>
+      </div> 
+
+
+</section> 
+
+
+<section> 
+  <div className="relative w-full h-screen overflow-hidden">
+      {/* Smoke PNG */}
+      <Image
+        ref={smokeRef}
+        src="/assets/images/bg_smoke1.png"
+        alt="smoke"
+        width={1920}
+        height={1044}
+        className="absolute top-0 left-0 w-full h-full object-cover opacity-40"
+      />
+
+  <h2 className='text-center'>Our Menu</h2>
+<FlipCardSlider/>
+</div>
+</section>
+<section className='mt-10 mb-10'>
+
+  <Ambiance/>
+</section>
+
+<WhyChooseUs/>
+<CounterSection/>
+
+{/* <Counters/> */}
+<h2 className='text-center mt-20'>Some Of Our Items</h2>
+<section className="w-full">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      
+    <div className="overflow-hidden">
+      <Image
+        src="/assets/images/grid1.png"
+        alt="item"
+        width={640}
+        height={350}
+        className="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
+      />
     </div>
-  );
+
+    <div className="overflow-hidden">
+      <Image
+        src="/assets/images/grid2.png"
+        alt="item"
+        width={640}
+        height={350}
+        className="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
+      />
+    </div>
+
+    <div className="overflow-hidden">
+      <Image
+        src="/assets/images/grid3.png"
+        alt="item"
+        width={640}
+        height={350}
+        className="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
+      />
+    </div>
+
+    <div className="overflow-hidden">
+      <Image
+        src="/assets/images/grid4.png"
+        alt="item"
+        width={640}
+        height={350}
+        className="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
+      />
+    </div>
+
+    <div className="overflow-hidden">
+      <Image
+        src="/assets/images/grid5.png"
+        alt="item"
+        width={640}
+        height={350}
+        className="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
+      />
+    </div>
+
+    <div className="overflow-hidden">
+      <Image
+        src="/assets/images/grid6.png"
+        alt="item"
+        width={640}
+        height={350}
+        className="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
+      />
+    </div>
+
+  </div>
+</section>
+<div>
+      <p className="text-center text-[#8E6E3B] text-xl  my-8">Customer Feedback</p>
+      <h3 className="text-center text-3xl font-bold my-8">What Our Clients Say</h3>
+      {/* <TestimonialSlider /> */}
+      <Testimonials/>
+
+       
+    </div>
+
+
+
+
+
+
+
+      <div className="section kf-video">
+  <div className="kf-video-item relative w-full h-[250px] overflow-hidden">
+    {/* Video */}
+    <video
+      className="absolute top-0 left-0 w-full h-full object-cover"
+      autoPlay
+      muted
+      loop
+      playsInline
+    >
+      <source src="assets/images/video/awtar-vedio.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+ <div className="absolute inset-0 bg-black/50"></div>
+    {/* Content on top of video */}
+    <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+      <div className="kf-titles max-w-2xl">
+        {/* Subtitle */}
+        <div className=" mb-2 text-white text-sm md:text-base">
+          Booking Table For You, Family & Friends
+        </div>
+
+        {/* Title */}
+        <h3 className="kf-title text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-white">
+          Your satisfaction means everything to us
+        </h3>
+
+        {/* Button */}
+        <Link
+          href="reservation"
+          className="kf-btn inline-flex items-center px-2 py-2 md:px-3 md:py-3 text-sm md:text-lg font-medium text-white bg-gold rounded transition-all duration-300"
+        >
+          <span>Booking Table</span>
+          <i className="fas fa-chevron-right ml-2" />
+        </Link>
+      </div>
+    </div>
+  </div>
+</div>
+<Footer/>
+
+    </div>
+
+  )
 }
+
+export default Home
