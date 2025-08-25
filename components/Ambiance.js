@@ -290,7 +290,7 @@ const Ambiance = () => {
         <div className="ambiance-right">
            <h2>Perfect Ambiance</h2>
           <p>Whether you’re chilling with friends, catching a game, or just escaping the noise — Awtar is your spot.</p>
-          <Link href="/" className="kf-btn w-48">
+          <Link href="about" className="kf-btn w-48">
             <span>Read More</span>
             <i className="fas fa-chevron-right" />
           </Link>

@@ -57,7 +57,7 @@ const Gallery = () => {
         </div>
         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 align-self-center align-right">
           <Link
-            href="booking-table"
+            href="reservation"
             className="kf-btn"
           >
             <span>booking table</span>
