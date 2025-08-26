@@ -202,8 +202,7 @@ export default function Menu () {
             ref={smokeRef}
             src="/assets/images/menubg.png"
             alt="smoke"
-            width={1920}
-            height={1042}
+            fill
             className="absolute top-0 left-0 w-full h-full object-cover opacity-40"
           />
     
