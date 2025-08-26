@@ -23,8 +23,9 @@ export default function Footer() {
           {/* Column 2: Working Hours */}
           <div>
             <h6 className="text-xl font-bold text-[#8E6E3B] mb-4">Working Hours</h6>
-            <p>Every Day</p>
-            <p>08:00 am - 05:00 am</p>
+            <p>Every Day 
+              <br/>
+              08:00 am - 05:00 am</p>
           </div>
 
           {/* Column 3: Contact Details */}

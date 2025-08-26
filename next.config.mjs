@@ -18,8 +18,10 @@
 // export default nextConfig;
 
 /** @type {import('next').NextConfig} */
+// import { i18n } from './next-i18next.config.mjs';
 const nextConfig = {
-  output: 'export',   // tells Next.js to generate static HTML (out/ folder)
+  output: 'export', 
+    //  i18n,
   images: {
     unoptimized: true, // if you use <Image>, disable Image Optimization
   },
@@ -27,3 +29,4 @@ const nextConfig = {
 };
 
 export default nextConfig;
+

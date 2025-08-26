@@ -119,7 +119,7 @@ export default function MenuTabs() {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`font-semibold px-4 py-2 rounded ${
+              className={`font-semibold  rounded ${
                 activeTab === tab
                   ? "border-b-4 border-yellow-600 text-yellow-600"
                   : "text-gray-600 hover:text-yellow-600"

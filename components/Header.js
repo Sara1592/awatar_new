@@ -1,14 +1,23 @@
 
 "use client";
 
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import Link from "next/link";
 import Image from "next/image";
+
 import { useRouter } from "next/router";
+// import { useTranslation } from 'next-i18next';
 
 const Header = () => {
+  // const { t } = useTranslation('common'); 
   const { locale, locales, asPath } = useRouter();
   const [mobileMenu, setMobileMenu] = useState(false);
+
+   const handleChangeLanguage = (e) => {
+    const newLocale = e.target.value;
+    push(asPath, asPath, { locale: newLocale });
+  };
+
 
   return (
     <header className="kf-header">
@@ -16,7 +25,7 @@ const Header = () => {
       <div className="kf-topline hidden md:flex justify-between items-center py-2 px-4">
         <div className="kf-h-group flex items-center gap-2">
           <i className="far fa-clock" />
-          <span>08:00 am - 09:00 pm</span>
+          <span>Open Hours: 08:00 am - 09:00 pm</span>
         </div>
         <div className="kf-h-social flex items-center gap-3">
           <Link href="https://www.facebook.com/awtarcafe.dubai" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f" /></Link>
@@ -26,7 +35,7 @@ const Header = () => {
         </div>
         <div className="kf-h-group flex items-center gap-2">
           <i className="fas fa-map-marker-alt" />
-          <span>Dubai - Al Muraqqabat</span>
+          <span>Dubai - Al Muraqqabat – Deira – Bu Haleeba plaza</span>
         </div>
       </div>
 
@@ -42,23 +51,39 @@ const Header = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex kf-main-menu">
           <ul className="flex gap-6">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/menu">Menu</Link></li>
-            <li><Link href="/gallery">Gallery</Link></li>
-            <li><Link href="/about">About us</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
-           
+            <li><Link href="/">
+            Home
+            {/* {t('home')} */}
+            </Link></li>
+            <li><Link href="/menu">
+            Menu
+            {/* {t('menu')} */}
+            </Link></li>
+            <li><Link href="/gallery">
+            Gallery
+            {/* {t('gallery')} */}
+            </Link></li>
+            <li><Link href="/about">
+            About us
+            {/* {t('about')} */}
+            </Link></li>
+            <li><Link href="/contact">
+            Contact
+            {/* {t('contact')} */}
+            </Link></li>
+
           </ul>
+          
         </div>
 
-        {/* Hamburger & Book button */}
+     
         <div className="flex items-center gap-4">
-            {/* <Link href="/reservation" className="hidden md:inline-block kf-btn w-48">
-                      <span>Book a table</span>
-                      <i className="fas fa-chevron-right" />
-                    </Link> */}
+            
            <Link href="/reservation" className="hidden md:inline-block kf-btn h-btn">
-            <span>Book a table</span> 
+            <span>
+              Book a table
+              {/* {t('bookTable')} */}
+              </span> 
           </Link> 
 
 <div className="md:hidden ">
@@ -86,26 +111,53 @@ const Header = () => {
             <ul className="flex flex-col gap-4 text-lg mb-6">
               <li className="flex items-center gap-2">
                 <i className="fas fa-home"></i>
-                <Link href="/" onClick={() => setMobileMenu(false)}>Home</Link>
+                <Link href="/" onClick={() => setMobileMenu(false)}>
+                Home
+                {/* {t('home')} */}
+                </Link>
               </li>
               <li className="flex items-center gap-2">
                 <i className="fas fa-utensils"></i>
-                <Link href="/menu" onClick={() => setMobileMenu(false)}>Menu</Link>
+                <Link href="/menu" onClick={() => setMobileMenu(false)}>
+                Menu
+                {/* {t('menu')} */}
+                </Link>
               </li>
               <li className="flex items-center gap-2">
                 <i className="fas fa-image"></i>
-                <Link href="/gallery" onClick={() => setMobileMenu(false)}>Gallery</Link>
+                <Link href="/gallery" onClick={() => setMobileMenu(false)}>
+                Gallery
+                {/* {t('gallery')} */}
+                </Link>
               </li>
               <li className="flex items-center gap-2">
                 <i className="fas fa-info-circle"></i>
-                <Link href="/about" onClick={() => setMobileMenu(false)}>About us</Link>
+                <Link href="/about" onClick={() => setMobileMenu(false)}>
+                About us
+                {/* {t('about')} */}
+                </Link>
               </li>
               <li className="flex items-center gap-2">
                 <i className="fas fa-envelope"></i>
-                <Link href="/contact" onClick={() => setMobileMenu(false)}>Contact</Link>
+                <Link href="/contact" onClick={() => setMobileMenu(false)}>
+                Contact
+                {/* {t('contact')} */}
+                </Link>
               </li>
               
             </ul>
+            {/* Mobile language switch */}
+            {/* <select
+              value={locale}
+              onChange={handleChangeLanguage}
+              className="border rounded px-2 py-1 mt-4"
+            >
+              {locales.map((loc) => (
+                <option key={loc} value={loc}>
+                  {loc.toUpperCase()}
+                </option>
+              ))}
+            </select> */}
 
             {/* Social Links */}
             <div className="kf-h-social flex gap-4 mb-4">

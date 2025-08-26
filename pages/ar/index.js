@@ -508,13 +508,3 @@ const about1Ref = useRef(null);
 }
 
 export default Home
-
-// export async function getStaticProps({ locale }) {
-//   // fallback locale
-//   const currentLocale = locale ?? 'en';
-//   return {
-//     props: {
-//       ...(await serverSideTranslations(currentLocale, ['common'])),
-//     },
-//   };
-// }
