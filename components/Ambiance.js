@@ -1,247 +1,4 @@
-// // App.js
-// import React, { useEffect, useRef } from "react";
-// import gsap from "gsap";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation, Autoplay, Parallax } from "swiper/modules";
-// import Image from "next/image";
 
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/parallax";
-
-//   const slides = [
-//     {
-//       image: "assets/images/atom1.png",
-    
-//     //   navImg: "assets/images/nav.png",
-//     },
-//     {
-//         image: "assets/images/atom1.png",
-    
-      
-//     //  navImg: "assets/images/nav1.png",
-//     },
-//     {
-//         image: "assets/images/atom1.png",
-    
-     
-//     },
-//   ];
-
-
-// const Ambiance = () => {
- 
-
-//   return (
-//     <div className="container">
-//     <div style={{ display: "flex", padding: "50px", gap: "50px" }}>
-//       {/* Left Column */}
-//       <div style={{ flex: 1 }}>
-//         <h2>Awesome Title</h2>
-//         <p>This is some descriptive text explaining the slider content.</p>
-//         <button style={{ padding: "10px 20px", cursor: "pointer" }}>
-//           Click Me
-//         </button>
-//       </div>
-
-//       {/* Right Column */}
-     
-//         <section className="relative w-full h-auto ">
-//       <Swiper
-//         modules={[Navigation, Autoplay, Parallax]}
-//         loop={true}
-//         autoplay={{ delay: 5000, disableOnInteraction: false }}
-//         navigation={false}
-       
-//         speed={1000}
-//         parallax={true}
-//         className="w-full h-full"
-//       >
-//         {slides.map((slide, index) => (
-//           <SwiperSlide key={index}>
-//             <div
-//               className="relative w-[70%] h-full"
-//               style={{ backgroundImage: `url(${slide.image})` }}
-//               data-swiper-parallax="-100"
-//             >
-//               {/* Overlay */}
-             
-
-//               {/* Text */}
-             
-//             </div>
-//           </SwiperSlide>
-//         ))}
-//       </Swiper>
-
-//     </section>
-//       </div>
-//     </div>
-    
-//   );
-// };
-
-// export default Ambiance;
-
-
-// App.js
-// import React from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation, Autoplay, Parallax } from "swiper/modules";
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/parallax";
-
-// const slides = [
-//   { image: "assets/images/atom1.png" },
-//   { image: "assets/images/atom1.png" },
-//   { image: "assets/images/atom1.png" },
-// ];
-
-// const Ambiance = () => {
-//   return (
-//     <div style={{ display: "flex", width: "100%", minHeight: "500px" }}>
-//       {/* Left Column */}
-//       <div
-//         style={{
-//           width: "50%",
-//           display: "flex",
-//           flexDirection: "column",
-//           justifyContent: "center",
-//           padding: "50px",
-//         }}
-//       >
-//         <h2>Awesome Title</h2>
-//         <p>This is some descriptive text explaining the slider content.</p>
-//         <button style={{ padding: "10px 20px", cursor: "pointer" }}>
-//           Click Me
-//         </button>
-//       </div>
-
-//       {/* Right Column */}
-//       <div style={{ width: "50%", position: "relative" }}>
-//         <Swiper
-//           modules={[Navigation, Autoplay, Parallax]}
-//           loop={true}
-//           autoplay={{ delay: 5000, disableOnInteraction: false }}
-//           navigation={true} // enable nav buttons
-//           speed={1000}
-//           parallax={true}
-//           style={{ width: "100%", height: "100%" }}
-//         >
-//           {slides.map((slide, index) => (
-//             <SwiperSlide key={index}>
-//               <div
-//                 style={{
-//                   width: "100%",
-//                   height: "500px",
-//                   backgroundImage: `url(${slide.image})`,
-//                   backgroundSize: "cover",
-//                   backgroundPosition: "center",
-//                 }}
-//                 data-swiper-parallax="-100"
-//               ></div>
-//             </SwiperSlide>
-//           ))}
-//         </Swiper>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Ambiance;
-
-
-// App.js
-// import React from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation, Autoplay, Parallax } from "swiper/modules";
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/parallax";
-
-// const slides = [
-//   { image: "assets/images/atom1.png" },
-//   { image: "assets/images/atom1.png" },
-//   { image: "assets/images/atom1.png" },
-// ];
-
-// const Ambiance = () => {
-//   return (
-//     <div
-//       style={{
-//         maxWidth: "1200px",
-//         margin: "0 auto",
-//         padding: "50px 20px",
-//       }}
-//     >
-//       <div
-//         style={{
-//           display: "flex",
-//           flexWrap: "wrap", // allows stacking on mobile
-//           gap: "50px",
-//         }}
-//       >
-//         {/* Left Column */}
-//         <div className="text-center"
-//         >
-//           <h2>Awesome Title</h2>
-//           <p>This is some descriptive text explaining the slider content.</p>
-//           <a
-//           href="/"
-//           className="kf-btn "
-        
-//         >
-//           <span >Read More</span>
-//           <i className="fas fa-chevron-right" />
-//         </a>
-
-//         </div>
-
-//         {/* Right Column */}
-//         <div
-//           style={{
-//             flex: "1 1 400px",
-//             minWidth: "300px",
-//             position: "relative",
-//           }}
-//         >
-//           <Swiper
-//             modules={[Navigation, Autoplay, Parallax]}
-//             loop={true}
-//             autoplay={{ delay: 5000, disableOnInteraction: false }}
-//             navigation={false}
-//             speed={1000}
-//             parallax={true}
-//             style={{
-//               width: "100%",
-//               height: "500px", // slider height
-//             }}
-//           >
-//             {slides.map((slide, index) => (
-//               <SwiperSlide key={index}>
-//                 <div
-//                   style={{
-//                     width: "100%",
-//                     height: "500px",
-//                     backgroundImage: `url(${slide.image})`,
-//                     backgroundSize: "cover",
-//                     backgroundPosition: "center",
-//                   }}
-//                   data-swiper-parallax="-100"
-//                 ></div>
-//               </SwiperSlide>
-//             ))}
-//           </Swiper>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Ambiance;
-
-// App.js
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Parallax } from "swiper/modules";
@@ -363,6 +120,33 @@ const Ambiance = () => {
             height: 300px; /* smaller slider height on mobile */
           }
         }
+          @media (max-width: 480px) {
+
+  .ambiance-container {
+    margin-top:0px;
+    padding: 30px 30px;
+    margin-bottom:-20px;
+  }
+
+  .slide-item {
+    height: 250px;
+  }
+
+  .ambiance-right h2 {
+    font-size: 2rem;
+    margin-top:-80px
+    
+  }
+
+  .ambiance-right p {
+    font-size: 1rem;
+  }
+
+  .kf-btn {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}
       `}</style>
     </div>
   );

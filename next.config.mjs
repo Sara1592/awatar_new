@@ -23,6 +23,7 @@ const nextConfig = {
   images: {
     unoptimized: true, // if you use <Image>, disable Image Optimization
   },
+
 };
 
 export default nextConfig;

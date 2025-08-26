@@ -207,9 +207,9 @@ Message: ${form.message}`;
         {/* Button */}
         <button
           type="submit"
-          className="w-[200px]  bg-yellow-600 text-white font-semibold rounded-lg hover:bg-yellow-700 transition"
+          className="hidden md:inline-block kf-btn "
         >
-          Send Us Message
+         <span>Send Us Message</span> 
         </button>
       </form>
     </div>

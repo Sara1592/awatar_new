@@ -345,7 +345,7 @@ const about1Ref = useRef(null);
 <FlipCardSlider/>
 </div>
 </section>
-<section className='mt-10 mb-10'>
+<section className=' mt-5 md:mt-10 md:mb-10 mb-5'>
 
   <Ambiance/>
 </section>
