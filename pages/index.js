@@ -343,14 +343,9 @@ const about1Ref = useRef(null);
         ref={smokeRef}
         src="/assets/images/bg_smoke1.png"
         alt="smoke"
-        width={1920}
-        height={1044}
+        fill
          className="
-    absolute top-0 left-0 
-    w-full h-full 
-    object-cover 
-    opacity-30 sm:opacity-40
-    max-h-[80vh] sm:max-h-none
+   absolute top-0 left-0 w-full h-full object-cover opacity-40
   "
       />
 
