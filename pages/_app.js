@@ -4,6 +4,25 @@ import "@/styles/styles.css";
 import Head from "next/head";
 import Header from "@/components/Header";
 import FloatingContactButtons from "@/components/ContactButton";
+import { Roboto, Oswald, Merienda } from "next/font/google";
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
+  variable: "--font-roboto",
+});
+
+const oswald = Oswald({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700"],
+  variable: "--font-oswald",
+});
+
+const merienda = Merienda({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-merienda",
+});
 
 
 export default function App({ Component, pageProps }) {
@@ -18,10 +37,15 @@ export default function App({ Component, pageProps }) {
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
-      </Head>
+           </Head>
+           <div className={`${roboto.variable} ${oswald.variable} ${merienda.variable}`}>
+
+          
       <Header/>
       <Component {...pageProps} />
       <FloatingContactButtons/>
+           </div>
+     
     </>
   );
 }

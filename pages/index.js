@@ -51,32 +51,60 @@ const about1Ref = useRef(null);
 
   useEffect(() => {
     const loadAnimation = async () => {
-      // const { Draggable }  = await import("gsap/Draggable");
+      
       const { ScrollTrigger } = await import("gsap/ScrollTrigger");
       const SplitType = (await import("split-type")).default;
 
       gsap.registerPlugin(ScrollTrigger);
-      // gsap.registerPlugin(Draggable);
+      
 
 
-// function getBgPos(i){ //returns the background-position string to create parallax movement in each image
-//   return ( -gsap.utils.wrap(0,360,gsap.getProperty(ring, 'rotationY')-180-i*36)/360*400 )+'px 0px';
-// }
-
-      // Split text for subtitle and title
+     
       const subtitleSplit = new SplitType(subtitleRef.current, { types: "words, chars" });
       const titleSplit = new SplitType(titleRef.current, { types: "words, chars" });
 
-       gsap.to(smokeRef.current, {
-      x: 100,
-      y: -50,
-      scale: 1.2,
-      opacity: 0.7,
-      duration: 10,
-      repeat: -1,
-      yoyo: true,
-      ease: "sine.inOut",
+    //    gsap.to(smokeRef.current, {
+    //   x: 100,
+    //   y: -50,
+    //   scale: 1.2,
+    //   opacity: 0.7,
+    //   duration: 10,
+    //   repeat: -1,
+    //   yoyo: true,
+    //   ease: "sine.inOut",
+    // });
+
+    const ctx = gsap.context(() => {
+    let mm = gsap.matchMedia();
+
+    mm.add("(max-width: 768px)", () => {
+      gsap.to(smokeRef.current, {
+        x: 40,
+        y: -20,
+        scale: 1.1,
+        opacity: 0.7,
+        duration: 10,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
     });
+
+    mm.add("(min-width: 769px)", () => {
+      gsap.to(smokeRef.current, {
+        x: 100,
+        y: -50,
+        scale: 1.2,
+        opacity: 0.7,
+        duration: 10,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+    });
+  });
+
+  return () => ctx.revert();
 
       // Animate subtitle (letters one by one)
       gsap.from(subtitleSplit.chars, {
@@ -304,7 +332,13 @@ const about1Ref = useRef(null);
         alt="smoke"
         width={1920}
         height={1044}
-        className="absolute top-0 left-0 w-full h-full object-cover opacity-40"
+         className="
+    absolute top-0 left-0 
+    w-full h-full 
+    object-cover 
+    opacity-30 sm:opacity-40
+    max-h-[80vh] sm:max-h-none
+  "
       />
 
   <h2 className='text-center'>Our Menu</h2>
