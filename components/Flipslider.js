@@ -88,7 +88,7 @@ export default function FlipCardSlider() {
   return (
     <section className="w-full flex justify-center py-10 sm:py-16">
       {/* Responsive width/height */}
-      <div className="w-[90%] max-w-[500px] h-[550px] sm:max-w-[500px] sm:h-[700px]">
+      <div className="w-[90%]  h-[550px] sm:max-w-[500px] sm:h-[700px]">
         <Swiper
           effect={"cards"}
           grabCursor={true}
