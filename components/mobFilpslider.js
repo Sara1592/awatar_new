@@ -72,10 +72,9 @@ import "swiper/css/effect-cards";
 export default function MobFlipCardSlider() {
   const slides = [
     { image: "/assets/images/mob_menu.png" },
-     
-    { image: "/assets/images/mob_menu1.png" },
    { image: "/assets/images/mob_menu2.png" },
     { image: "/assets/images/mob_menu3.png" },
+ { image: "/assets/images/mob_menu1.png" },
     { image: "/assets/images/mob_menu4.png" },
     { image: "/assets/images/mob_menu5.png" },
     { image: "/assets/images/mob_menu6.png" },
