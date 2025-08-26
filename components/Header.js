@@ -144,17 +144,20 @@ const Header = () => {
                 {/* {t('contact')} */}
                 </Link>
               </li>
-              
+             
             </ul>
            
 
             {/* Social Links */}
-             <Link href="/reservation" className="block  md:hidden kf-btn h-btn">
+           
+          <div className="text-center">
+             <Link href="/reservation"  onClick={() => setMobileMenu(false)} className="kf-btn  mb-6">
             <span>
               Book a table
-              {/* {t('bookTable')} */}
+             
               </span> 
           </Link> 
+          </div>
             <div className="kf-h-social flex gap-4 mb-4">
 
               <Link href="https://www.facebook.com/awtarcafe.dubai" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f" /></Link>
