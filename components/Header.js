@@ -146,21 +146,17 @@ const Header = () => {
               </li>
               
             </ul>
-            {/* Mobile language switch */}
-            {/* <select
-              value={locale}
-              onChange={handleChangeLanguage}
-              className="border rounded px-2 py-1 mt-4"
-            >
-              {locales.map((loc) => (
-                <option key={loc} value={loc}>
-                  {loc.toUpperCase()}
-                </option>
-              ))}
-            </select> */}
+           
 
             {/* Social Links */}
+             <Link href="/reservation" className="block  md:hidden kf-btn h-btn">
+            <span>
+              Book a table
+              {/* {t('bookTable')} */}
+              </span> 
+          </Link> 
             <div className="kf-h-social flex gap-4 mb-4">
+
               <Link href="https://www.facebook.com/awtarcafe.dubai" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f" /></Link>
               <Link href="https://twitter.com" target="_blank" rel="noreferrer"><i className="fab fa-twitter" /></Link>
               <Link href="https://www.instagram.com/awtarcafe.ae/" target="_blank" rel="noreferrer"><i className="fab fa-instagram" /></Link>

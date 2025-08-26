@@ -3,7 +3,7 @@ import Image from "next/image";
 import gsap from 'gsap';
 import Link from "next/link";
 import Footer from "@/components/Footer";
-
+import MobFlipCardSlider from '@/components/mobFilpslider';
 import FlipCardSlider from '@/components/Flipslider'
 import MenuSection from '@/components/Menupage'
 export default function Menu () {
@@ -196,7 +196,7 @@ export default function Menu () {
     <div className='mt-38'>
     
     <section> 
-      <div className="relative w-full h-full overflow-hidden">
+      <div className="relative w-full h-full overflow-hidden md:block hidden">
           {/* Smoke PNG */}
           <Image
             ref={smokeRef}
@@ -210,6 +210,25 @@ export default function Menu () {
     <FlipCardSlider/>
     </div>
     </section>
+     <div className="relative w-full h-full overflow-hidden md:hidden block">
+          {/* Smoke PNG */}
+          <Image
+           
+           src="/assets/images/menubg.png"
+            alt="smoke"
+          
+            fill
+             className="
+       absolute top-0 left-0 w-full h-full object-cover opacity-40
+      "
+          />
+    
+      <h2 className='text-center'>
+        Our Menu
+        {/* {t('someItems')} */}
+        </h2>
+    <MobFlipCardSlider/>
+    </div>
 
     
   <section className="section kf-menu-classic mt-32 section-bg">

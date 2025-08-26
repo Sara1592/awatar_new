@@ -1,5 +1,6 @@
 import React from 'react'
 import HeroSlider from '@/components/HeroSlider'
+import MobFlipCardSlider from '@/components/mobFilpslider';
 
 import gsap from 'gsap';
 import Image from 'next/image';
@@ -337,7 +338,7 @@ const about1Ref = useRef(null);
 
 
 <section> 
-  <div className="relative w-full h-full overflow-hidden">
+  <div className="relative w-full h-full overflow-hidden md:block hidden">
       {/* Smoke PNG */}
       <Image
         ref={smokeRef}
@@ -354,6 +355,24 @@ const about1Ref = useRef(null);
     {/* {t('someItems')} */}
     </h2>
 <FlipCardSlider/>
+</div>
+ <div className="relative w-full h-full overflow-hidden md:hidden block">
+      {/* Smoke PNG */}
+      <Image
+       
+        src="/assets/images/bg_smoke1.png"
+        alt="smoke"
+        fill
+         className="
+   absolute top-0 left-0 w-full h-full object-cover opacity-40
+  "
+      />
+
+  <h2 className='text-center'>
+    Our Menu
+    {/* {t('someItems')} */}
+    </h2>
+<MobFlipCardSlider/>
 </div>
 </section>
 <section className=' mt-5 md:mt-10 md:mb-10 mb-5'>
