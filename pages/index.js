@@ -337,7 +337,7 @@ const about1Ref = useRef(null);
 
 
 <section> 
-  <div className="relative w-full h-screen overflow-hidden">
+  <div className="relative w-full h-full overflow-hidden">
       {/* Smoke PNG */}
       <Image
         ref={smokeRef}

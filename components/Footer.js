@@ -14,7 +14,7 @@ export default function Footer() {
              <div className="kf-h-social flex items-center gap-3">
           <Link href="https://www.facebook.com/awtarcafe.dubai" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f" /></Link>
           <Link href="https://twitter.com" target="_blank" rel="noreferrer"><i className="fab fa-twitter" /></Link>
-          <Link href="https://instagram.com" target="_blank" rel="noreferrer"><i className="fab fa-instagram" /></Link>
+          <Link href="https://www.instagram.com/awtarcafe.ae/" target="_blank" rel="noreferrer"><i className="fab fa-instagram" /></Link>
           <Link href="https://youtube.com" target="_blank" rel="noreferrer"><i className="fab fa-youtube" /></Link>
         </div>
           </div>

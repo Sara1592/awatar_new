@@ -30,12 +30,12 @@ const Header = () => {
         <div className="kf-h-social flex items-center gap-3">
           <Link href="https://www.facebook.com/awtarcafe.dubai" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f" /></Link>
           <Link href="https://twitter.com" target="_blank" rel="noreferrer"><i className="fab fa-twitter" /></Link>
-          <Link href="https://instagram.com" target="_blank" rel="noreferrer"><i className="fab fa-instagram" /></Link>
+          <Link href="https://www.instagram.com/awtarcafe.ae/" target="_blank" rel="noreferrer"><i className="fab fa-instagram" /></Link>
           <Link href="https://youtube.com" target="_blank" rel="noreferrer"><i className="fab fa-youtube" /></Link>
         </div>
         <div className="kf-h-group flex items-center gap-2">
           <i className="fas fa-map-marker-alt" />
-          <span>Dubai - Al Muraqqabat – Deira – Bu Haleeba plaza</span>
+          <span><Link href="https://maps.app.goo.gl/o4FdEsR6L57Qy8ebA" className="">Dubai - Al Muraqqabat – Deira – Bu Haleeba plaza</Link></span>
         </div>
       </div>
 
@@ -163,7 +163,7 @@ const Header = () => {
             <div className="kf-h-social flex gap-4 mb-4">
               <Link href="https://www.facebook.com/awtarcafe.dubai" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f" /></Link>
               <Link href="https://twitter.com" target="_blank" rel="noreferrer"><i className="fab fa-twitter" /></Link>
-              <Link href="https://instagram.com" target="_blank" rel="noreferrer"><i className="fab fa-instagram" /></Link>
+              <Link href="https://www.instagram.com/awtarcafe.ae/" target="_blank" rel="noreferrer"><i className="fab fa-instagram" /></Link>
               <Link href="https://youtube.com" target="_blank" rel="noreferrer"><i className="fab fa-youtube" /></Link>
             </div>
           </div>
