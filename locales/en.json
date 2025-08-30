@@ -1,6 +1,17 @@
 {
 
     "home":{
+       "slide1Title": "Welcome to",
+    "slide1Subtitle": "Awtar Café",
+    "slide1Image": "/assets/images/slider2.png",
+    "slide2Title": "",
+    "slide2Subtitle": "",
+    "slide2Image": "/assets/images/slider1.png",
+
+    "slide3Title": "Welcome to",
+    "slide3Subtitle": "Awtar Café",
+        "slide3Image": "/assets/images/slider3.png",
+
   "aboutSubtitle": "About Us",
   "aboutTitle": "Awtar Café’s Story",
   "aboutDesc1": "At a cozy corner of Al Muraqqabat, there’s a place where the scent of coffee pulls you in before you even see the door. That corner was once just a dream — today, it’s Awtar.",
@@ -23,6 +34,9 @@
   "openHours": "Open Hours: 08:00 am - 09:00 pm",
   "address": "Dubai - Al Muraqqabat – Deira – Bu Haleeba plaza"
 }
+
+
+
 }
 
 

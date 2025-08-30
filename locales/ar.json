@@ -3,6 +3,16 @@
 {
 
     "home":{
+      "slide1Title": "مرحبا بكم في",
+    "slide1Subtitle": "أوتار كافيه",
+    "slide1Image": "/assets/images/slider2.png",
+    "slide2Title": "",
+    "slide2Subtitle": "",
+    "slide2Image": "/assets/images/slider1.png",
+    "slide3Title": "مرحبا بكم في",
+    "slide3Subtitle": "أوتار كافيه",
+    "slide3Image": "/assets/images/slider3.png",
+
   "aboutSubtitle": "من نحن",
   "aboutTitle": "قصة مقهى أوتار",
   "aboutDesc1": "في زاوية دافئة من المرقبات، هناك مكان تجذبك رائحة القهوة إليه قبل أن ترى الباب. كانت تلك الزاوية مجرد حلم - اليوم، إنها أوتار.",
