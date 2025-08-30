@@ -6,10 +6,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { useRouter } from "next/router";
-// import { useTranslation } from 'next-i18next';
+
 
 const Header = () => {
-  // const { t } = useTranslation('common'); 
+
   const { locale, locales, asPath } = useRouter();
   const [mobileMenu, setMobileMenu] = useState(false);
 
@@ -71,6 +71,12 @@ const Header = () => {
             Contact
             {/* {t('contact')} */}
             </Link></li>
+            <li>
+              <select onChange={handleChangeLanguage} value={locale}>
+        <option value="en">English</option>
+        <option value="ar">Arabic</option>
+      </select>
+            </li>
 
           </ul>
           

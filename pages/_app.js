@@ -4,7 +4,9 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import FloatingContactButtons from "@/components/ContactButton";
 import { Roboto, Oswald, Merienda } from "next/font/google";
-import { appWithTranslation } from 'next-i18next';
+// import { NextIntlProvider } from 'next-intl';
+// import { NextIntlClientProvider } from 'next-intl';
+import NoticePopup from "@/components/NoticePopup";
 
 
 const roboto = Roboto({
@@ -28,6 +30,9 @@ const merienda = Merienda({
 function App({ Component, pageProps }) {
   return (
     <>
+    {/* <NextIntlProvider messages={pageProps.messages}> */}
+
+     {/* <NextIntlClientProvider messages={pageProps.messages} locale={pageProps.locale}> */}
       <Head>
         {/* Font Awesome CDN */}
         <link
@@ -44,10 +49,27 @@ function App({ Component, pageProps }) {
       <Header/>
       <Component {...pageProps} />
       <FloatingContactButtons/>
+      <NoticePopup/>
            </div>
-     
-    </>
+           
+     {/* </NextIntlClientProvider> */}
+  {/* </NextIntlProvider> */}
+
+  </>
   );
 }
 
-export default appWithTranslation(App);
+
+export default App;
+
+
+// import { NextIntlProvider } from 'next-intl';
+// import '../styles/globals.css';
+
+// export default function MyApp({ Component, pageProps }) {
+//   return (
+//     <NextIntlProvider messages={pageProps.messages || {}} locale={pageProps.locale || 'en'}>
+//       <Component {...pageProps} />
+//     </NextIntlProvider>
+//   );
+// }

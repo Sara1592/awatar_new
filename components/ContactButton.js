@@ -9,19 +9,19 @@ export default function FloatingContactButtons() {
         href="https://wa.me/971544115335"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center"
+        className="bg-[#8E6E3B]  text-white p-4 rounded-full shadow-lg flex items-center justify-center"
         aria-label="WhatsApp"
       >
-        <FaWhatsapp className="w-6 h-6" />
+        <FaWhatsapp className="w-6 h-6 text-white hover:text-white"  />
       </Link>
 
       {/* Phone call button */}
       <Link
         href="tel:+971544115335"
-        className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg flex items-center justify-center"
+        className="bg-[#8E6E3B] hover:bg-[#8E6E3B] text-white p-4 rounded-full shadow-lg flex items-center justify-center"
         aria-label="Call Phone"
       >
-        <FaPhone className="w-6 h-6" />
+        <FaPhone className="w-6 h-6  text-white hover:text-white" />
       </Link>
     </div>
   )

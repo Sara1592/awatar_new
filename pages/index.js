@@ -20,24 +20,14 @@ import { useEffect, useRef } from "react";
 import Ambiance from '@/components/Ambiance';
 import Footer from '@/components/Footer';
 import CounterSection from '@/components/aboutcount';
+import { useTranslations } from 'next-intl';
+// import LanguageSwitcher from '../components/LanguageSwitcher';
+import enMessages from '../locales/en.json'
 
-const Home = () => {
-  // const { locale, locales, asPath } = useRouter();
-  // const translations = {
-  //   en: {
-  //     welcome: "Welcome to our website",
-  //     about: "About Us",
-  //     contact: "Contact",
-  //   },
-  //   ar: {
-  //     welcome: "مرحبا بكم في موقعنا",
-  //     about: "معلومات عنا",
-  //     contact: "اتصل بنا",
-  //   },
-  // };
+export default function Home({ locale }) {
+  // const t = useTranslations('home');
+// const Home = () => {
 
-  //  const t = translations[locale] || translations.en;
-  
 let xPos = 0;
   const subtitleRef = useRef(null);
   const titleRef = useRef(null);
@@ -248,6 +238,7 @@ const about1Ref = useRef(null);
 
   return (
     <div>
+        {/* <LanguageSwitcher currentLocale="en" /> */}
       <HeroSlider/>
        <section
   className="section kf-category"
@@ -521,14 +512,17 @@ const about1Ref = useRef(null);
   )
 }
 
-export default Home
 
-// export async function getStaticProps({ locale }) {
-//   // fallback locale
-//   const currentLocale = locale ?? 'en';
+// export async function getStaticProps() {
+//   return { props: { messages: enMessages, locale: 'en' } };
+// }
+
+
+// export function getStaticProps({ locale }) {
 //   return {
 //     props: {
-//       ...(await serverSideTranslations(currentLocale, ['common'])),
-//     },
+//       messages: require(`../messages/${locale}.json`),
+//       locale
+//     }
 //   };
 // }

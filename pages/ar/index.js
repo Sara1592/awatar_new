@@ -19,8 +19,14 @@ import { useEffect, useRef } from "react";
 import Ambiance from '@/components/Ambiance';
 import Footer from '@/components/Footer';
 import CounterSection from '@/components/aboutcount';
+import { useTranslations } from 'next-intl';
+import LanguageSwitcher from '../../components/LanguageSwitcher';
+import arMessages from '../../locales/ar.json'
 
-const Home = () => {
+
+export default function Home() {
+  const t = useTranslations();
+// const Home = () => {
   // const { locale, locales, asPath } = useRouter();
   // const translations = {
   //   en: {
@@ -247,6 +253,7 @@ const about1Ref = useRef(null);
 
   return (
     <div>
+        <LanguageSwitcher currentLocale="ar" />
       <HeroSlider/>
        <section
   className="section kf-category"
@@ -292,29 +299,29 @@ const about1Ref = useRef(null);
        <div className="kf-titles">
           <div
             className="kf-subtitle " ref={subtitleRef} >
-            About Us
-            {/* {t('aboutSubtitle')} */}
+            {/* About Us */}
+            {t('aboutSubtitle')}
           </div>
           <h3
             className="kf-title" ref={titleRef}
           
           >
-            Awtar Café’s Story
-            {/* {t('aboutTitle')} */}
+            {/* Awtar Café’s Story */}
+            {t('aboutTitle')}
           </h3>
         </div>
         <div className="kf-text" ref={descRef}>
           <p>
-            At a cozy corner of Al Muraqqabat, there’s a place where the scent of coffee pulls you in before you even see the door. That corner was once just a dream — today, it’s Awtar.
-            {/* {t('aboutDesc1')} */}
+            {/* At a cozy corner of Al Muraqqabat, there’s a place where the scent of coffee pulls you in before you even see the door. That corner was once just a dream — today, it’s Awtar. */}
+            {t('aboutDesc1')}
           </p>
           <p>
-            We named it Awtar because every sip, every moment here plays like a note on the strings of your mood.
-            {/* {t('aboutDesc2')} */}
+            {/* We named it Awtar because every sip, every moment here plays like a note on the strings of your mood. */}
+            {t('aboutDesc2')}
             </p>
 <p>
-  We wanted to bring back the old rituals — the warmth of Arabic coffee, the calm of a fresh mint tea, the comfort of tradition.
-  {/* {t('aboutDesc3')} */}
+  {/* We wanted to bring back the old rituals — the warmth of Arabic coffee, the calm of a fresh mint tea, the comfort of tradition. */}
+  {t('aboutDesc3')}
   </p>
         </div>
         <Link
@@ -323,8 +330,8 @@ const about1Ref = useRef(null);
          ref={buttRef}
         >
           <span >
-            Read More
-            {/* {t('readMore')} */}
+            {/* Read More */}
+            {t('readMore')}
             </span>
           <i className="fas fa-chevron-right" />
         </Link>
@@ -355,8 +362,8 @@ const about1Ref = useRef(null);
       />
 
   <h2 className='text-center'>
-    Our Menu
-    {/* {t('someItems')} */}
+    {/* Our Menu */}
+    {t('someItems')}
     </h2>
 <FlipCardSlider/>
 </div>
@@ -438,12 +445,12 @@ const about1Ref = useRef(null);
 </section>
 <div>
       <p className="text-center text-[#8E6E3B] text-xl  my-8">
-        Customer Feedback
-        {/* {t('customerFeedback')} */}
+        {/* Customer Feedback */}
+        {t('customerFeedback')}
         </p>
       <h3 className="text-center text-3xl font-bold my-8">
-        What Our Clients Say
-        {/* {t('whatClientsSay')} */}
+        {/* What Our Clients Say */}
+        {t('whatClientsSay')}
         </h3>
       {/* <TestimonialSlider /> */}
       <Testimonials/>
@@ -476,14 +483,14 @@ const about1Ref = useRef(null);
       <div className="kf-titles max-w-2xl">
         {/* Subtitle */}
         <div className=" mb-2 text-white text-sm md:text-base">
-          Booking Table For You, Family & Friends
-          {/* {t('bookingSubtitle')} */}
+          {/* Booking Table For You, Family & Friends */}
+          {t('bookingSubtitle')}
         </div>
 
         {/* Title */}
         <h3 className="kf-title text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-white">
-          Your satisfaction means everything to us
-          {/* {t('bookingTitle')} */}
+          {/* Your satisfaction means everything to us */}
+          {t('bookingTitle')}
         </h3>
 
         {/* Button */}
@@ -492,7 +499,8 @@ const about1Ref = useRef(null);
           className="kf-btn inline-flex items-center px-2 py-2 md:px-3 md:py-3 text-sm md:text-lg font-medium text-white bg-gold rounded transition-all duration-300"
         >
           <span>
-           {/* {t('bookingButton')} */}Book a Table
+           {t('bookingButton')}
+           {/* Book a Table */}
             </span>
           <i className="fas fa-chevron-right ml-2" />
         </Link>
@@ -507,4 +515,11 @@ const about1Ref = useRef(null);
   )
 }
 
-export default Home
+export async function getStaticProps() {
+  return {
+    props: {
+      messages: arMessages,
+      locale: 'ar',
+    },
+  };
+}
