@@ -22,7 +22,7 @@ const titleRef = useRef(null);
   const descRef = useRef(null);
 
    const smokeRef = useRef(null);
-  
+
 
   useEffect(() => {
     const loadAnimation = async () => {
@@ -66,11 +66,11 @@ const titleRef = useRef(null);
       ease: "power2.out",
       delay: 0.8,
     });
-    
+
 
     }
 
-    
+
     loadAnimation();
   }, []);
   return (
@@ -80,7 +80,7 @@ const titleRef = useRef(null);
         className="section kf-category"
         style={{ backgroundImage: "url('assets/images/category_bg.jpg')" }}
       >
-      
+
           <div className="container">
             <div className="flex flex-wrap gap-2 mb-20 ">
               <div className="w-full sm:w-[45%] mt-30">
@@ -89,32 +89,32 @@ const titleRef = useRef(null);
                   <div className="image kf-image-hover" ref={about1Ref} >
                    <Image src="/assets/images/about1.png" alt="Awatar" width={1000} height={1000}/>
                   </div>
-              
+
                 </div>
                 <div className="kf-category-item" ref={about3Ref}>
                   <div className="image kf-image-hover">
                     <Image src="/assets/images/about3.png" alt="Awatar" width={1000} height={1000}/>
                   </div>
-                 
+
                 </div>
                 <div className="kf-category-item" ref={about4Ref}>
                   <div className="image kf-image-hover">
                   <Image src="/assets/images/about4.png" alt="Awatar" width={1000} height={1000}/>
-      
+
                   </div>
-                 
+
                 </div>
                 <div className="kf-category-item" ref={about2Ref}>
                   <div className="image kf-image-hover">
                   <Image src="/assets/images/about2.png" alt="Awatar" width={1000} height={1000}/>
-      
+
                   </div>
-                
+
                 </div>
               </div>
               </div>
                 <div className="w-full sm:w-[5%] mt-30">
-             
+
             </div>
             <div className="w-full sm:w-[40%] mt-0 md:mt-50">
              <div className="kf-titles">
@@ -124,7 +124,7 @@ const titleRef = useRef(null);
                 </div>
                 <h3
                   className="kf-title" ref={titleRef}
-                
+
                 >
                   Awtar Café’s Story
                 </h3>
@@ -133,8 +133,9 @@ const titleRef = useRef(null);
                 <p>
                   At a cozy corner of Al Muraqqabat, there’s a place where the scent of coffee pulls you in before you even see the door. That corner was once just a dream — today, it’s Awtar.
                 </p>
-                <p>We named it Awtar because every sip, every moment here plays like a note on the strings of your mood.</p>
-      <p>We wanted to bring back the old rituals — the warmth of Arabic coffee, the calm of a fresh mint tea, the comfort of tradition.</p>
+                <p>We named it Awtar because every sip, every moment here plays like a note on the strings of your.
+                </p>
+                <p>We wanted to bring back the old rituals — the warmth of Arabic coffee, the calm of a fresh mint tea, the comfort of tradition.</p>
               </div>
               <a
                 href="/"
@@ -146,9 +147,9 @@ const titleRef = useRef(null);
               </a>
             </div>
             </div>
-            </div> 
-      
-      
+            </div>
+
+
       </section>  */}
 
       <section   className="section kf-category py-20"
@@ -167,7 +168,7 @@ const titleRef = useRef(null);
             ref={titleRef}
             className="text-3xl md:text-5xl font-bold leading-tight mb-4"
           >
-            Awtar Café’ <br /> 
+            Awtar Café’ <br />
           </h2>
           <h3 className="text-lg text-gray-600 mb-6">
            Warm Flavors, Warmer Hearts Food & Drinks crafted with care, shared with joy.
@@ -188,7 +189,7 @@ const titleRef = useRef(null);
           >
             <span > Our Menu</span>
           <i className="fas fa-chevron-right" />
-           
+
           </Link>
         </div>
 
@@ -246,7 +247,7 @@ const titleRef = useRef(null);
   </div>
 </div>
 <Footer/>
-      
+
     </div>
   )
 }
@@ -256,7 +257,7 @@ export default About
 export async function getStaticProps() {
   return {
     props: {
-      messages: (await import(`../locales/en.json`)).default,
+      messages: (await import(`../../locales/ar.json`)).default,
     },
   };
 }

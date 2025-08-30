@@ -6,16 +6,30 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { useRouter } from "next/router";
+import { useTranslations } from 'next-intl';
 
 
 const Header = () => {
-
-  const { locale, locales, asPath } = useRouter();
+  const t = useTranslations('home');
+  const router = useRouter();
+  const { pathname, asPath, push } = router;
   const [mobileMenu, setMobileMenu] = useState(false);
 
    const handleChangeLanguage = (e) => {
     const newLocale = e.target.value;
-    push(asPath, asPath, { locale: newLocale });
+    let newPath = asPath;
+
+    if (newLocale === 'ar') {
+      if (!pathname.startsWith('/ar')) {
+        newPath = `/ar${asPath}`;
+      }
+    } else {
+      if (pathname.startsWith('/ar')) {
+        newPath = asPath.replace('/ar', '') || '/';
+      }
+    }
+
+    push(newPath);
   };
 
 
@@ -25,7 +39,7 @@ const Header = () => {
       <div className="kf-topline hidden md:flex justify-between items-center py-2 px-4">
         <div className="kf-h-group flex items-center gap-2">
           <i className="far fa-clock" />
-          <span>Open Hours: 08:00 am - 09:00 pm</span>
+          <span>{t('openHours')}</span>
         </div>
         <div className="kf-h-social flex items-center gap-3">
           <Link href="https://www.facebook.com/awtarcafe.dubai" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f" /></Link>
@@ -35,7 +49,7 @@ const Header = () => {
         </div>
         <div className="kf-h-group flex items-center gap-2">
           <i className="fas fa-map-marker-alt" />
-          <span><Link href="https://maps.app.goo.gl/o4FdEsR6L57Qy8ebA" className="">Dubai - Al Muraqqabat – Deira – Bu Haleeba plaza</Link></span>
+          <span><Link href="https://maps.app.goo.gl/o4FdEsR6L57Qy8ebA" className="">{t('address')}</Link></span>
         </div>
       </div>
 
@@ -52,27 +66,22 @@ const Header = () => {
         <div className="hidden md:flex kf-main-menu">
           <ul className="flex gap-6">
             <li><Link href="/">
-            Home
-            {/* {t('home')} */}
+            {t('home')}
             </Link></li>
             <li><Link href="/menu">
-            Menu
-            {/* {t('menu')} */}
+            {t('menu')}
             </Link></li>
             <li><Link href="/gallery">
-            Gallery
-            {/* {t('gallery')} */}
+            {t('gallery')}
             </Link></li>
             <li><Link href="/about">
-            About us
-            {/* {t('about')} */}
+            {t('about')}
             </Link></li>
             <li><Link href="/contact">
-            Contact
-            {/* {t('contact')} */}
+            {t('contact')}
             </Link></li>
             <li>
-              <select onChange={handleChangeLanguage} value={locale}>
+              <select onChange={handleChangeLanguage} value={pathname.startsWith('/ar') ? 'ar' : 'en'}>
         <option value="en">English</option>
         <option value="ar">Arabic</option>
       </select>
@@ -87,8 +96,7 @@ const Header = () => {
             
            <Link href="/reservation" className="hidden md:inline-block kf-btn h-btn">
             <span>
-              Book a table
-              {/* {t('bookTable')} */}
+              {t('bookTable')}
               </span> 
           </Link> 
 
@@ -118,36 +126,31 @@ const Header = () => {
               <li className="flex items-center gap-2">
                 <i className="fas fa-home"></i>
                 <Link href="/" onClick={() => setMobileMenu(false)}>
-                Home
-                {/* {t('home')} */}
+                {t('home')}
                 </Link>
               </li>
               <li className="flex items-center gap-2">
                 <i className="fas fa-utensils"></i>
                 <Link href="/menu" onClick={() => setMobileMenu(false)}>
-                Menu
-                {/* {t('menu')} */}
+                {t('menu')}
                 </Link>
               </li>
               <li className="flex items-center gap-2">
                 <i className="fas fa-image"></i>
                 <Link href="/gallery" onClick={() => setMobileMenu(false)}>
-                Gallery
-                {/* {t('gallery')} */}
+                {t('gallery')}
                 </Link>
               </li>
               <li className="flex items-center gap-2">
                 <i className="fas fa-info-circle"></i>
                 <Link href="/about" onClick={() => setMobileMenu(false)}>
-                About us
-                {/* {t('about')} */}
+                {t('about')}
                 </Link>
               </li>
               <li className="flex items-center gap-2">
                 <i className="fas fa-envelope"></i>
                 <Link href="/contact" onClick={() => setMobileMenu(false)}>
-                Contact
-                {/* {t('contact')} */}
+                {t('contact')}
                 </Link>
               </li>
              
@@ -159,8 +162,7 @@ const Header = () => {
           <div className="text-center">
              <Link href="/reservation"  onClick={() => setMobileMenu(false)} className="kf-btn  mb-6">
             <span>
-              Book a table
-             
+              {t('bookTable')}
               </span> 
           </Link> 
           </div>

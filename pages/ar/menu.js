@@ -7,7 +7,7 @@ import MobFlipCardSlider from '@/components/mobFilpslider';
 import FlipCardSlider from '@/components/Flipslider'
 import MenuSection from '@/components/Menupage'
 export default function Menu () {
-      
+
     let xPos = 0;
       const subtitleRef = useRef(null);
       const titleRef = useRef(null);
@@ -17,12 +17,12 @@ export default function Menu () {
       const about2Ref = useRef(null);
       const about3Ref = useRef(null);
       const about4Ref = useRef(null);
-    
-    
-    
+
+
+
 
        const smokeRef = useRef(null);
-  
+
 
   useEffect(() => {
     const loadAnimation = async () => {
@@ -117,7 +117,7 @@ export default function Menu () {
           },
         }
       );
-    
+
 
 
        gsap.fromTo(
@@ -187,15 +187,15 @@ export default function Menu () {
 
     }
 
-    
+
     loadAnimation();
   }, []);
 
 
   return (
     <div className='mt-38'>
-    
-    <section> 
+
+    <section>
       <div className="relative w-full h-full overflow-hidden md:block hidden">
           {/* Smoke PNG */}
           <Image
@@ -205,7 +205,7 @@ export default function Menu () {
             fill
             className="absolute top-0 left-0 w-full h-full object-cover opacity-40"
           />
-    
+
       <h2 className='text-center'>Our Menu</h2>
     <FlipCardSlider/>
     </div>
@@ -213,16 +213,16 @@ export default function Menu () {
      <div className="relative w-full h-full overflow-hidden md:hidden block">
           {/* Smoke PNG */}
           <Image
-           
+
            src="/assets/images/menubg.png"
             alt="smoke"
-          
+
             fill
              className="
        absolute top-0 left-0 w-full h-full object-cover opacity-40
       "
           />
-    
+
       <h2 className='text-center'>
         Our Menu
         {/* {t('someItems')} */}
@@ -230,7 +230,7 @@ export default function Menu () {
     <MobFlipCardSlider/>
     </div>
 
-    
+
   <section className="section kf-menu-classic mt-32 section-bg">
     <div className="container">
       <div className="kf-titles align-center">
@@ -247,10 +247,10 @@ export default function Menu () {
          Hot Drinks
         </h3>
       </div>
-    
+
 
  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      
+
       {/* Left Column */}
       <div className="p-6 rounded-lg shadow">
         <Image src="/assets/images/hotdrink1.jpg" alt="hotdrink" width={700} height={1100} />
@@ -269,7 +269,7 @@ export default function Menu () {
                   <span className="px-6">AED34</span>
                 </div>
 
-                
+
 </div>
 </div>
 
@@ -323,7 +323,7 @@ export default function Menu () {
     </div>
   </div>
 </div>
-    </div>  
+    </div>
  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div
         className="kf-menu-items">
@@ -377,23 +377,23 @@ export default function Menu () {
 
 
 
-  
-  
-</div>    
+
+
+</div>
       {/* Left Column */}
       <div className="p-6 rounded-lg shadow">
         <Image src="/assets/images/hotdrink2.jpg" alt="hotdrink" width={700} height={900} />
       </div>
 
       {/* Right Column */}
-       
-     
+
+
 
     </div>
 
-    
+
  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      
+
       {/* Left Column */}
       <div className="p-6 rounded-lg shadow">
         <Image src="/assets/images/hotdrink3.png" alt="hotdrink" width={700} height={1100} />
@@ -475,7 +475,7 @@ export default function Menu () {
 </div>
 
 
-</div>    
+</div>
     </div>
 
 
@@ -548,22 +548,22 @@ export default function Menu () {
 </div>
 
 
-  
-  
-</div>    
+
+
+</div>
       {/* Left Column */}
       <div className="p-6 rounded-lg shadow">
         <Image src="/assets/images/hotdrink4.png" alt="hotdrink" width={700} height={900} />
       </div>
 
       {/* Right Column */}
-       
-     
+
+
 
     </div>
-       
-       
-    
+
+
+
     </div>
   </section>
       {/* end */}
@@ -586,7 +586,7 @@ export default function Menu () {
       </div>
 
        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      
+
       {/* Left Column */}
       <div className="p-6 rounded-lg shadow">
         <Image src="/assets/images/jui2.png" alt="hotdrink" width={700} height={1100} />
@@ -667,13 +667,13 @@ export default function Menu () {
   </div>
 
 
-</div>    
+</div>
     </div>
 
      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      
+
       {/* Left Column */}
-     
+
 
       {/* Right Column */}
        <div
@@ -684,7 +684,7 @@ export default function Menu () {
       <div className="price"><span className="px-6">AED24</span></div>
     </div>
   </div>
- 
+
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
       <h5 className="name px-6">Awtar Qashati</h5>
@@ -756,12 +756,12 @@ export default function Menu () {
   </div>
 
 
-</div>  
+</div>
  <div className="py-6 rounded-lg shadow">
         <Image src="/assets/images/jui1.png" alt="hotdrink" width={700} height={1200} />
-      </div>  
+      </div>
     </div>
-    
+
 
 
 </div>
@@ -787,7 +787,7 @@ export default function Menu () {
       </div>
 
        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      
+
       {/* Left Column */}
       <div className="p-6 rounded-lg shadow">
         <Image src="/assets/images/mojito.png" alt="hotdrink" width={700} height={1100} />
@@ -870,9 +870,9 @@ export default function Menu () {
   </div>
 
 </div>
- 
+
     </div>
-   
+
 
 
 </div>
@@ -881,7 +881,7 @@ export default function Menu () {
   </section>
 
 
-  
+
    <section className="section kf-menu-classic mt-32 section-bg">
     <div className="container">
       <div className="kf-titles align-center">
@@ -900,7 +900,7 @@ COLD DRINKS
       </div>
 
        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      
+
       {/* Left Column */}
     <div class="kf-menu-items">
   <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
@@ -989,12 +989,12 @@ COLD DRINKS
         <div className="p-6 rounded-lg shadow">
         <Image src="/assets/images/cold.png" alt="hotdrink" width={700} height={1100} />
       </div>
-     
- 
+
+
     </div>
 </div>
   </section>
-  
+
       <div className="section kf-video mt-10">
   <div className="kf-video-item relative w-full h-[250px] overflow-hidden">
     {/* Video */}
@@ -1044,7 +1044,7 @@ COLD DRINKS
 export async function getStaticProps() {
   return {
     props: {
-      messages: (await import(`../locales/en.json`)).default,
+      messages: (await import(`../../locales/ar.json`)).default,
     },
   };
 }

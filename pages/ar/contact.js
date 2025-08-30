@@ -44,9 +44,9 @@ Message: ${form.message}`;
      <BreadcrumbBanner/>
       <section className="py-16">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-        
+
         {/* Location */}
-        <div className="p-6 rounded-2xl shadow-lg text-center 
+        <div className="p-6 rounded-2xl shadow-lg text-center
             bg-[rgba(190,147,4,0.1)] backdrop-blur-md border border-yellow-500/20">
           <MapPin className="mx-auto w-10 h-10 text-[#8E6E3B] mb-3" />
           <h3 className="text-lg font-semibold text-gray-900">Our Location</h3>
@@ -56,7 +56,7 @@ Message: ${form.message}`;
         </div>
 
         {/* Phone */}
-        <div className="p-6 rounded-2xl shadow-lg text-center 
+        <div className="p-6 rounded-2xl shadow-lg text-center
             bg-[rgba(190,147,4,0.1)] backdrop-blur-md border border-yellow-500/20">
           <Phone className="mx-auto w-10 h-10 text-[#8E6E3B] mb-3" />
           <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
@@ -65,7 +65,7 @@ Message: ${form.message}`;
         </div>
 
         {/* Email */}
-        <div className="p-6 rounded-2xl shadow-lg text-center 
+        <div className="p-6 rounded-2xl shadow-lg text-center
             bg-[rgba(190,147,4,0.1)] backdrop-blur-md border border-yellow-500/20">
           <Mail className="mx-auto w-10 h-10 text-[#8E6E3B] mb-3" />
           <h3 className="text-lg font-semibold text-gray-900">Email</h3>
@@ -79,7 +79,7 @@ Message: ${form.message}`;
       <section className="py-16">
         <h2 className='text-center'>Where to find Us</h2>
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
-        
+
         {/* Left: Google Map */}
         <div className="w-full h-[450px] rounded-2xl overflow-hidden shadow-lg mt-15">
           {/* <iframe
@@ -97,7 +97,7 @@ Message: ${form.message}`;
         {/* <div className=" p-8 rounded-2xl shadow-lg">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Contact Us</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
-            
+
             <input
               type="text"
               name="name"
@@ -150,7 +150,7 @@ Message: ${form.message}`;
          <div className=" p-8 rounded-2xl shadow-lg">
       {/* <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2> */}
       <form onSubmit={handleSubmit} className="space-y-4">
-        
+
         {/* Row 1: Full Name, Phone, Email */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <input
@@ -209,7 +209,7 @@ Message: ${form.message}`;
           type="submit"
           className="hidden md:inline-block kf-btn "
         >
-         <span>Send Us Message</span> 
+         <span>Send Us Message</span>
         </button>
       </form>
     </div>
@@ -226,7 +226,7 @@ export default Contact
 export async function getStaticProps() {
   return {
     props: {
-      messages: (await import(`../locales/en.json`)).default,
+      messages: (await import(`../../locales/ar.json`)).default,
     },
   };
 }

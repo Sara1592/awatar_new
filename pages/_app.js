@@ -4,8 +4,8 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import FloatingContactButtons from "@/components/ContactButton";
 import { Roboto, Oswald, Merienda } from "next/font/google";
-// import { NextIntlProvider } from 'next-intl';
-// import { NextIntlClientProvider } from 'next-intl';
+import { NextIntlClientProvider } from 'next-intl';
+import { useRouter } from 'next/router';
 import NoticePopup from "@/components/NoticePopup";
 
 
@@ -28,11 +28,13 @@ const merienda = Merienda({
 });
 
 function App({ Component, pageProps }) {
-  return (
-    <>
-    {/* <NextIntlProvider messages={pageProps.messages}> */}
+  const router = useRouter();
 
-     {/* <NextIntlClientProvider messages={pageProps.messages} locale={pageProps.locale}> */}
+  return (
+    <NextIntlClientProvider
+      locale={router.pathname.startsWith('/ar') ? 'ar' : 'en'}
+      messages={pageProps.messages}
+    >
       <Head>
         {/* Font Awesome CDN */}
         <link
@@ -42,20 +44,14 @@ function App({ Component, pageProps }) {
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
-           </Head>
-           <div className={`${roboto.variable} ${oswald.variable} ${merienda.variable}`}>
-
-          
-      <Header/>
-      <Component {...pageProps} />
-      <FloatingContactButtons/>
-      <NoticePopup/>
-           </div>
-           
-     {/* </NextIntlClientProvider> */}
-  {/* </NextIntlProvider> */}
-
-  </>
+      </Head>
+      <div className={`${roboto.variable} ${oswald.variable} ${merienda.variable}`}>
+        <Header/>
+        <Component {...pageProps} />
+        <FloatingContactButtons/>
+        <NoticePopup/>
+      </div>
+    </NextIntlClientProvider>
   );
 }
 

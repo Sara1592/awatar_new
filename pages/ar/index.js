@@ -20,28 +20,10 @@ import Ambiance from '@/components/Ambiance';
 import Footer from '@/components/Footer';
 import CounterSection from '@/components/aboutcount';
 import { useTranslations } from 'next-intl';
-import LanguageSwitcher from '../../components/LanguageSwitcher';
-import arMessages from '../../locales/ar.json'
 
 
 export default function Home() {
-  const t = useTranslations();
-// const Home = () => {
-  // const { locale, locales, asPath } = useRouter();
-  // const translations = {
-  //   en: {
-  //     welcome: "Welcome to our website",
-  //     about: "About Us",
-  //     contact: "Contact",
-  //   },
-  //   ar: {
-  //     welcome: "مرحبا بكم في موقعنا",
-  //     about: "معلومات عنا",
-  //     contact: "اتصل بنا",
-  //   },
-  // };
-
-  //  const t = translations[locale] || translations.en;
+  const t = useTranslations('home');
   
 let xPos = 0;
   const subtitleRef = useRef(null);
@@ -253,7 +235,6 @@ const about1Ref = useRef(null);
 
   return (
     <div>
-        <LanguageSwitcher currentLocale="ar" />
       <HeroSlider/>
        <section
   className="section kf-category"
@@ -518,8 +499,7 @@ const about1Ref = useRef(null);
 export async function getStaticProps() {
   return {
     props: {
-      messages: arMessages,
-      locale: 'ar',
+      messages: (await import(`../../locales/ar.json`)).default,
     },
   };
 }

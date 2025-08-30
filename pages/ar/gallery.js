@@ -27,8 +27,8 @@ const Gallery = () => {
         </h3>
          <MenuTabs/>
       </div>
-    
-  
+
+
 
     </div>
   </section>
@@ -69,7 +69,7 @@ const Gallery = () => {
   </section>
   {/* Section Brands */}
   <Footer/>
-  
+
 </>
 
     </div>
@@ -81,7 +81,7 @@ export default Gallery
 export async function getStaticProps() {
   return {
     props: {
-      messages: (await import(`../locales/en.json`)).default,
+      messages: (await import(`../../locales/ar.json`)).default,
     },
   };
 }

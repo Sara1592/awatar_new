@@ -518,11 +518,10 @@ const about1Ref = useRef(null);
 // }
 
 
-// export function getStaticProps({ locale }) {
-//   return {
-//     props: {
-//       messages: require(`../messages/${locale}.json`),
-//       locale
-//     }
-//   };
-// }
+export async function getStaticProps() {
+  return {
+    props: {
+      messages: (await import(`../locales/en.json`)).default,
+    },
+  };
+}
