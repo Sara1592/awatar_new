@@ -8275,3 +8275,37 @@ button {
         line-height: 28px;
   }
 } */
+
+
+.close-btn {
+  position: absolute;
+  top: 0.75rem;        /* top-3 */
+  left: 22rem;         /* left-40 */
+  width: 10px;         /* w-8 */
+  height: 40px;        /* h-8 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8E6E3B; /* bg-gray-700 */
+  color: #fff;               /* text-white */
+  font-size: 0.875rem;       /* text-sm */
+ 
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.close-btn:hover {
+  background-color: #8E6E3B; /* hover:bg-gray-600 */
+}
+
+
+@media (max-width: 768px) {
+
+   .close-btn {
+    top: 0.25rem;
+    right: 0.25rem;
+    width: 24px;
+    height: 24px;
+    font-size: 0.9rem;
+  }
+}
