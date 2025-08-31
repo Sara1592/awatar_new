@@ -6,16 +6,19 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/parallax";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
-const slides = [
-  { image: "assets/images/atom1.png" },
-  { image: "assets/images/atom2.png" },
-  { image: "assets/images/atom3.png" },
-  { image: "assets/images/atom4.png" },
-  { image: "assets/images/atom5.png" },
-];
 
 const Ambiance = () => {
+   const t = useTranslations("home");
+   
+const slides = [
+  { image: t("ambimg1") },
+  { image: t("ambimg2")  },
+  { image: t("ambimg3")  },
+  { image: t("ambimg4")  },
+  { image: t("ambimg5")  },
+];
   return (
     <div className="ambiance-container glass">
       <div className="ambiance-wrapper">
@@ -45,10 +48,20 @@ const Ambiance = () => {
 
         {/* Right Column */}
         <div className="ambiance-right">
-           <h2>Perfect Ambiance</h2>
-          <p>Whether you’re chilling with friends, catching a game, or just escaping the noise — Awtar is your spot.</p>
+           <h2>
+            {/* Perfect Ambiance */}
+            {t('ambtitle')}
+            </h2>
+          <p>
+            {/* Whether you’re chilling with friends, catching a game, or just escaping the noise — Awtar is your spot. */}
+            {t('ambdescription')}
+            </p>
+          
           <Link href="about" className="kf-btn w-48">
-            <span>Read More</span>
+            <span>
+              {/* Read More */}
+              {t('ambreadMore')}
+              </span>
             <i className="fas fa-chevron-right" />
           </Link>
          

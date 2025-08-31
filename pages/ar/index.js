@@ -20,6 +20,7 @@ import Ambiance from '@/components/Ambiance';
 import Footer from '@/components/Footer';
 import CounterSection from '@/components/aboutcount';
 import { useTranslations } from 'next-intl';
+import MobFlipCardSlider from '@/components/mobFilpslider';
 
 
 export default function Home() {
@@ -325,26 +326,21 @@ const about1Ref = useRef(null);
 
 
 <section> 
-  <div className="relative w-full h-screen overflow-hidden">
+ <div className="relative w-full h-full overflow-hidden md:block hidden">
       {/* Smoke PNG */}
       <Image
         ref={smokeRef}
         src="/assets/images/bg_smoke1.png"
         alt="smoke"
-        width={1920}
-        height={1044}
+        fill
          className="
-    absolute top-0 left-0 
-    w-full h-full 
-    object-cover 
-    opacity-30 sm:opacity-40
-    max-h-[80vh] sm:max-h-none
+   absolute top-0 left-0 w-full h-full object-cover opacity-40
   "
       />
 
   <h2 className='text-center'>
     {/* Our Menu */}
-    {t('someItems')}
+    {t('ourMenu')}
     </h2>
 <FlipCardSlider/>
 </div>
@@ -358,7 +354,10 @@ const about1Ref = useRef(null);
 <CounterSection/>
 
 {/* <Counters/> */}
-<h2 className='text-center mt-20'>Some Of Our Items</h2>
+<h2 className='text-center mt-20'>
+  {/* Some Of Our Items */}
+  {t('someItems')}
+  </h2>
 <section className="w-full">
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
       
@@ -455,7 +454,7 @@ const about1Ref = useRef(null);
       loop
       playsInline
     >
-      <source src="assets/images/video/awtar-vedio.mp4" type="video/mp4" />
+      <source src={t("videoSrc")} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
  <div className="absolute inset-0 bg-black/50"></div>

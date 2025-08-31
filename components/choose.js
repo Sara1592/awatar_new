@@ -3,10 +3,13 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+
 
 const WhyChooseUs = () => {
   const sectionRef = useRef(null);
   const cardsRef = useRef([]);
+  const t = useTranslations("home");
 
 useEffect(() => {
   const whychoose = async () => {
@@ -113,26 +116,33 @@ useEffect(() => {
    
     <div className="flex-1">
       <h2 className="why-title text-4xl md:text-5xl font-bold mb-6  drop-shadow-lg">
-        Why Choose Us
+        {/* Why Choose Us */}
+        {t('choosetitle')}
       </h2>
       <p className="why-text text-lg opacity-80">
-        We’re not just another café. We’re home to the best café in town —
-        smooth, flavorful, and crafted to perfection, every time.
+        {/* We’re not just another café. We’re home to the best café in town —
+        smooth, flavorful, and crafted to perfection, every time. */}
+     {t('choosedesc1')}
       </p>
 
       <p className="why-text text-lg opacity-80 mt-4">
-        At Awtar, we mix tradition with a modern twist. From rich Arabic coffee
+        {/* At Awtar, we mix tradition with a modern twist. From rich Arabic coffee
         to icy fresh juices, every detail is made to elevate your moment.
         Whether you’re chilling with friends, catching a game, or just escaping
-        the noise — Awtar is your spot.
+        the noise — Awtar is your spot. */}
+        {t('choosedesc2')}
       </p>
 
       <p className="why-text text-lg opacity-80 mt-4">
-        Great vibes and a space that feels just right. That’s why Awtar.
+        {/* Great vibes and a space that feels just right. That’s why Awtar. */}
+       {t('choosedesc3')}
       </p>
 
       <Link href="/about" className="kf-btn w-48 mt-6 inline-block">
-        <span>Read More</span>
+        <span>
+          {/* Read More */}
+          {t('readMore')}
+          </span>
         <i className="fas fa-chevron-right" />
       </Link>
     </div>

@@ -16,12 +16,8 @@ export default function Menu () {
     const about1Ref = useRef(null);
       const about2Ref = useRef(null);
       const about3Ref = useRef(null);
-      const about4Ref = useRef(null);
-    
-    
-    
-
-       const smokeRef = useRef(null);
+      const about4Ref = useRef(null);  
+     const smokeRef = useRef(null);
   
 
   useEffect(() => {
@@ -992,8 +988,482 @@ COLD DRINKS
      
  
     </div>
+
+    
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+  {/* Left Column */}
+  <div className="p-6 rounded-lg shadow">
+    <Image src="/assets/images/cold1.png" alt="hotdrink" width={700} height={1100} />
+  </div>
+
+  {/* Right Column */}
+  <div className="kf-menu-items">
+    {[
+      { name: "Ice Chocolate", price: "AED26" },
+      { name: "Ice Amricano", price: "AED26" },
+      { name: "Redbull", price: "AED20" },
+      { name: "Barbican", price: "AED18" },
+      { name: "Perrier water", price: "AED16" },
+      { name: "Mineral water", price: "AED4" },
+      { name: "Soft drinks", price: "AED12" },
+      { name: "Vitamin C", price: "AED15" },
+      { name: "Ice Karkadie", price: "AED18" },
+    ].map((item, i) => (
+      <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+          <h5 className="name px-6">{item.name}</h5>
+          <div className="price">
+            <span className="px-6">{item.price}</span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
 </div>
-  </section>
+</div>
+</section>
+
+ <section className="section kf-menu-classic mt-32 section-bg">
+    <div className="container">
+      <div className="kf-titles align-center">
+        <div
+          className="kf-subtitle  scroll-animate"
+          data-animate="active"
+        >
+         Choose Best of
+        </div>
+        <h3
+          className="kf-title  scroll-animate"
+          data-animate="active"
+        >
+MILK SHAKE
+        </h3>
+      </div>
+
+       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      {/* Left Column */}
+   <div className="kf-menu-items">
+  {[
+    { name: "Chocolate", price: "AED23" },
+    { name: "Strawberry", price: "AED23" },
+    { name: "Mango", price: "AED23" },
+    { name: "Vanilla", price: "AED23" },
+    { name: "Mix", price: "AED23" },
+    { name: "Snickers", price: "AED27" },
+  ].map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{item.name}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+      {/* Right Column */}
+        <div className="p-6 rounded-lg shadow">
+        <Image src="/assets/images/milk_1.png" alt="hotdrink" width={700} height={750} />
+      </div>
+     
+ 
+    </div>
+
+    
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+  {/* Left Column */}
+  <div className="p-6 rounded-lg shadow">
+    <Image src="/assets/images/milk_2.png" alt="hotdrink" width={700} height={700} />
+  </div>
+
+  {/* Right Column */}
+<div className="kf-menu-items">
+  {[
+    { name: "Kit Kat", price: "AED27" },
+    { name: "Lotus", price: "AED27" },
+    { name: "Oreo", price: "AED27" },
+    { name: "Pistachio", price: "AED27" },
+    { name: "Cerelac", price: "AED27" },
+    { name: "Nescafe", price: "AED27" },
+  ].map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{item.name}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+</div>
+</div>
+</section>
+
+ <section className="section kf-menu-classic mt-32 section-bg">
+    <div className="container">
+      <div className="kf-titles align-center">
+        <div
+          className="kf-subtitle  scroll-animate"
+          data-animate="active"
+        >
+         Choose Best of
+        </div>
+        <h3
+          className="kf-title  scroll-animate"
+          data-animate="active"
+        >
+FRUIT SALAD & ICE CREAM
+        </h3>
+      </div>
+
+       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      {/* Left Column */}
+   <div className="kf-menu-items">
+  {[
+   { name: "Snickers Fruit Salad", price: "AED30" },
+    { name: "Nutella Fruit Salad", price: "AED30" },
+    { name: "Pistachio Fruit Salad", price: "AED30" },
+    { name: "Upon Request Fruit Salad", price: "AED30" },
+  ].map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{item.name}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+      {/* Right Column */}
+        <div className="p-6 rounded-lg shadow">
+        <Image src="/assets/images/fruitsald.png" alt="hotdrink" width={700} height={600} />
+      </div>
+     
+ 
+    </div>
+
+    
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+  {/* Left Column */}
+  <div className="p-6 rounded-lg shadow">
+    <Image src="/assets/images/fruitsald1.png" alt="hotdrink" width={700} height={400} />
+  </div>
+
+  {/* Right Column */}
+<div className="kf-menu-items">
+  {[
+    { name: "Ice cream upon request", price: "AED22" },
+    { name: "Mix Ice cream Awtar", price: "AED35" },
+    { name: "Banana Split", price: "AED35" },
+   
+  ].map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{item.name}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+</div>
+</div>
+</section>
+  
+   <section className="section kf-menu-classic mt-32 section-bg">
+    <div className="container">
+      <div className="kf-titles align-center">
+        <div
+          className="kf-subtitle  scroll-animate"
+          data-animate="active"
+        >
+         Choose Best of
+        </div>
+        <h3
+          className="kf-title  scroll-animate"
+          data-animate="active"
+        >
+DESSERT
+        </h3>
+      </div>
+
+       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      {/* Left Column */}
+   <div className="kf-menu-items">
+  {[
+   { name: "Pistachio Crepe", price: "AED25" },
+    { name: "Nutella Crepe", price: "AED25" },
+    { name: "Fruit Crepe", price: "AED25" },
+    { name: "Lotus Crepe", price: "AED25" },
+  ].map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{item.name}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+      {/* Right Column */}
+        <div className="p-6 rounded-lg shadow">
+        <Image src="/assets/images/dessert.png" alt="hotdrink" width={700} height={500} />
+         <h3 className="text-center">CREPE</h3>
+     
+      </div>
+     
+ 
+    </div>
+
+    
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+  {/* Left Column */}
+  <div className="p-6 rounded-lg shadow">
+    <Image src="/assets/images/dessert1.png" alt="hotdrink" width={700} height={600} />
+     <h3 className="text-center">CAKE</h3>
+  </div>
+
+  {/* Right Column */}
+<div className="kf-menu-items">
+  {[
+     { name: "Honey Cake", price: "AED24" },
+    { name: "Pistachio Cake", price: "AED24" },
+    { name: "Carrot Cake", price: "AED24" },
+    { name: "Chocolate Cake", price: "AED24" },
+    { name: "Strawberry Cake", price: "AED24" },
+  ].map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{item.name}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+</div>
+
+ <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      {/* Left Column */}
+   <div className="kf-menu-items">
+  {[
+   { name: "Nutella Waffle", price: "AED22" },
+    { name: "Pistachio Waffle", price: "AED22" },
+    { name: "Fruit Waffle", price: "AED22" },
+    { name: "Lotus Waffle", price: "AED23" },
+  ].map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{item.name}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+      {/* Right Column */}
+        <div className="p-6 rounded-lg shadow">
+        <Image src="/assets/images/Waffle.png" alt="hotdrink" width={700} height={400} />
+         <h3 className="text-center">Waffle</h3>
+     
+      </div>
+     
+ 
+    </div>
+
+        
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+  {/* Left Column */}
+  <div className="p-6 rounded-lg shadow">
+    <Image src="/assets/images/kunafa.png" alt="hotdrink" width={700} height={100} />
+     {/* <h3 className="text-center">Kunafa</h3> */}
+  </div>
+
+  {/* Right Column */}
+<div className="kf-menu-items">
+  {[
+     { name: "Cheese Kunafah", price: "AED26" },
+    { name: "Cream Kunafah", price: "AED26" },
+   
+  ].map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{item.name}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+</div>
+
+</div>
+</section>
+
+ <section className="section kf-menu-classic mt-32 section-bg">
+    <div className="container">
+      <div className="kf-titles align-center">
+        <div
+          className="kf-subtitle  scroll-animate"
+          data-animate="active"
+        >
+         Choose Best of
+        </div>
+        <h3
+          className="kf-title  scroll-animate"
+          data-animate="active"
+        >
+BUBBLE TEA
+        </h3>
+      </div>
+
+       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      {/* Left Column */}
+   <div className="kf-menu-items">
+  {[
+   { name: "Macha", price: "AED18" },
+    { name: "Classic Vanilla", price: "AED18" },
+    { name: "Taro", price: "AED18" },
+  
+  ].map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{item.name}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+      {/* Right Column */}
+        <div className="p-6 rounded-lg shadow">
+        <Image src="/assets/images/bubble.png" alt="hotdrink" width={700} height={600} />
+      </div>
+     
+ 
+    </div>
+
+    
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+  {/* Left Column */}
+  <div className="p-6 rounded-lg shadow">
+    <Image src="/assets/images/bubble1.png" alt="hotdrink" width={700} height={400} />
+  </div>
+
+  {/* Right Column */}
+<div className="kf-menu-items">
+  {[
+    { name: "Strawberry", price: "AED18" },
+    { name: "Black Berry", price: "AED18" },
+    { name: "Chocolate", price: "AED18" },
+   
+  ].map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{item.name}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+</div>
+</div>
+</section>
+
+
+
+ <section className="section kf-menu-classic mt-32 section-bg">
+    <div className="container">
+      <div className="kf-titles align-center">
+        <div
+          className="kf-subtitle  scroll-animate"
+          data-animate="active"
+        >
+         Choose Best of
+        </div>
+        <h3
+          className="kf-title  scroll-animate"
+          data-animate="active"
+        >
+BUBBLE TEA
+        </h3>
+      </div>
+
+       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      {/* Left Column */}
+   <div className="kf-menu-items">
+  {[
+  { name: "Peach", price: "AED18" },
+    { name: "Oreo", price: "AED18" },
+    { name: "Black Berry", price: "AED18" },
+    { name: "Caramel", price: "AED18" },
+    { name: "Vanilla", price: "AED18" },
+  
+  ].map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{item.name}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+<div className="kf-menu-items">
+  {[
+    { name: "Chocolate", price: "AED18" },
+    { name: "Masha", price: "AED18" },
+    { name: "Watermelon", price: "AED18" },
+    { name: "Strawberry", price: "AED18" },
+    { name: "Taro", price: "AED18" },
+  ].map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{item.name}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+     
+ 
+    </div>
+
+  
+</div>
+</section>
+  
+
   
       <div className="section kf-video mt-10">
   <div className="kf-video-item relative w-full h-[250px] overflow-hidden">
@@ -1005,7 +1475,7 @@ COLD DRINKS
       loop
       playsInline
     >
-      <source src="assets/images/video/awtar-vedio.mp4" type="video/mp4" />
+      <source src="/assets/images/video/awtar-vedio.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
  <div className="absolute inset-0 bg-black/50"></div>

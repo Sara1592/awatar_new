@@ -103,38 +103,40 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { useTranslations } from 'next-intl';
 
 export default function Testimonials() {
+ const t = useTranslations("home");
   const testimonials = [
     {
       image: "/assets/images/rev1.jpg",
       stars: 5,
-      text: "The most amazing place its take you from the depression world to the dream place that’s everyone love to have. The music, the food and the drink it’s fantastic. They have also very nice Hookah with many flavours so if you looking for quiet place, amazing service and great staff I guarantee to you this is the best place you can find.",
-      name: "Al N",
+      text: t('review1'),
+      name: t('name1'),
     },
     {
       image: "/assets/images/rev2.jpg",
       stars: 5,
-      text: "The place is amazing and it’s very nice view. The staff are very friendly and very nice. The prices are very reasonable.",
-      name: "Abdalrahman Nassar",
+      text: t('review2'),
+      name: t('name2'),
     },
     {
       image: "/assets/images/rev3.jpg",
       stars: 5,
-      text: "Great atmosphere and service. Great place to sit down and enjoy coffee, iced tea or fruit cocktail. I have been at this place 2 times. First day we had Turkish coffee. The second day I had lemon iced tea. It was so refreshing and not sweet at all. It had no sugar but the fresh mint made it so good. Thank you Latefa.",
-      name: "Liliana",
+      text: t('review3'),
+      name: t('name3'),
     },
     {
       image: "/assets/images/rev1.jpg",
       stars: 5,
-      text: "My recent experience was too good. Owner- Basel spoke to us so well & ensured our visit was comfortable & hassle free.",
-      name: "Asma Hussin",
+       text: t('review4'),
+      name: t('name4'),
     },
     {
       image: "/assets/images/rev2.jpg",
       stars: 5,
-      text: "Looking for a great cafe to chill and affordable also then I have come up with a great option for you all! I tried light sandwiches, pastas, burgers, and fajitas, and they tasted great.",
-      name: "Chaniksha",
+      text: t('review5'),
+      name: t('name5'),
     },
   ];
 

@@ -32,7 +32,41 @@
   "contact": "Contact",
   "bookTable": "Book a table",
   "openHours": "Open Hours: 08:00 am - 09:00 pm",
-  "address": "Dubai - Al Muraqqabat – Deira – Bu Haleeba plaza"
+  "address": "Dubai - Al Muraqqabat – Deira – Bu Haleeba plaza",
+"ambtitle": "Perfect Ambiance",
+    "ambdescription": "Whether you’re chilling with friends, catching a game, or just escaping the noise — Awtar is your spot.",
+    "ambreadMore": "Read More",
+   "ambimg1":"/assets/images/atom1.png",
+   "ambimg2":"/assets/images/atom2.png",
+   "ambimg3":"/assets/images/atom3.png",
+   "ambimg4":"/assets/images/atom4.png",
+   "ambimg5":"/assets/images/atom5.png",
+
+   "choosetitle": "Why Choose Us",
+    "choosedesc1": "We’re not just another café. We’re home to the best café in town — smooth, flavorful, and crafted to perfection, every time.",
+    "choosedesc2": "At Awtar, we mix tradition with a modern twist. From rich Arabic coffee to icy fresh juices, every detail is made to elevate your moment. Whether you’re chilling with friends, catching a game, or just escaping the noise — Awtar is your spot.",
+    "choosedesc3": "Great vibes and a space that feels just right. That’s why Awtar.",
+     "premiumClients": "Premium Clients",
+    "professionalTeam": "Professional Team",
+    "reviews": "5 Star Reviews",
+    "menuItems": "Menu Items",
+    "review1": "The most amazing place its take you from the depression world to the dream place that’s everyone love to have. The music, the food and the drink it’s fantastic. They have also very nice Hookah with many flavours so if you looking for quiet place, amazing service and great staff I guarantee to you this is the best place you can find.",
+    "name1": "Al N",
+
+    "review2": "The place is amazing and it’s very nice view. The staff are very friendly and very nice. The prices are very reasonable.",
+    "name2": "Abdalrahman Nassar",
+
+    "review3": "Great atmosphere and service. Great place to sit down and enjoy coffee, iced tea or fruit cocktail. I have been at this place 2 times. First day we had Turkish coffee. The second day I had lemon iced tea. It was so refreshing and not sweet at all. It had no sugar but the fresh mint made it so good. Thank you Latefa.",
+    "name3": "Liliana",
+
+    "review4": "My recent experience was too good. Owner- Basel spoke to us so well & ensured our visit was comfortable & hassle free.",
+    "name4": "Asma Hussin",
+
+    "review5": "Looking for a great cafe to chill and affordable also then I have come up with a great option for you all! I tried light sandwiches, pastas, burgers, and fajitas, and they tasted great.",
+    "name5": "Chaniksha",
+    "videoSrc": "/assets/images/video/awtar-vedio.mp4",
+    "videoAlt": "Awtar Café Promo Video"
+
 }
 
 
