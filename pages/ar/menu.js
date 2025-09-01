@@ -194,7 +194,109 @@ export default function Menu () {
     loadAnimation();
   }, []);
 
+   const cold_drink = [
+    { key: "iceChocolate", price: 26 },
+    { key: "iceAmericano", price: 26 },
+    { key: "redbull", price: 20 },
+    { key: "barbican", price: 18 },
+    { key: "perrierWater", price: 16 },
+    { key: "mineralWater", price: 4 },
+    { key: "softDrinks", price: 12 },
+    { key: "vitaminC", price: 15 },
+    { key: "iceKarkadie", price: 18 },
+  ];
 
+const milkshakeLeft = [
+  { key: "chocolate", price: 23 },
+  { key: "strawberry", price: 23 },
+  { key: "mango", price: 23 },
+  { key: "vanilla", price: 23 },
+  { key: "mix", price: 23 },
+  { key: "snickers", price: 27 },
+];
+
+const milkshakeRight = [
+  { key: "kitKat", price: 27 },
+  { key: "lotus", price: 27 },
+  { key: "oreo", price: 27 },
+  { key: "pistachio", price: 27 },
+  { key: "cerelac", price: 27 },
+  { key: "nescafe", price: 27 },
+];
+
+const fruitSaladLeft = [
+  { key: "snickersFruitSalad", price: "AED30" },
+          { key: "nutellaFruitSalad", price: "AED30" },
+          { key: "pistachioFruitSalad", price: "AED30" },
+          { key: "uponRequestFruitSalad", price: "AED30" },
+];
+
+const fruitSaladRight = [
+    { key: "iceCreamUponRequest", price: "AED22" },
+          { key: "mixIceCreamAwtar", price: "AED35" },
+          { key: "bananaSplit", price: "AED35" },
+  ];
+
+  const dessertLeft = [
+     { key: "pistachioCrepe", price: "AED25" },
+    { key: "nutellaCrepe", price: "AED25" },
+    { key: "fruitCrepe", price: "AED25" },
+    { key: "lotusCrepe", price: "AED25" },
+ ];
+
+ const dessertRight = [
+     { key: "honeyCake", price: "AED24" },
+    { key: "pistachioCake", price: "AED24" },
+    { key: "carrotCake", price: "AED24" },
+    { key: "chocolateCake", price: "AED24" },
+      { key: "strawberryCake", price: "AED24" },
+ ];
+
+  const dessertWaffle = [
+     { key: "nutellaWaffle", price: "AED22" },
+    { key: "pistachioWaffle", price: "AED22" },
+    { key: "fruitWaffle", price: "AED22" },
+    { key: "lotusWaffle", price: "AED23" },
+    
+ ];
+
+ const dessertKunafah = [
+     { key: "cheeseKunafa", price: "AED26" },
+    { key: "creamKunafa", price: "AED26" },
+   
+    
+ ];
+
+  const bubbleTeaLeft = [
+     { key: "macha", price: "AED18" },
+    { key: "classicVanilla", price: "AED18" },
+     { key: "taro", price: "AED18" },
+ ];
+
+ const bubbleTeaRight = [
+     { key: "strawberry", price: "AED18" },
+    { key: "blackBerry", price: "AED18" },
+     { key: "chocolate", price: "AED18" },
+ ];
+
+  const bubbleSmoothLeft = [
+     { key: "peach", price: "AED18" },
+    { key: "oreo", price: "AED18" },
+     { key: "blackBerry", price: "AED18" },
+       { key: "caramel", price: "AED18" },
+         { key: "vanilla", price: "AED18" },
+         
+ ];
+
+
+  const bubbleSmoothRight = [
+     { key: "chocolate", price: "AED18" },
+    { key: "masha", price: "AED18" },
+     { key: "watermelon", price: "AED18" },
+       { key: "strawberry", price: "AED18" },
+         { key: "taro", price: "AED18" },
+         
+ ];
   return (
     <div className='mt-38'>
 
@@ -1086,7 +1188,8 @@ export default function Menu () {
             className="kf-title  scroll-animate"
             data-animate="active"
           >
-  COLD DRINKS
+  {/* COLD DRINKS */}
+  {t("coldDrinks")}
           </h3>
         </div>
   
@@ -1096,7 +1199,10 @@ export default function Menu () {
       <div class="kf-menu-items">
     <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
       <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-        <h5 class="name px-6">Ice Tea Black Berry</h5>
+        <h5 class="name px-6">
+          {/* Ice Tea Black Berry */}
+          {t("iceTeaBlackBerry")}
+          </h5>
         <div class="price">
           <span class="px-6">AED26</span>
         </div>
@@ -1105,7 +1211,10 @@ export default function Menu () {
   
     <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
       <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-        <h5 class="name px-6">Ice Tea Peach</h5>
+        <h5 class="name px-6">
+          {/* Ice Tea Peach */}
+          {t("iceTeaPeach")}
+          </h5>
         <div class="price">
           <span class="px-6">AED26</span>
         </div>
@@ -1114,7 +1223,10 @@ export default function Menu () {
   
     <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
       <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-        <h5 class="name px-6">Ice Tea Lemon</h5>
+        <h5 class="name px-6">
+          {/* Ice Tea Lemon */}
+           {t("iceTeaLemon")}
+          </h5>
         <div class="price">
           <span class="px-6">AED26</span>
         </div>
@@ -1123,7 +1235,10 @@ export default function Menu () {
   
     <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
       <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-        <h5 class="name px-6">Ice Tea Pomegranate</h5>
+        <h5 class="name px-6">
+          {/* Ice Tea Pomegranate */}
+           {t("iceTeaPomegranate")}
+          </h5>
         <div class="price">
           <span class="px-6">AED26</span>
         </div>
@@ -1132,7 +1247,10 @@ export default function Menu () {
   
     <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
       <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-        <h5 class="name px-6">Ice Tea Passionfruit</h5>
+        <h5 class="name px-6">
+          {/* Ice Tea Passionfruit */}
+           {t("iceTeaPassionfruit")}
+          </h5>
         <div class="price">
           <span class="px-6">AED26</span>
         </div>
@@ -1141,7 +1259,10 @@ export default function Menu () {
   
     <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
       <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-        <h5 class="name px-6">Ice Spanish Latte</h5>
+        <h5 class="name px-6">
+          {/* Ice Spanish Latte */}
+           {t("iceSpanishLatte")}
+          </h5>
         <div class="price">
           <span class="px-6">AED26</span>
         </div>
@@ -1150,7 +1271,10 @@ export default function Menu () {
   
     <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
       <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-        <h5 class="name px-6">Ice Latte</h5>
+        <h5 class="name px-6">
+          {/* Ice Latte */}
+          {t("iceLatte")}
+          </h5>
         <div class="price">
           <span class="px-6">AED26</span>
         </div>
@@ -1159,7 +1283,10 @@ export default function Menu () {
   
     <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
       <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-        <h5 class="name px-6">Ice Mocha</h5>
+        <h5 class="name px-6">
+          {/* Ice Mocha */}
+           {t("iceMocha")}
+          </h5>
         <div class="price">
           <span class="px-6">AED26</span>
         </div>
@@ -1168,7 +1295,10 @@ export default function Menu () {
   
     <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
       <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-        <h5 class="name px-6">Ice Macchiato</h5>
+        <h5 class="name px-6">
+          {/* Ice Macchiato */}
+           {t("iceMacchiato")}
+          </h5>
         <div class="price">
           <span class="px-6">AED26</span>
         </div>
@@ -1193,7 +1323,7 @@ export default function Menu () {
   
     {/* Right Column */}
     <div className="kf-menu-items">
-      {[
+      {/* {[
         { name: "Ice Chocolate", price: "AED26" },
         { name: "Ice Amricano", price: "AED26" },
         { name: "Redbull", price: "AED20" },
@@ -1212,7 +1342,20 @@ export default function Menu () {
             </div>
           </div>
         </div>
-      ))}
+      ))} */}
+
+      <div className="kf-menu-items">
+  {cold_drink.map((item) => (
+    <div key={item.key} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{t(`${item.key}`)}</h5>
+        <div className="price">
+          <span className="px-6">AED{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
     </div>
   </div>
   </div>
@@ -1225,13 +1368,15 @@ export default function Menu () {
             className="kf-subtitle  scroll-animate"
             data-animate="active"
           >
-           Choose Best of
+           {/* Choose Best of */}
+           {t('chooseBestOf')}
           </div>
           <h3
             className="kf-title  scroll-animate"
             data-animate="active"
           >
-  MILK SHAKE
+  {/* MILK SHAKE */}
+  {t('milkShake')}
           </h3>
         </div>
   
@@ -1239,7 +1384,7 @@ export default function Menu () {
         
         {/* Left Column */}
      <div className="kf-menu-items">
-    {[
+    {/* {[
       { name: "Chocolate", price: "AED23" },
       { name: "Strawberry", price: "AED23" },
       { name: "Mango", price: "AED23" },
@@ -1255,7 +1400,19 @@ export default function Menu () {
           </div>
         </div>
       </div>
-    ))}
+    ))} */}
+    <div className="kf-menu-items">
+  {milkshakeLeft.map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{t(`${item.key}`)}</h5>
+        <div className="price">
+          <span className="px-6">AED{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
   </div>
   
         {/* Right Column */}
@@ -1275,7 +1432,7 @@ export default function Menu () {
   
     {/* Right Column */}
   <div className="kf-menu-items">
-    {[
+    {/* {[
       { name: "Kit Kat", price: "AED27" },
       { name: "Lotus", price: "AED27" },
       { name: "Oreo", price: "AED27" },
@@ -1291,7 +1448,18 @@ export default function Menu () {
           </div>
         </div>
       </div>
-    ))}
+    ))} */}
+
+    {milkshakeRight.map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{t(`${item.key}`)}</h5>
+        <div className="price">
+          <span className="px-6">AED{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
   </div>
   
   </div>
@@ -1305,13 +1473,15 @@ export default function Menu () {
             className="kf-subtitle  scroll-animate"
             data-animate="active"
           >
-           Choose Best of
+           {/* Choose Best of */}
+           {t('chooseBestOf')}
           </div>
           <h3
             className="kf-title  scroll-animate"
             data-animate="active"
           >
-  FRUIT SALAD & ICE CREAM
+  {/* FRUIT SALAD & ICE CREAM */}
+   {t('fruitSaladTitle')}
           </h3>
         </div>
   
@@ -1319,21 +1489,32 @@ export default function Menu () {
         
         {/* Left Column */}
      <div className="kf-menu-items">
-    {[
-     { name: "Snickers Fruit Salad", price: "AED30" },
-      { name: "Nutella Fruit Salad", price: "AED30" },
-      { name: "Pistachio Fruit Salad", price: "AED30" },
-      { name: "Upon Request Fruit Salad", price: "AED30" },
+    {/* {[
+     { key: "Snickers Fruit Salad", price: "AED30" },
+      { key: "Nutella Fruit Salad", price: "AED30" },
+      { key: "Pistachio Fruit Salad", price: "AED30" },
+      { key: "Upon Request Fruit Salad", price: "AED30" },
     ].map((item, i) => (
       <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
         <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-          <h5 className="name px-6">{item.name}</h5>
+          <h5 className="name px-6">{t(`${item.key}`)}</h5>
           <div className="price">
             <span className="px-6">{item.price}</span>
           </div>
         </div>
       </div>
-    ))}
+    ))} */}
+
+    {fruitSaladLeft.map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{t(`${item.key}`)}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
   </div>
   
         {/* Right Column */}
@@ -1353,7 +1534,7 @@ export default function Menu () {
   
     {/* Right Column */}
   <div className="kf-menu-items">
-    {[
+    {/* {[
       { name: "Ice cream upon request", price: "AED22" },
       { name: "Mix Ice cream Awtar", price: "AED35" },
       { name: "Banana Split", price: "AED35" },
@@ -1367,7 +1548,18 @@ export default function Menu () {
           </div>
         </div>
       </div>
-    ))}
+    ))} */}
+
+    {fruitSaladRight.map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{t(`${item.key}`)}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
   </div>
   
   </div>
@@ -1381,13 +1573,14 @@ export default function Menu () {
             className="kf-subtitle  scroll-animate"
             data-animate="active"
           >
-           Choose Best of
+           {t('chooseBestOf')}
           </div>
           <h3
             className="kf-title  scroll-animate"
             data-animate="active"
           >
-  DESSERT
+  {/* DESSERT */}
+   {t('dessertTitle')}
           </h3>
         </div>
   
@@ -1395,7 +1588,7 @@ export default function Menu () {
         
         {/* Left Column */}
      <div className="kf-menu-items">
-    {[
+    {/* {[
      { name: "Pistachio Crepe", price: "AED25" },
       { name: "Nutella Crepe", price: "AED25" },
       { name: "Fruit Crepe", price: "AED25" },
@@ -1409,13 +1602,27 @@ export default function Menu () {
           </div>
         </div>
       </div>
-    ))}
+    ))} */}
+    
+    {dessertLeft.map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{t(`${item.key}`)}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
   </div>
   
         {/* Right Column */}
           <div className="p-6 rounded-lg shadow">
           <Image src="/assets/images/dessert.png" alt="hotdrink" width={700} height={500} />
-           <h3 className="text-center">CREPE</h3>
+           <h3 className="text-center">
+            {/* CREPE */}
+            {t('crepeTitle')}
+            </h3>
        
         </div>
        
@@ -1427,12 +1634,15 @@ export default function Menu () {
     {/* Left Column */}
     <div className="p-6 rounded-lg shadow">
       <Image src="/assets/images/dessert1.png" alt="hotdrink" width={700} height={600} />
-       <h3 className="text-center">CAKE</h3>
+       <h3 className="text-center">
+        {/* CAKE */}
+        {t('cakeTitle')}
+        </h3>
     </div>
   
     {/* Right Column */}
   <div className="kf-menu-items">
-    {[
+    {/* {[
        { name: "Honey Cake", price: "AED24" },
       { name: "Pistachio Cake", price: "AED24" },
       { name: "Carrot Cake", price: "AED24" },
@@ -1447,7 +1657,18 @@ export default function Menu () {
           </div>
         </div>
       </div>
-    ))}
+    ))} */}
+    
+    {dessertRight.map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{t(`${item.key}`)}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
   </div>
   
   </div>
@@ -1456,7 +1677,7 @@ export default function Menu () {
         
         {/* Left Column */}
      <div className="kf-menu-items">
-    {[
+    {/* {[
      { name: "Nutella Waffle", price: "AED22" },
       { name: "Pistachio Waffle", price: "AED22" },
       { name: "Fruit Waffle", price: "AED22" },
@@ -1470,13 +1691,27 @@ export default function Menu () {
           </div>
         </div>
       </div>
-    ))}
+    ))} */}
+
+     {dessertWaffle.map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{t(`${item.key}`)}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
   </div>
   
         {/* Right Column */}
           <div className="p-6 rounded-lg shadow">
           <Image src="/assets/images/Waffle.png" alt="hotdrink" width={700} height={400} />
-           <h3 className="text-center">Waffle</h3>
+           <h3 className="text-center">
+            {/* Waffle */}
+            {t('waffleTitle')}
+            </h3>
        
         </div>
        
@@ -1493,7 +1728,7 @@ export default function Menu () {
   
     {/* Right Column */}
   <div className="kf-menu-items">
-    {[
+    {/* {[
        { name: "Cheese Kunafah", price: "AED26" },
       { name: "Cream Kunafah", price: "AED26" },
      
@@ -1506,7 +1741,17 @@ export default function Menu () {
           </div>
         </div>
       </div>
-    ))}
+    ))} */}
+    {dessertKunafah.map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{t(`${item.key}`)}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
   </div>
   
   </div>
@@ -1521,13 +1766,14 @@ export default function Menu () {
             className="kf-subtitle  scroll-animate"
             data-animate="active"
           >
-           Choose Best of
+           {/* Choose Best of */}
+           {t('chooseBestOf')}
           </div>
           <h3
             className="kf-title  scroll-animate"
             data-animate="active"
           >
-  BUBBLE TEA
+{t('bubbleTeaTitle')}
           </h3>
         </div>
   
@@ -1535,7 +1781,7 @@ export default function Menu () {
         
         {/* Left Column */}
      <div className="kf-menu-items">
-    {[
+    {/* {[
      { name: "Macha", price: "AED18" },
       { name: "Classic Vanilla", price: "AED18" },
       { name: "Taro", price: "AED18" },
@@ -1549,7 +1795,18 @@ export default function Menu () {
           </div>
         </div>
       </div>
-    ))}
+    ))} */}
+
+    {bubbleTeaLeft.map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{t(`${item.key}`)}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
   </div>
   
         {/* Right Column */}
@@ -1569,7 +1826,7 @@ export default function Menu () {
   
     {/* Right Column */}
   <div className="kf-menu-items">
-    {[
+    {/* {[
       { name: "Strawberry", price: "AED18" },
       { name: "Black Berry", price: "AED18" },
       { name: "Chocolate", price: "AED18" },
@@ -1583,7 +1840,18 @@ export default function Menu () {
           </div>
         </div>
       </div>
-    ))}
+    ))} */}
+
+      {bubbleTeaRight.map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{t(`${item.key}`)}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
   </div>
   
   </div>
@@ -1599,13 +1867,15 @@ export default function Menu () {
             className="kf-subtitle  scroll-animate"
             data-animate="active"
           >
-           Choose Best of
+           {/* Choose Best of */}
+           {t('chooseBestOf')}
           </div>
           <h3
             className="kf-title  scroll-animate"
             data-animate="active"
           >
-  BUBBLE TEA
+  {/* BUBBLE SMOOTHIE */}
+  {t('bubbleSmoothieTitle')}
           </h3>
         </div>
   
@@ -1613,7 +1883,7 @@ export default function Menu () {
         
         {/* Left Column */}
      <div className="kf-menu-items">
-    {[
+    {/* {[
     { name: "Peach", price: "AED18" },
       { name: "Oreo", price: "AED18" },
       { name: "Black Berry", price: "AED18" },
@@ -1629,11 +1899,24 @@ export default function Menu () {
           </div>
         </div>
       </div>
-    ))}
+    ))} */}
+
+      {bubbleSmoothLeft.map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{t(`${item.key}`)}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
+
+
   </div>
   
   <div className="kf-menu-items">
-    {[
+    {/* {[
       { name: "Chocolate", price: "AED18" },
       { name: "Masha", price: "AED18" },
       { name: "Watermelon", price: "AED18" },
@@ -1648,7 +1931,17 @@ export default function Menu () {
           </div>
         </div>
       </div>
-    ))}
+    ))} */}
+     {bubbleSmoothRight.map((item, i) => (
+    <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 className="name px-6">{t(`${item.key}`)}</h5>
+        <div className="price">
+          <span className="px-6">{item.price}</span>
+        </div>
+      </div>
+    </div>
+  ))}
   </div>
        
    
@@ -1678,12 +1971,14 @@ export default function Menu () {
       <div className="kf-titles max-w-2xl">
         {/* Subtitle */}
         <div className=" mb-2 text-white text-sm md:text-base">
-          Booking Table For You, Family & Friends
+          {/* Booking Table For You, Family & Friends */}
+        {t('bookingSubtitle')}
         </div>
 
         {/* Title */}
         <h3 className="kf-title text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-white">
-          Your satisfaction means everything to us
+          {/* Your satisfaction means everything to us */}
+        {t('bookingTitle')}
         </h3>
 
         {/* Button */}
@@ -1691,7 +1986,10 @@ export default function Menu () {
           href="reservation"
           className="kf-btn inline-flex items-center px-2 py-2 md:px-3 md:py-3 text-sm md:text-lg font-medium text-white bg-gold rounded transition-all duration-300"
         >
-          <span>Booking Table</span>
+          <span>
+            {/* Booking Table */}
+            {t('bookingButton')}
+            </span>
           <i className="fas fa-chevron-right ml-2" />
         </Link>
       </div>

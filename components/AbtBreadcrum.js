@@ -2,14 +2,14 @@ import React from 'react'
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useMemo } from "react";
-
+import { useTranslations } from "next-intl";
 
 export default function AbtBreadcrumbBanner({
   banner = "/assets/images/breadcrumb_about.png", // default banner
   title = "About",
 }) {
   const pathname = usePathname();
-
+ const t = useTranslations("home");
   const items = useMemo(() => {
     if (!pathname) return [];
     const clean = pathname.split(/[?#]/)[0];
@@ -27,7 +27,7 @@ export default function AbtBreadcrumbBanner({
       });
     });
 
-    return [{ label: "Home", href: "/" }, ...acc];
+    return [{ label: t('home'), href: "/" }, ...acc];
   }, [pathname]);
 
   return (
@@ -40,12 +40,12 @@ export default function AbtBreadcrumbBanner({
               const isLast = i === items.length - 1;
               return (
                 <li key={i}>
-                  {item.href && !isLast ? (
+                  {/* {item.href && !isLast ? (
                     <Link href={item.href}>{item.label}</Link>
                   ) : (
                     <span className="current">{item.label}</span>
                   )}
-                  {!isLast && <span className="sep">/</span>}
+                  {!isLast && <span className="sep">/</span>} */}
                 </li>
               );
             })}

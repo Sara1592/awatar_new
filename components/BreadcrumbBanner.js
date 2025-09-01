@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useMemo } from "react";
+import { useTranslations } from "next-intl";
 
 export default function BreadcrumbBanner({
   banner = "/assets/images/breadcrumb.png", // default banner
@@ -39,12 +40,12 @@ export default function BreadcrumbBanner({
               const isLast = i === items.length - 1;
               return (
                 <li key={i}>
-                  {item.href && !isLast ? (
+                  {/* {item.href && !isLast ? (
                     <Link href={item.href}>{item.label}</Link>
                   ) : (
                     <span className="current">{item.label}</span>
                   )}
-                  {!isLast && <span className="sep">/</span>}
+                  {!isLast && <span className="sep">/</span>} */}
                 </li>
               );
             })}

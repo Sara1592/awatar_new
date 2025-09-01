@@ -2,6 +2,7 @@ import React from 'react'
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useMemo } from "react";
+import { useTranslations } from "next-intl";
 
 
 export default function GallBreadcrumbBanner({
@@ -9,7 +10,7 @@ export default function GallBreadcrumbBanner({
   title = "Gallery",
 }) {
   const pathname = usePathname();
-
+ const t = useTranslations("home");
   const items = useMemo(() => {
     if (!pathname) return [];
     const clean = pathname.split(/[?#]/)[0];
@@ -27,25 +28,25 @@ export default function GallBreadcrumbBanner({
       });
     });
 
-    return [{ label: "Home", href: "/" }, ...acc];
-  }, [pathname]);
+    return [{ label: t('home'), href: "/" }, ...acc];
+  }, [pathname, t]);
 
   return (
     <div className="banner mt-42">
       <div className="overlay">
-        <h1>{title}</h1>
+        <h1>{t('gallery')}</h1>
         <nav aria-label="Breadcrumb">
           <ol>
             {items.map((item, i) => {
               const isLast = i === items.length - 1;
               return (
                 <li key={i}>
-                  {item.href && !isLast ? (
+                  {/* {item.href && !isLast ? (
                     <Link href={item.href}>{item.label}</Link>
                   ) : (
                     <span className="current">{item.label}</span>
                   )}
-                  {!isLast && <span className="sep">/</span>}
+                  {!isLast && <span className="sep">/</span>} */}
                 </li>
               );
             })}
