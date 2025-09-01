@@ -6,7 +6,10 @@ import Footer from "@/components/Footer";
 import MobFlipCardSlider from '@/components/mobFilpslider';
 import FlipCardSlider from '@/components/Flipslider'
 import MenuSection from '@/components/Menupage'
+import { useTranslations } from "next-intl";
+
 export default function Menu () {
+   const t = useTranslations("home");
 
     let xPos = 0;
       const subtitleRef = useRef(null);
@@ -206,7 +209,10 @@ export default function Menu () {
             className="absolute top-0 left-0 w-full h-full object-cover opacity-40"
           />
 
-      <h2 className='text-center'>Our Menu</h2>
+      <h2 className='text-center'>
+        {/* Our Menu */}
+        {t('ourMenu')}
+        </h2>
     <FlipCardSlider/>
     </div>
     </section>
@@ -224,8 +230,8 @@ export default function Menu () {
           />
 
       <h2 className='text-center'>
-        Our Menu
-        {/* {t('someItems')} */}
+        {/* Our Menu */}
+        {t('ourMenu')}
         </h2>
     <MobFlipCardSlider/>
     </div>
@@ -238,13 +244,15 @@ export default function Menu () {
           className="kf-subtitle  scroll-animate"
           data-animate="active"
         >
-         Choose Best of
+         {/* Choose Best of */}
+         {t('chooseBestOf')}
         </div>
         <h3
           className="kf-title  scroll-animate"
           data-animate="active"
         >
-         Hot Drinks
+         {/* Hot Drinks */}
+          {t('hotDrinks')}
         </h3>
       </div>
 
@@ -264,7 +272,10 @@ export default function Menu () {
              <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
  <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated "
 >
-    <h5 className="name px-6">Moroccan Tea (Big)</h5>
+    <h5 className="name px-6">
+      {/* Moroccan Tea (Big) */}
+       {t('moroccanTeaBig')}
+      </h5>
      <div className="price">
                   <span className="px-6">AED34</span>
                 </div>
@@ -276,21 +287,31 @@ export default function Menu () {
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Ginger Orange Honey</h5>
+      <h5 className="name px-6">
+        {/* Ginger Orange Honey */}
+               {t('gingerOrangeHoney')}
+
+        </h5>
       <div className="price"><span className="px-6">AED19</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Ginger Lemon Honey</h5>
+      <h5 className="name px-6">
+        {/* Ginger Lemon Honey */}
+        {t('gingerLemonHoney')}
+        </h5>
       <div className="price"><span className="px-6">AED19</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Cumin and Lemon</h5>
+      <h5 className="name px-6">
+        {/* Cumin and Lemon */}
+        {t('cuminAndLemon')}
+        </h5>
       <div className="price"><span className="px-6">AED19</span></div>
     </div>
   </div>
@@ -298,27 +319,39 @@ export default function Menu () {
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Matta</h5>
+      <h5 className="name px-6">
+        {/* Matta */}
+        {t('matta')}
+        </h5>
       <div className="price"><span className="px-6">AED18</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Sahlab</h5>
+      <h5 className="name px-6">
+        {/* Sahlab */}
+         {t('sahlab')}
+        </h5>
       <div className="price"><span className="px-6">AED22</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Roselle</h5>
+      <h5 className="name px-6">
+        {/* Roselle */}
+        {t('roselle')}
+        </h5>
       <div className="price"><span className="px-6">AED18</span></div>
     </div>
   </div>
     <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Hot mix Awtar</h5>
+      <h5 className="name px-6">
+        {/* Hot mix Awtar */}
+        {t('hotMixAwtar')}
+        </h5>
       <div className="price"><span className="px-6">AED24</span></div>
     </div>
   </div>
@@ -330,47 +363,68 @@ export default function Menu () {
 
 <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Moroccan Tea (Small)</h5>
+      <h5 className="name px-6">
+        {/* Moroccan Tea (Small) */}
+         {t('moroccanTeaSmall')}
+        </h5>
       <div className="price"><span className="px-6">AED24</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Apple Cinnamon</h5>
+      <h5 className="name px-6">
+        {/* Apple Cinnamon */}
+         {t('appleCinnamon')}
+        </h5>
       <div className="price"><span className="px-6">AED20</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Tea kettle</h5>
+      <h5 className="name px-6">
+        {/* Tea kettle */}
+         {t('teaKettle')}
+        </h5>
       <div className="price"><span className="px-6">AED27</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Tea (Lipton-Koshre)</h5>
+      <h5 className="name px-6">
+        {/* Tea (Lipton-Koshre) */}
+        {t('teaLipton')}
+        </h5>
       <div className="price"><span className="px-6">AED13</span></div>
     </div>
   </div>
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Tea (Iraqian, Karak, Khamer, Miramya)</h5>
+      <h5 className="name px-6">
+        {/* Tea (Iraqian, Karak, Khamer, Miramya) */}
+         {t('teaIraqi')}
+        </h5>
       <div className="price"><span className="px-6">AED14</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Zhourat</h5>
+      <h5 className="name px-6">
+        {/* Zhourat */}
+         {t('zhourat')}
+        </h5>
       <div className="price"><span className="px-6">AED14</span></div>
     </div>
   </div>
     <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Espresso (Single)</h5>
+      <h5 className="name px-6">
+        {/* Espresso (Single) */}
+         {t('espressoSingle')}
+        </h5>
       <div className="price"><span className="px-6">AED16</span></div>
     </div>
   </div>
@@ -406,7 +460,10 @@ export default function Menu () {
 
          <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
   <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-    <h5 className="name px-6">Espresso (Double)</h5>
+    <h5 className="name px-6">
+      {/* Espresso (Double) */}
+      {t('espressoDouble')}
+      </h5>
     <div className="price">
       <span className="px-6">AED20</span>
     </div>
@@ -415,7 +472,10 @@ export default function Menu () {
 
 <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
   <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-    <h5 className="name px-6">Turkish Coffee</h5>
+    <h5 className="name px-6">
+      {/* Turkish Coffee */}
+       {t('turkishCoffee')}
+      </h5>
     <div className="price">
       <span className="px-6">AED17</span>
     </div>
@@ -424,7 +484,10 @@ export default function Menu () {
 
 <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
   <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-    <h5 className="name px-6">Coffee with Pistachio</h5>
+    <h5 className="name px-6">
+      {/* Coffee with Pistachio */}
+      {t('coffeePistachio')}
+      </h5>
     <div className="price">
       <span className="px-6">AED26</span>
     </div>
@@ -433,7 +496,10 @@ export default function Menu () {
 
 <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
   <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-    <h5 className="name px-6">Jouzi Mocha</h5>
+    <h5 className="name px-6">
+      {/* Jouzi Mocha */}
+      {t('jouziMocha')}
+      </h5>
     <div className="price">
       <span className="px-6">AED22</span>
     </div>
@@ -442,7 +508,10 @@ export default function Menu () {
 
 <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
   <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-    <h5 className="name px-6">Coffee Mocha</h5>
+    <h5 className="name px-6">
+      {/* Coffee Mocha */}
+       {t('coffeeMocha')}
+      </h5>
     <div className="price">
       <span className="px-6">AED22</span>
     </div>
@@ -450,7 +519,10 @@ export default function Menu () {
 </div>
 <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
   <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-    <h5 className="name px-6">Coffee Latte</h5>
+    <h5 className="name px-6">
+      {/* Coffee Latte */}
+      {t('coffeeLatte')}
+      </h5>
     <div className="price">
       <span className="px-6">AED24</span>
     </div>
@@ -459,7 +531,10 @@ export default function Menu () {
 
 <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
   <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-    <h5 className="name px-6">Cappuccino</h5>
+    <h5 className="name px-6">
+      {/* Cappuccino */}
+       {t('cappuccino')}
+      </h5>
     <div className="price">
       <span className="px-6">AED24</span>
     </div>
@@ -467,7 +542,10 @@ export default function Menu () {
 </div>
 <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
   <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-    <h5 className="name px-6">Frappuccino</h5>
+    <h5 className="name px-6">
+      {/* Frappuccino */}
+      {t('frappuccino')}
+      </h5>
     <div className="price">
       <span className="px-6">AED24</span>
     </div>
@@ -487,7 +565,10 @@ export default function Menu () {
 
 <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
   <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-    <h5 className="name px-6">Nescafe Black</h5>
+    <h5 className="name px-6">
+      {/* Nescafe Black */}
+       {t('nescafeBlack')}
+      </h5>
     <div className="price">
       <span className="px-6">AED15</span>
     </div>
@@ -496,7 +577,10 @@ export default function Menu () {
 
 <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
   <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-    <h5 className="name px-6">Nescafe with Milk</h5>
+    <h5 className="name px-6">
+      {/* Nescafe with Milk */}
+       {t('nescafeMilk')}
+      </h5>
     <div className="price">
       <span className="px-6">AED20</span>
     </div>
@@ -505,7 +589,10 @@ export default function Menu () {
 
 <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
   <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-    <h5 className="name px-6">Spanish Latte</h5>
+    <h5 className="name px-6">
+      {/* Spanish Latte */}
+      {t('spanishLatte')}
+      </h5>
     <div className="price">
       <span className="px-6">AED24</span>
     </div>
@@ -514,7 +601,10 @@ export default function Menu () {
 
 <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
   <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-    <h5 className="name px-6">French Coffee</h5>
+    <h5 className="name px-6">
+      {/* French Coffee */}
+      {t('frenchCoffee')}
+      </h5>
     <div className="price">
       <span className="px-6">AED21</span>
     </div>
@@ -523,7 +613,10 @@ export default function Menu () {
 
 <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
   <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-    <h5 className="name px-6">Americano</h5>
+    <h5 className="name px-6">
+      {/* Americano */}
+       {t('americano')}
+      </h5>
     <div className="price">
       <span className="px-6">AED20</span>
     </div>
@@ -531,7 +624,10 @@ export default function Menu () {
 </div>
 <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
   <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-    <h5 className="name px-6">Espresso Macchiato</h5>
+    <h5 className="name px-6">
+      {/* Espresso Macchiato */}
+      {t('espressoMacchiato')}
+      </h5>
     <div className="price">
       <span className="px-6">AED22</span>
     </div>
@@ -540,7 +636,10 @@ export default function Menu () {
 
 <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
   <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-    <h5 className="name px-6">Arabic Coffee</h5>
+    <h5 className="name px-6">
+      {/* Arabic Coffee */}
+       {t('arabicCoffee')}
+      </h5>
     <div className="price">
       <span className="px-6">AED28</span>
     </div>
@@ -575,13 +674,15 @@ export default function Menu () {
           className="kf-subtitle  scroll-animate"
           data-animate="active"
         >
-         Choose Best of
+         {/* Choose Best of */}
+         {t("chooseBestOf")}
         </div>
         <h3
           className="kf-title  scroll-animate"
           data-animate="active"
         >
-        FRESH JUICES & COCKTAIL
+        {/* FRESH JUICES & COCKTAIL */}
+        {t('freshJuicesCocktail')}
         </h3>
       </div>
 
@@ -598,70 +699,100 @@ export default function Menu () {
 
 <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Orange</h5>
+      <h5 className="name px-6">
+        {/* Orange */}
+         {t('orange')}
+        </h5>
       <div className="price"><span className="px-6">AED24</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Lemon</h5>
+      <h5 className="name px-6">
+        {/* Lemon */}
+         {t('lemon')}
+        </h5>
       <div className="price"><span className="px-6">AED24</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Lemon w/mint</h5>
+      <h5 className="name px-6">
+        {/* Lemon w/mint */}
+         {t('lemonMint')}
+        </h5>
       <div className="price"><span className="px-6">AED24</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Strawberry</h5>
+      <h5 className="name px-6">
+        {/* Strawberry */}
+        {t('strawberry')}
+        </h5>
       <div className="price"><span className="px-6">AED24</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Mango</h5>
+      <h5 className="name px-6">
+        {/* Mango */}
+         {t('mango')}
+        </h5>
       <div className="price"><span className="px-6">AED24</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Pineapple</h5>
+      <h5 className="name px-6">
+        {/* Pineapple */}
+         {t('pineapple')}
+        </h5>
       <div className="price"><span className="px-6">AED24</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Kiwi</h5>
+      <h5 className="name px-6">
+        {/* Kiwi */}
+         {t('kiwi')}
+        </h5>
       <div className="price"><span className="px-6">AED24</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Pomegranate</h5>
+      <h5 className="name px-6">
+        {/* Pomegranate */}
+         {t('pomegranate')}
+        </h5>
       <div className="price"><span className="px-6">AED26</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Watermelon</h5>
+      <h5 className="name px-6">
+        {/* Watermelon */}
+        {t('watermelon')}
+        </h5>
       <div className="price"><span className="px-6">AED24</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Melon</h5>
+      <h5 className="name px-6">
+         {t('melon')}
+        {/* Melon */}
+        </h5>
       <div className="price"><span className="px-6">AED24</span></div>
     </div>
   </div>
@@ -680,77 +811,110 @@ export default function Menu () {
         className="kf-menu-items">
 <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Orange w/Carrot</h5>
+      <h5 className="name px-6">
+        {/* Orange w/Carrot */}
+         {t('orangeCarrot')}
+        </h5>
       <div className="price"><span className="px-6">AED24</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Awtar Qashati</h5>
+      <h5 className="name px-6">
+        {/* Awtar Qashati */}
+        {t('awtarQashati')}
+        </h5>
       <div className="price"><span className="px-6">AED36</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Galaxy Cocktail</h5>
+      <h5 className="name px-6">
+        {/* Galaxy Cocktail */}
+        {t('galaxyCocktail')}
+        </h5>
       <div className="price"><span className="px-6">AED36</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Grendizer</h5>
+      <h5 className="name px-6">
+        {/* Grendizer */}
+         {t('grendizer')}
+        </h5>
       <div className="price"><span className="px-6">AED30</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Pcs Cocktail</h5>
+      <h5 className="name px-6">
+        {/* Pcs Cocktail */}
+         {t('pcsCocktail')}
+        </h5>
       <div className="price"><span className="px-6">AED36</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Awtar Cocktail</h5>
+      <h5 className="name px-6">
+        {/* Awtar Cocktail */}
+        {t('awtarCocktail')}
+        </h5>
       <div className="price"><span className="px-6">AED36</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Cocktail as your order</h5>
+      <h5 className="name px-6">
+        {/* Cocktail as your order */}
+         {t('cocktailYourOrder')}
+        </h5>
       <div className="price"><span className="px-6">AED35</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Florida Cocktail</h5>
+      <h5 className="name px-6">
+        {/* Florida Cocktail */}
+        {t('floridaCocktail')}
+        </h5>
       <div className="price"><span className="px-6">AED30</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Avocado Cocktail Honey and Nuts</h5>
+      <h5 className="name px-6">
+        {/* Avocado Cocktail Honey and Nuts */}
+         {t('avocadoCocktail')}
+        </h5>
       <div className="price"><span className="px-6">AED28</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Banana Milk Chocolate / Strawberry</h5>
+      <h5 className="name px-6">
+        {/* Banana Milk Chocolate / Strawberry */}
+         {t('bananaMilkChocolate')}
+        </h5>
       <div className="price"><span className="px-6">AED26</span></div>
     </div>
   </div>
 
   <div className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 className="name px-6">Layers Cocktail as your order</h5>
+      <h5 className="name px-6">
+        {/* Layers Cocktail as your order */}
+        {t('layersCocktailYourOrder')}
+        </h5>
       <div className="price"><span className="px-6">AED36</span></div>
     </div>
   </div>
@@ -776,13 +940,15 @@ export default function Menu () {
           className="kf-subtitle  scroll-animate"
           data-animate="active"
         >
-         Choose Best of
+         {/* Choose Best of */}
+          {t("chooseBestOf")}
         </div>
         <h3
           className="kf-title  scroll-animate"
           data-animate="active"
         >
-       MOJITO
+       {/* MOJITO */}
+        {t("mojito")}
         </h3>
       </div>
 
@@ -799,7 +965,10 @@ export default function Menu () {
 
   <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 class="name px-6">Orange</h5>
+      <h5 class="name px-6">
+        {/* Orange */}
+         {t("orange")}
+        </h5>
       <div class="price">
         <span class="px-6">AED24</span>
       </div>
@@ -808,7 +977,10 @@ export default function Menu () {
 
   <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 class="name px-6">Mango Mojito</h5>
+      <h5 class="name px-6">
+        {/* Mango Mojito */}
+         {t("mangoMojito")}
+        </h5>
       <div class="price">
         <span class="px-6">AED27</span>
       </div>
@@ -817,7 +989,10 @@ export default function Menu () {
 
   <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 class="name px-6">Kiwi Mojito</h5>
+      <h5 class="name px-6">
+        {/* Kiwi Mojito */}
+         {t("kiwiMojito")}
+        </h5>
       <div class="price">
         <span class="px-6">AED27</span>
       </div>
@@ -826,7 +1001,10 @@ export default function Menu () {
 
   <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 class="name px-6">Passion Mojito</h5>
+      <h5 class="name px-6">
+        {/* Passion Mojito */}
+         {t("passionMojito")}
+        </h5>
       <div class="price">
         <span class="px-6">AED27</span>
       </div>
@@ -835,7 +1013,10 @@ export default function Menu () {
 
   <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 class="name px-6">Virgin Mojito</h5>
+      <h5 class="name px-6">
+        {/* Virgin Mojito */}
+         {t("virginMojito")}
+        </h5>
       <div class="price">
         <span class="px-6">AED25</span>
       </div>
@@ -844,7 +1025,10 @@ export default function Menu () {
 
   <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 class="name px-6">Strawberry Mojito</h5>
+      <h5 class="name px-6">
+        {/* Strawberry Mojito */}
+         {t("strawberryMojito")}
+        </h5>
       <div class="price">
         <span class="px-6">AED27</span>
       </div>
@@ -853,7 +1037,10 @@ export default function Menu () {
 
   <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 class="name px-6">Pomegranate Mojito</h5>
+      <h5 class="name px-6">
+        {/* Pomegranate Mojito */}
+         {t("pomegranateMojito")}
+        </h5>
       <div class="price">
         <span class="px-6">AED27</span>
       </div>
@@ -862,7 +1049,10 @@ export default function Menu () {
 
   <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 class="name px-6">Redbull Mojito</h5>
+      <h5 class="name px-6">
+        {/* Redbull Mojito */}
+        {t("redbullMojito")}
+        </h5>
       <div class="price">
         <span class="px-6">AED28</span>
       </div>
@@ -882,118 +1072,592 @@ export default function Menu () {
 
 
 
-   <section className="section kf-menu-classic mt-32 section-bg">
-    <div className="container">
-      <div className="kf-titles align-center">
-        <div
-          className="kf-subtitle  scroll-animate"
-          data-animate="active"
-        >
-         Choose Best of
+  <section className="section kf-menu-classic mt-32 section-bg">
+      <div className="container">
+        <div className="kf-titles align-center">
+          <div
+            className="kf-subtitle  scroll-animate"
+            data-animate="active"
+          >
+           {/* Choose Best of */}
+            {t("chooseBestOf")}
+          </div>
+          <h3
+            className="kf-title  scroll-animate"
+            data-animate="active"
+          >
+  COLD DRINKS
+          </h3>
         </div>
-        <h3
-          className="kf-title  scroll-animate"
-          data-animate="active"
-        >
-COLD DRINKS
-        </h3>
+  
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        {/* Left Column */}
+      <div class="kf-menu-items">
+    <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 class="name px-6">Ice Tea Black Berry</h5>
+        <div class="price">
+          <span class="px-6">AED26</span>
+        </div>
       </div>
-
-       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-      {/* Left Column */}
-    <div class="kf-menu-items">
-  <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
-    <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 class="name px-6">Ice Tea Black Berry</h5>
-      <div class="price">
-        <span class="px-6">AED26</span>
+    </div>
+  
+    <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 class="name px-6">Ice Tea Peach</h5>
+        <div class="price">
+          <span class="px-6">AED26</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 class="name px-6">Ice Tea Lemon</h5>
+        <div class="price">
+          <span class="px-6">AED26</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 class="name px-6">Ice Tea Pomegranate</h5>
+        <div class="price">
+          <span class="px-6">AED26</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 class="name px-6">Ice Tea Passionfruit</h5>
+        <div class="price">
+          <span class="px-6">AED26</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 class="name px-6">Ice Spanish Latte</h5>
+        <div class="price">
+          <span class="px-6">AED26</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 class="name px-6">Ice Latte</h5>
+        <div class="price">
+          <span class="px-6">AED26</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 class="name px-6">Ice Mocha</h5>
+        <div class="price">
+          <span class="px-6">AED26</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+        <h5 class="name px-6">Ice Macchiato</h5>
+        <div class="price">
+          <span class="px-6">AED26</span>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
-    <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 class="name px-6">Ice Tea Peach</h5>
-      <div class="price">
-        <span class="px-6">AED26</span>
+  
+        {/* Right Column */}
+          <div className="p-6 rounded-lg shadow">
+          <Image src="/assets/images/cold.png" alt="hotdrink" width={700} height={1100} />
+        </div>
+       
+   
       </div>
+  
+      
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {/* Left Column */}
+    <div className="p-6 rounded-lg shadow">
+      <Image src="/assets/images/cold1.png" alt="hotdrink" width={700} height={1100} />
+    </div>
+  
+    {/* Right Column */}
+    <div className="kf-menu-items">
+      {[
+        { name: "Ice Chocolate", price: "AED26" },
+        { name: "Ice Amricano", price: "AED26" },
+        { name: "Redbull", price: "AED20" },
+        { name: "Barbican", price: "AED18" },
+        { name: "Perrier water", price: "AED16" },
+        { name: "Mineral water", price: "AED4" },
+        { name: "Soft drinks", price: "AED12" },
+        { name: "Vitamin C", price: "AED15" },
+        { name: "Ice Karkadie", price: "AED18" },
+      ].map((item, i) => (
+        <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+          <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+            <h5 className="name px-6">{item.name}</h5>
+            <div className="price">
+              <span className="px-6">{item.price}</span>
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
   </div>
-
-  <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
-    <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 class="name px-6">Ice Tea Lemon</h5>
-      <div class="price">
-        <span class="px-6">AED26</span>
-      </div>
-    </div>
   </div>
-
-  <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
-    <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 class="name px-6">Ice Tea Pomegranate</h5>
-      <div class="price">
-        <span class="px-6">AED26</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
-    <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 class="name px-6">Ice Tea Passionfruit</h5>
-      <div class="price">
-        <span class="px-6">AED26</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
-    <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 class="name px-6">Ice Spanish Latte</h5>
-      <div class="price">
-        <span class="px-6">AED26</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
-    <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 class="name px-6">Ice Latte</h5>
-      <div class="price">
-        <span class="px-6">AED26</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
-    <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 class="name px-6">Ice Mocha</h5>
-      <div class="price">
-        <span class="px-6">AED26</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
-    <div class="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
-      <h5 class="name px-6">Ice Macchiato</h5>
-      <div class="price">
-        <span class="px-6">AED26</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-      {/* Right Column */}
-        <div className="p-6 rounded-lg shadow">
-        <Image src="/assets/images/cold.png" alt="hotdrink" width={700} height={1100} />
-      </div>
-
-
-    </div>
-</div>
   </section>
+  
+   <section className="section kf-menu-classic mt-32 section-bg">
+      <div className="container">
+        <div className="kf-titles align-center">
+          <div
+            className="kf-subtitle  scroll-animate"
+            data-animate="active"
+          >
+           Choose Best of
+          </div>
+          <h3
+            className="kf-title  scroll-animate"
+            data-animate="active"
+          >
+  MILK SHAKE
+          </h3>
+        </div>
+  
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        {/* Left Column */}
+     <div className="kf-menu-items">
+    {[
+      { name: "Chocolate", price: "AED23" },
+      { name: "Strawberry", price: "AED23" },
+      { name: "Mango", price: "AED23" },
+      { name: "Vanilla", price: "AED23" },
+      { name: "Mix", price: "AED23" },
+      { name: "Snickers", price: "AED27" },
+    ].map((item, i) => (
+      <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+          <h5 className="name px-6">{item.name}</h5>
+          <div className="price">
+            <span className="px-6">{item.price}</span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+  
+        {/* Right Column */}
+          <div className="p-6 rounded-lg shadow">
+          <Image src="/assets/images/milk_1.png" alt="hotdrink" width={700} height={750} />
+        </div>
+       
+   
+      </div>
+  
+      
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {/* Left Column */}
+    <div className="p-6 rounded-lg shadow">
+      <Image src="/assets/images/milk_2.png" alt="hotdrink" width={700} height={700} />
+    </div>
+  
+    {/* Right Column */}
+  <div className="kf-menu-items">
+    {[
+      { name: "Kit Kat", price: "AED27" },
+      { name: "Lotus", price: "AED27" },
+      { name: "Oreo", price: "AED27" },
+      { name: "Pistachio", price: "AED27" },
+      { name: "Cerelac", price: "AED27" },
+      { name: "Nescafe", price: "AED27" },
+    ].map((item, i) => (
+      <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+          <h5 className="name px-6">{item.name}</h5>
+          <div className="price">
+            <span className="px-6">{item.price}</span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+  
+  </div>
+  </div>
+  </section>
+  
+   <section className="section kf-menu-classic mt-32 section-bg">
+      <div className="container">
+        <div className="kf-titles align-center">
+          <div
+            className="kf-subtitle  scroll-animate"
+            data-animate="active"
+          >
+           Choose Best of
+          </div>
+          <h3
+            className="kf-title  scroll-animate"
+            data-animate="active"
+          >
+  FRUIT SALAD & ICE CREAM
+          </h3>
+        </div>
+  
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        {/* Left Column */}
+     <div className="kf-menu-items">
+    {[
+     { name: "Snickers Fruit Salad", price: "AED30" },
+      { name: "Nutella Fruit Salad", price: "AED30" },
+      { name: "Pistachio Fruit Salad", price: "AED30" },
+      { name: "Upon Request Fruit Salad", price: "AED30" },
+    ].map((item, i) => (
+      <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+          <h5 className="name px-6">{item.name}</h5>
+          <div className="price">
+            <span className="px-6">{item.price}</span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+  
+        {/* Right Column */}
+          <div className="p-6 rounded-lg shadow">
+          <Image src="/assets/images/fruitsald.png" alt="hotdrink" width={700} height={600} />
+        </div>
+       
+   
+      </div>
+  
+      
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {/* Left Column */}
+    <div className="p-6 rounded-lg shadow">
+      <Image src="/assets/images/fruitsald1.png" alt="hotdrink" width={700} height={400} />
+    </div>
+  
+    {/* Right Column */}
+  <div className="kf-menu-items">
+    {[
+      { name: "Ice cream upon request", price: "AED22" },
+      { name: "Mix Ice cream Awtar", price: "AED35" },
+      { name: "Banana Split", price: "AED35" },
+     
+    ].map((item, i) => (
+      <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+          <h5 className="name px-6">{item.name}</h5>
+          <div className="price">
+            <span className="px-6">{item.price}</span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+  
+  </div>
+  </div>
+  </section>
+    
+     <section className="section kf-menu-classic mt-32 section-bg">
+      <div className="container">
+        <div className="kf-titles align-center">
+          <div
+            className="kf-subtitle  scroll-animate"
+            data-animate="active"
+          >
+           Choose Best of
+          </div>
+          <h3
+            className="kf-title  scroll-animate"
+            data-animate="active"
+          >
+  DESSERT
+          </h3>
+        </div>
+  
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        {/* Left Column */}
+     <div className="kf-menu-items">
+    {[
+     { name: "Pistachio Crepe", price: "AED25" },
+      { name: "Nutella Crepe", price: "AED25" },
+      { name: "Fruit Crepe", price: "AED25" },
+      { name: "Lotus Crepe", price: "AED25" },
+    ].map((item, i) => (
+      <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+          <h5 className="name px-6">{item.name}</h5>
+          <div className="price">
+            <span className="px-6">{item.price}</span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+  
+        {/* Right Column */}
+          <div className="p-6 rounded-lg shadow">
+          <Image src="/assets/images/dessert.png" alt="hotdrink" width={700} height={500} />
+           <h3 className="text-center">CREPE</h3>
+       
+        </div>
+       
+   
+      </div>
+  
+      
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {/* Left Column */}
+    <div className="p-6 rounded-lg shadow">
+      <Image src="/assets/images/dessert1.png" alt="hotdrink" width={700} height={600} />
+       <h3 className="text-center">CAKE</h3>
+    </div>
+  
+    {/* Right Column */}
+  <div className="kf-menu-items">
+    {[
+       { name: "Honey Cake", price: "AED24" },
+      { name: "Pistachio Cake", price: "AED24" },
+      { name: "Carrot Cake", price: "AED24" },
+      { name: "Chocolate Cake", price: "AED24" },
+      { name: "Strawberry Cake", price: "AED24" },
+    ].map((item, i) => (
+      <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+          <h5 className="name px-6">{item.name}</h5>
+          <div className="price">
+            <span className="px-6">{item.price}</span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+  
+  </div>
+  
+   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        {/* Left Column */}
+     <div className="kf-menu-items">
+    {[
+     { name: "Nutella Waffle", price: "AED22" },
+      { name: "Pistachio Waffle", price: "AED22" },
+      { name: "Fruit Waffle", price: "AED22" },
+      { name: "Lotus Waffle", price: "AED23" },
+    ].map((item, i) => (
+      <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+          <h5 className="name px-6">{item.name}</h5>
+          <div className="price">
+            <span className="px-6">{item.price}</span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+  
+        {/* Right Column */}
+          <div className="p-6 rounded-lg shadow">
+          <Image src="/assets/images/Waffle.png" alt="hotdrink" width={700} height={400} />
+           <h3 className="text-center">Waffle</h3>
+       
+        </div>
+       
+   
+      </div>
+  
+          
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {/* Left Column */}
+    <div className="p-6 rounded-lg shadow">
+      <Image src="/assets/images/kunafa.png" alt="hotdrink" width={700} height={100} />
+       {/* <h3 className="text-center">Kunafa</h3> */}
+    </div>
+  
+    {/* Right Column */}
+  <div className="kf-menu-items">
+    {[
+       { name: "Cheese Kunafah", price: "AED26" },
+      { name: "Cream Kunafah", price: "AED26" },
+     
+    ].map((item, i) => (
+      <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+          <h5 className="name px-6">{item.name}</h5>
+          <div className="price">
+            <span className="px-6">{item.price}</span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+  
+  </div>
+  
+  </div>
+  </section>
+  
+   <section className="section kf-menu-classic mt-32 section-bg">
+      <div className="container">
+        <div className="kf-titles align-center">
+          <div
+            className="kf-subtitle  scroll-animate"
+            data-animate="active"
+          >
+           Choose Best of
+          </div>
+          <h3
+            className="kf-title  scroll-animate"
+            data-animate="active"
+          >
+  BUBBLE TEA
+          </h3>
+        </div>
+  
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        {/* Left Column */}
+     <div className="kf-menu-items">
+    {[
+     { name: "Macha", price: "AED18" },
+      { name: "Classic Vanilla", price: "AED18" },
+      { name: "Taro", price: "AED18" },
+    
+    ].map((item, i) => (
+      <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+          <h5 className="name px-6">{item.name}</h5>
+          <div className="price">
+            <span className="px-6">{item.price}</span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+  
+        {/* Right Column */}
+          <div className="p-6 rounded-lg shadow">
+          <Image src="/assets/images/bubble.png" alt="hotdrink" width={700} height={600} />
+        </div>
+       
+   
+      </div>
+  
+      
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {/* Left Column */}
+    <div className="p-6 rounded-lg shadow">
+      <Image src="/assets/images/bubble1.png" alt="hotdrink" width={700} height={400} />
+    </div>
+  
+    {/* Right Column */}
+  <div className="kf-menu-items">
+    {[
+      { name: "Strawberry", price: "AED18" },
+      { name: "Black Berry", price: "AED18" },
+      { name: "Chocolate", price: "AED18" },
+     
+    ].map((item, i) => (
+      <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+          <h5 className="name px-6">{item.name}</h5>
+          <div className="price">
+            <span className="px-6">{item.price}</span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+  
+  </div>
+  </div>
+  </section>
+  
+  
+  
+   <section className="section kf-menu-classic mt-32 section-bg">
+      <div className="container">
+        <div className="kf-titles align-center">
+          <div
+            className="kf-subtitle  scroll-animate"
+            data-animate="active"
+          >
+           Choose Best of
+          </div>
+          <h3
+            className="kf-title  scroll-animate"
+            data-animate="active"
+          >
+  BUBBLE TEA
+          </h3>
+        </div>
+  
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        {/* Left Column */}
+     <div className="kf-menu-items">
+    {[
+    { name: "Peach", price: "AED18" },
+      { name: "Oreo", price: "AED18" },
+      { name: "Black Berry", price: "AED18" },
+      { name: "Caramel", price: "AED18" },
+      { name: "Vanilla", price: "AED18" },
+    
+    ].map((item, i) => (
+      <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+          <h5 className="name px-6">{item.name}</h5>
+          <div className="price">
+            <span className="px-6">{item.price}</span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+  
+  <div className="kf-menu-items">
+    {[
+      { name: "Chocolate", price: "AED18" },
+      { name: "Masha", price: "AED18" },
+      { name: "Watermelon", price: "AED18" },
+      { name: "Strawberry", price: "AED18" },
+      { name: "Taro", price: "AED18" },
+    ].map((item, i) => (
+      <div key={i} className="kf-menu-item-2 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        <div className="kf-menu-item-2 element-anim-1 scroll-animate animate__active animate__animated">
+          <h5 className="name px-6">{item.name}</h5>
+          <div className="price">
+            <span className="px-6">{item.price}</span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+       
+   
+      </div>
+  
+    
+  </div>
+  </section>
+    
 
       <div className="section kf-video mt-10">
   <div className="kf-video-item relative w-full h-[250px] overflow-hidden">
@@ -1005,7 +1669,7 @@ COLD DRINKS
       loop
       playsInline
     >
-      <source src="assets/images/video/awtar-vedio.mp4" type="video/mp4" />
+      <source src="/assets/images/video/awtar-vedio.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
  <div className="absolute inset-0 bg-black/50"></div>

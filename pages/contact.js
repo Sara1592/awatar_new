@@ -4,19 +4,6 @@ import { MapPin, Phone, Mail } from "lucide-react";
 import Footer from '@/components/Footer';
 import { useState } from "react";
 const Contact = () => {
-//      const [form, setForm] = useState({ name: "", phone: "", email: "", message: "" });
-
-//   const handleChange = (e) => {
-//     setForm({ ...form, [e.target.name]: e.target.value });
-//   };
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     const phoneNumber = "971501234567"; // your WhatsApp number (without +)
-//     const text = `Hello, my name is ${form.name}, phone: ${form.phone}, email: ${form.email}. Message: ${form.message}`;
-//     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
-//     window.open(url, "_blank");
-//   };
 
 const [form, setForm] = useState({
     name: "",

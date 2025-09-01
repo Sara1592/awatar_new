@@ -4,7 +4,9 @@ import ReservationForm from '@/components/reservationform'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
 
+
 const BookAnTable = () => {
+  
   return (
     <div>
       <BookBreadcrumbBanner/>

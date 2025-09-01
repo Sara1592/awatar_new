@@ -3,11 +3,12 @@ import BookBreadcrumbBanner from '@/components/BookBreadcrum'
 import ReservationForm from '@/components/reservationform'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
-
+import { useTranslations } from "next-intl";
 const BookAnTable = () => {
+   const t = useTranslations("home");
   return (
     <div>
-      <BookBreadcrumbBanner/>
+      <BookBreadcrumbBanner  title={t('reservationText')} />
       <ReservationForm/>
       <section className="w-full">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">

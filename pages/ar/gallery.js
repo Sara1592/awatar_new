@@ -3,11 +3,14 @@ import MenuTabs from '@/components/menuTab'
 import GallBreadcrumbBanner from '@/components/gallBreadcrum'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import { useTranslations } from "next-intl";
 
 const Gallery = () => {
+  const t = useTranslations("home");
+
   return (
     <div>
-        <GallBreadcrumbBanner/>
+        <GallBreadcrumbBanner title={t("gallery")}/>
       <>
 
   {/* Section Gallery */}
@@ -18,13 +21,15 @@ const Gallery = () => {
           className="kf-subtitle  scroll-animate"
           data-animate="active"
         >
-          Gallery
+          {/* Gallery */}
+          {t("gallery")}
         </div>
         <h3
           className="kf-title "
         >
-          Looks Our Some Item
-        </h3>
+          {/* Looks Our Some Item */}
+          {t('looksOurItems')}
+                  </h3>
          <MenuTabs/>
       </div>
 
@@ -45,13 +50,15 @@ const Gallery = () => {
               className="kf-subtitle  scroll-animate"
               data-animate="active"
             >
-              Need a Table On Awatar Cafe
+              {/* Need a Table On Awatar Cafe */}
+              {t('needTable')}
             </div>
             <h3
               className="kf-title  scroll-animate"
               data-animate="active"
             >
-              Booking Table For Your &amp; Family Members
+              {t('bookingSubtitle')}
+              {/* Booking Table For Your &amp; Family Members */}
             </h3>
           </div>
         </div>
@@ -60,7 +67,10 @@ const Gallery = () => {
             href="reservation"
             className="kf-btn"
           >
-            <span>booking table</span>
+            <span>
+              {/* booking table */}
+              {t('bookingButton')}
+              </span>
             <i className="fas fa-chevron-right" />
           </Link>
         </div>
