@@ -68,6 +68,14 @@ label {
   cursor: pointer;
 }
 
+.lang{
+  background-color: #8E6E3B;
+  color: white;
+}
+.lang:hover{
+  background-color: #8E6E3B;
+}
+
 iframe {
   max-width: 100%;
 }

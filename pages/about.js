@@ -216,7 +216,7 @@ const titleRef = useRef(null);
       loop
       playsInline
     >
-      <source src="assets/images/video/awtar-vedio.mp4" type="video/mp4" />
+      <source src="/assets/images/video/awtar-vedio.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
  <div className="absolute inset-0 bg-black/50"></div>

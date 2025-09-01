@@ -39,8 +39,16 @@ const [form, setForm] = useState({
     const text = `Hello, my name is ${form.name}, phone: ${form.phone}, email: ${form.email}.
 Subject: ${form.subject}
 Message: ${form.message}`;
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
-    window.open(url, "_blank");
+    // const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+    // window.open(url, "_blank");
+     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  const baseUrl = isMobile
+    ? "https://wa.me"
+    : "https://web.whatsapp.com/send";
+
+  const url = `${baseUrl}?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
+
   };
   return (
     <div>
