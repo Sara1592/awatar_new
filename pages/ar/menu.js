@@ -1707,7 +1707,7 @@ const fruitSaladRight = [
   
         {/* Right Column */}
           <div className="p-6 rounded-lg shadow">
-          <Image src="/assets/images/Waffle.png" alt="hotdrink" width={700} height={400} />
+          <Image src="/assets/images/waffle.png" alt="hotdrink" width={700} height={400} />
            <h3 className="text-center">
             {/* Waffle */}
             {t('waffleTitle')}
