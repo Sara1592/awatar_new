@@ -106,7 +106,7 @@ export default function MobFlipCardSlider() {
                 src={slide.image}
                 alt={`menu-${index}`}
                 width={710}
-                height={1004}
+                height={1200}
                 className="object-cover"
               />
             </SwiperSlide>
