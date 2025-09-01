@@ -79,7 +79,7 @@ export default function MobFlipCardSlider() {
     { image: "/assets/images/mob_menu5.png" },
     { image: "/assets/images/mob_menu6.png" },
     { image: "/assets/images/mob_menu7.png" },
-    { image: "/assets/images/mob_menu_8.png" },
+    { image: "/assets/images/222.png" },
     { image: "/assets/images/mob_menu9.png" },
     { image: "/assets/images/mob_menu10.png" },
     { image: "/assets/images/mob_menu11.png" }
@@ -105,7 +105,8 @@ export default function MobFlipCardSlider() {
               <Image
                 src={slide.image}
                 alt={`menu-${index}`}
-                fill
+                width={710}
+                height={1004}
                 className="object-cover"
               />
             </SwiperSlide>
