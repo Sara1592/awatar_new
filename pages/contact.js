@@ -77,7 +77,7 @@ Message: ${form.message}`;
             allowFullScreen=""
             loading="lazy"
           /> */}
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4035.702886462178!2d55.326477911280904!3d25.264796128865616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5cc4f1d3d0e9%3A0xb913a806b9191904!2sBu%20Haleeba%20Plaza!5e1!3m2!1sen!2sae!4v1756103009107!5m2!1sen!2sae" width="100%" height="750" ></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4482.038742578994!2d55.328887300000005!3d25.2644579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5cc4f1bacb6b%3A0x4196f4fa51a04b3d!2zQXd0YXIgU2hpc2hhIENhZmUg2YXZgtmH2Ykg2LTZiti02Kkg2KPZiNiq2KfYsQ!5e1!3m2!1sen!2sae!4v1756703890441!5m2!1sen!2sae" width="100%" height="750"></iframe>
         </div>
 
         {/* Right: Contact Form */}
