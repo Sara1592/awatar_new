@@ -25,10 +25,10 @@ import { useTranslations } from 'next-intl';
 import enMessages from '../locales/en.json'
 
 
-const HeavyComponent = dynamic(
-  () => import("../components/HeavyComponent"),
-  { ssr: false } // will only load on client
-);
+// const HeavyComponent = dynamic(
+//   () => import("../components/HeavyComponent"),
+//   { ssr: false } // will only load on client
+// );
 
 
 export default function Home({ locale }) {
@@ -245,7 +245,7 @@ const about1Ref = useRef(null);
 
   return (
     <div>
-      <HeavyComponent/>
+      {/* <HeavyComponent/> */}
         {/* <LanguageSwitcher currentLocale="en" /> */}
       <HeroSlider/>
        <section
