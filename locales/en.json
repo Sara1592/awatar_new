@@ -3,14 +3,14 @@
     "home":{
        "slide1Title": "Welcome to",
     "slide1Subtitle": "Awtar Café",
-    "slide1Image": "/assets/images/slider2.png",
+    "slide1Image": "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730281/slider2_yi0f0t.png",
     "slide2Title": "",
     "slide2Subtitle": "",
-    "slide2Image": "/assets/images/slider1.png",
+    "slide2Image": "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730281/slider1_k5teag.png",
 
     "slide3Title": "Welcome to",
     "slide3Subtitle": "Awtar Café",
-        "slide3Image": "/assets/images/slider3.png",
+        "slide3Image": "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730281/slider2_yi0f0t.png",
 
   "aboutSubtitle": "About Us",
   "aboutTitle": "Awtar Café’s Story",
@@ -36,9 +36,9 @@
 "ambtitle": "Perfect Ambiance",
     "ambdescription": "Whether you’re chilling with friends, catching a game, or just escaping the noise — Awtar is your spot.",
     "ambreadMore": "Read More",
-   "ambimg1":"/assets/images/atom1.png",
-   "ambimg2":"/assets/images/atom2.png",
-   "ambimg3":"/assets/images/atom3.png",
+   "ambimg1":"https://res.cloudinary.com/dw1eguafc/image/upload/v1756730222/atom1_jkdb77.png",
+   "ambimg2":"https://res.cloudinary.com/dw1eguafc/image/upload/v1756730222/atom2_lvjupz.png",
+   "ambimg3":"https://res.cloudinary.com/dw1eguafc/image/upload/v1756730222/atom3_cx4rkm.png",
    "ambimg4":"/assets/images/atom4.png",
    "ambimg5":"/assets/images/atom5.png",
 

@@ -71,18 +71,18 @@ import "swiper/css/effect-cards";
 
 export default function MobFlipCardSlider() {
   const slides = [
-    { image: "/assets/images/mob_menu.png" },
-   { image: "/assets/images/mob_menu2.png" },
-    { image: "/assets/images/mob_menu3.png" },
- { image: "/assets/images/mob_menu1.png" },
-    { image: "/assets/images/mob_menu4.png" },
-    { image: "/assets/images/mob_menu5.png" },
-    { image: "/assets/images/mob_menu6.png" },
-    { image: "/assets/images/mob_menu7.png" },
-    { image: "/assets/images/222.png" },
-    { image: "/assets/images/mob_menu9.png" },
-    { image: "/assets/images/mob_menu10.png" },
-    { image: "/assets/images/mob_menu11.png" }
+    { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756731159/mob_menu_2_nkwrsk.png" },
+   { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756731175/mob_menu_10_mlorol.png" },
+    { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756731167/mob_menu_8_zgj48x.png" },
+ { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756731160/mob_menu_5_lwpfmf.png" },
+    { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756731180/mob_menu_11_j5ugxo.png" },
+    { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756731166/mob_menu_7_a0jc6t.png" },
+    { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756731160/mob_menu_3_cchwdk.png" },
+    { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756731158/mob_menu_1_f5bbiz.jpg" },
+    { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756731161/mob_menu_4_lcvg3x.png" },
+    { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756731174/mob_menu_1_zhnjnr.png" },
+    { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756731160/mob_menu_6_r7up16.png" },
+    { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756731167/mob_menu_9_fupg64.png" }
   ];
 
   return (
