@@ -1,7 +1,7 @@
 import React from 'react'
 import HeroSlider from '@/components/HeroSlider'
 import MobFlipCardSlider from '@/components/mobFilpslider';
-
+import dynamic from "next/dynamic";
 import gsap from 'gsap';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -23,6 +23,13 @@ import CounterSection from '@/components/aboutcount';
 import { useTranslations } from 'next-intl';
 // import LanguageSwitcher from '../components/LanguageSwitcher';
 import enMessages from '../locales/en.json'
+
+
+const HeavyComponent = dynamic(
+  () => import("../components/HeavyComponent"),
+  { ssr: false } // will only load on client
+);
+
 
 export default function Home({ locale }) {
   // const t = useTranslations('home');
@@ -238,6 +245,7 @@ const about1Ref = useRef(null);
 
   return (
     <div>
+      <HeavyComponent/>
         {/* <LanguageSwitcher currentLocale="en" /> */}
       <HeroSlider/>
        <section

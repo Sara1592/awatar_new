@@ -79,7 +79,7 @@ export default function MobFlipCardSlider() {
     { image: "/assets/images/mob_menu5.png" },
     { image: "/assets/images/mob_menu6.png" },
     { image: "/assets/images/mob_menu7.png" },
-    { image: "/assets/images/mob_menu8.png" },
+    { image: "/assets/images/mob_menu_8.png" },
     { image: "/assets/images/mob_menu9.png" },
     { image: "/assets/images/mob_menu10.png" },
     { image: "/assets/images/mob_menu11.png" }

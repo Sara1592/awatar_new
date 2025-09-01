@@ -48,10 +48,10 @@ export default function NoticePopup() {
 
         {/* CTA */}
         <Link
-          href="contact"
+          href="/"
            onClick={() => setOpen(false)}
           className="kf-btn">
-         <span>Get In Touch</span> 
+         <span>OK</span> 
         </Link>
       </div>
     </div>
