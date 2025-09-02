@@ -239,7 +239,7 @@ const about1Ref = useRef(null);
       <HeroSlider/>
        <section
   className="section kf-category"
-  style={{ backgroundImage: "url('assets/images/category_bg.jpg')" }}
+  style={{ backgroundImage: "url('https://res.cloudinary.com/dw1eguafc/image/upload/v1756730229/category_bg_q4pycd.jpg')" }}
 >
 
     <div className="container">
@@ -248,26 +248,26 @@ const about1Ref = useRef(null);
  <div className="kf-category-items" ref={about1Ref}>
           <div className="kf-category-item" >
             <div className="image kf-image-hover" >
-             <Image src="/assets/images/about1.png" alt="Awatar" width={1000} height={1000}/>
+             <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730221/about1_kdpr0c.png" alt="Awatar" width={1000} height={1000}/>
             </div>
         
           </div>
           <div className="kf-category-item">
             <div className="image kf-image-hover">
-              <Image src="/assets/images/about3.png" alt="Awatar" width={1000} height={1000}/>
+              <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730221/about3_or9ph0.png" alt="Awatar" width={1000} height={1000}/>
             </div>
            
           </div>
           <div className="kf-category-item" >
             <div className="image kf-image-hover">
-            <Image src="/assets/images/about4.png" alt="Awatar" width={1000} height={1000}/>
+            <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730222/about4_owckfd.png" alt="Awatar" width={1000} height={1000}/>
 
             </div>
            
           </div>
           <div className="kf-category-item">
             <div className="image kf-image-hover">
-            <Image src="/assets/images/about2.png" alt="Awatar" width={1000} height={1000}/>
+            <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730221/about2_xe4klu.png" alt="Awatar" width={1000} height={1000}/>
 
             </div>
           

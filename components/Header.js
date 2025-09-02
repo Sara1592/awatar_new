@@ -4,17 +4,16 @@
 import React, { useState , useEffect} from "react";
 import Link from "next/link";
 import Image from "next/image";
-
 import { useRouter } from "next/router";
 import { useTranslations } from 'next-intl';
 
 
 const Header = () => {
   const t = useTranslations('home');
+ const [mobileMenu, setMobileMenu] = useState(false);
   const router = useRouter();
   const { pathname, asPath, push } = router;
-  const [mobileMenu, setMobileMenu] = useState(false);
-
+  
    const handleChangeLanguage = (e) => {
     const newLocale = e.target.value;
     let newPath = asPath;
@@ -33,8 +32,27 @@ const Header = () => {
   };
 
 
+//   useEffect(() => {
+//   const handleScroll = () => {
+//     if (window.scrollY > lastScrollY) {
+//       // scrolling down
+//       setShowHeader(false);
+//     } else {
+//       // scrolling up
+//       setShowHeader(true);
+//     }
+//     setLastScrollY(window.scrollY);
+//   };
+
+//   window.addEventListener("scroll", handleScroll);
+
+//   return () => {
+//     window.removeEventListener("scroll", handleScroll);
+//   };
+// }, [lastScrollY]);
+
   return (
-    <header className="kf-header">
+    <header className="w-full">
       {/* Topline */}
       <div className="kf-topline hidden md:flex justify-between items-center py-2 px-4">
         <div className="kf-h-group flex items-center gap-2">
@@ -81,10 +99,11 @@ const Header = () => {
             {t('contact')}
             </Link></li>
             <li>
-              <select className="lang" onChange={handleChangeLanguage} value={pathname.startsWith('/ar') ? 'ar' : 'en' }>
+               <select className="lang" onChange={handleChangeLanguage} value={pathname.startsWith('/ar') ? 'ar' : 'en' }>
         <option value="en">English</option>
         <option value="ar">Arabic</option>
       </select>
+     
             </li>
 
           </ul>
@@ -121,6 +140,11 @@ const Header = () => {
             mobileMenu ? "translate-x-0 pointer-events-auto" : "-translate-x-full"
           }`}
         >
+        {/* <div
+  className={`md:hidden fixed top-0 left-0 w-full bg-bl z-50 transition-transform duration-300 ${
+    showHeader ? "translate-y-0" : "-translate-y-full"
+  }`}
+> */}
           <div className="p-6 mt-20 flex flex-col ">
             <ul className="flex flex-col gap-4 text-lg mb-6">
               <li className="flex items-center gap-2">
@@ -153,15 +177,12 @@ const Header = () => {
                 {t('contact')}
                 </Link>
               </li>
-               {/* <select onChange={handleChangeLanguage} value={pathname.startsWith('/ar') ? 'ar' : 'en'}>
-        <option value="en">English</option>
-        <option value="ar">Arabic</option>
-      </select> */}
+              
              
              <select
   onChange={(e) => {
-    handleChangeLanguage(e);   // your language change function
-    setMobileMenu(false);      // ✅ close the menu
+    handleChangeLanguage(e);   
+    setMobileMenu(false);      
   }}
   value={pathname.startsWith('/ar') ? 'ar' : 'en'}
 >
@@ -171,7 +192,7 @@ const Header = () => {
             </ul>
            
 
-            {/* Social Links */}
+          
            
           <div className="text-center">
              <Link href="/reservation"  onClick={() => setMobileMenu(false)} className="kf-btn  mb-6">
@@ -183,9 +204,9 @@ const Header = () => {
             <div className="kf-h-social flex gap-4 mb-4">
 
               <Link href="https://www.facebook.com/awtarcafe.dubai" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f" /></Link>
-              {/* <Link href="https://twitter.com" target="_blank" rel="noreferrer"><i className="fab fa-twitter" /></Link> */}
+             
               <Link href="https://www.instagram.com/awtarcafe.ae/" target="_blank" rel="noreferrer"><i className="fab fa-instagram" /></Link>
-              {/* <Link href="https://youtube.com" target="_blank" rel="noreferrer"><i className="fab fa-youtube" /></Link> */}
+             
             </div>
           </div>
         </div>
@@ -195,3 +216,4 @@ const Header = () => {
 };
 
 export default Header;
+

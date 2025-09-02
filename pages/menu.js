@@ -189,7 +189,7 @@ export default function Menu () {
 
 
   return (
-    <div className='mt-38'>
+    <div>
     
     <section> 
       <div className="relative w-full h-full overflow-hidden md:block hidden">

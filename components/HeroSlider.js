@@ -53,12 +53,12 @@ export default function HeroSlider() {
     navigation={false}
     speed={1000}
     parallax={true}
-    className="w-full h-full"
+    className="w-full h-full md:mt-[-90px] mt-[-10px] "
   >
     {slides.map((slide, index) => (
       <SwiperSlide key={index}>
         <div
-          className="relative w-full h-[80vh] sm:h-[90vh] mt-[120px] md:mt-[80px] sm:mt-[80px] bg-cover bg-center"
+          className="relative w-full h-[80vh] sm:h-[90vh] bg-cover bg-center"
           style={{ backgroundImage: `url(${slide.image})` }}
           data-swiper-parallax="-100"
         >

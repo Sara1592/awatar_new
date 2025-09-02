@@ -31,7 +31,7 @@ export default function BookBreadcrumbBanner({
   }, [pathname]);
 
   return (
-    <div className="banner mt-42">
+    <div className="banner">
       <div className="overlay">
         <h1>{title}</h1>
         <nav aria-label="Breadcrumb">

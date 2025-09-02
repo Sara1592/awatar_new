@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import "@/styles/styles.css";
 import Head from "next/head";
+
 import Header from "@/components/Header";
 import FloatingContactButtons from "@/components/ContactButton";
 import { Roboto, Oswald, Merienda } from "next/font/google";
@@ -47,6 +48,7 @@ function App({ Component, pageProps }) {
       </Head>
       <div className={`${roboto.variable} ${oswald.variable} ${merienda.variable}`}>
         <Header/>
+        {/* <Navbar/> */}
         <Component {...pageProps} />
         <FloatingContactButtons/>
         <NoticePopup/>

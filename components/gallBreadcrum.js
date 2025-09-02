@@ -32,7 +32,7 @@ export default function GallBreadcrumbBanner({
   }, [pathname, t]);
 
   return (
-    <div className="banner mt-42">
+    <div className="banner ">
       <div className="overlay">
         <h1>{t('gallery')}</h1>
         <nav aria-label="Breadcrumb">
