@@ -298,7 +298,7 @@ const fruitSaladRight = [
          
  ];
   return (
-    <div className='mt-38'>
+    <div className=''>
 
     <section>
       <div className="relative w-full h-full overflow-hidden md:block hidden">
