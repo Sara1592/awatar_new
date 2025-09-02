@@ -73,11 +73,41 @@ return (
             {t('contact')}
             </Link></li>
             <li>
+  <Link
+    href="#"
+    className={`cursor-pointer ${!pathname.startsWith('/ar') ? 'font-bold underline' : ''}`}
+    onClick={(e) => {
+      e.preventDefault(); // prevent default link behavior
+      if (pathname.startsWith('/ar')) {
+        push(asPath.replace('/ar', '') || '/');
+      }
+    }}
+  >
+    En
+  </Link>
+</li>
+
+<li>
+  <Link
+    href="#"
+    className={`cursor-pointer ${pathname.startsWith('/ar') ? 'font-bold underline' : ''}`}
+    onClick={(e) => {
+      e.preventDefault(); // prevent default link behavior
+      if (!pathname.startsWith('/ar')) {
+        push(`/ar${asPath}`);
+      }
+    }}
+  >
+    Ar
+  </Link>
+</li>
+
+            {/* <li>
                <select className="lang" onChange={handleChangeLanguage} value={pathname.startsWith('/ar') ? 'ar' : 'en' }>
         <option value="en">English</option>
         <option value="ar">Arabic</option>
       </select>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="flex items-center gap-4">
@@ -136,7 +166,64 @@ return (
                 </Link>
               </li>
               
-             
+  {/* <Link
+    href="#"
+    className={`cursor-pointer ${!pathname.startsWith('/ar') ? 'font-bold underline' : ''}`}
+   
+    onClick={(e) => {
+      e.preventDefault(); // prevent default link behavior
+      if (pathname.startsWith('/ar')) {
+        push(asPath.replace('/ar', '') || '/');
+      }
+    }}
+  >
+    En
+  </Link> */}
+
+  <Link
+    href="#"
+    className={`cursor-pointer ${!pathname.startsWith('/ar') ? 'font-bold underline' : ''}`}
+    onClick={(e) => {
+      e.preventDefault();
+      if (pathname.startsWith('/ar')) {
+        setMobileMenu(false);           // close menu first
+        push(asPath.replace('/ar', '') || '/');
+      }
+    }}
+  >
+    En
+  </Link>
+
+
+
+  {/* <Link
+    href="#"
+    className={`cursor-pointer ${pathname.startsWith('/ar') ? 'font-bold underline' : ''}`}
+    onClick={(e) => {
+      e.preventDefault(); // prevent default link behavior
+      if (!pathname.startsWith('/ar')) {
+        push(`/ar${asPath}`);
+      }
+    }}
+  >
+    Ar
+  </Link> */}
+
+  <Link
+    href="#"
+    className={`cursor-pointer ${pathname.startsWith('/ar') ? 'font-bold underline' : ''}`}
+    onClick={(e) => {
+      e.preventDefault();
+      if (!pathname.startsWith('/ar')) {
+        setMobileMenu(false);          
+        push(`/ar${asPath}`);
+      }
+    }}
+  >
+    Ar
+  </Link>
+
+{/*              
              <select
   onChange={(e) => {
     handleChangeLanguage(e);   
@@ -146,8 +233,9 @@ return (
 >
   <option value="en">English</option>
   <option value="ar">Arabic</option>
-</select>
+</select> */}
             </ul>
+           
 
           <div className="text-center">
              <Link href="/reservation"  onClick={() => setMobileMenu(false)} className="kf-btn  mb-6">
