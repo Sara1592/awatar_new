@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 
 
 export default function GallBreadcrumbBanner({
-  banner = "/assets/images/gallary.png", // default banner
+  banner = "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730237/gallary_g4ao49.png", // default banner
   title = "Gallery",
 }) {
   const pathname = usePathname();

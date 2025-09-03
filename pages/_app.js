@@ -1,7 +1,9 @@
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 import "@/styles/globals.css";
 import "@/styles/styles.css";
 import Head from "next/head";
-
+import Script from "next/script";
 import Header from "@/components/Header";
 import FloatingContactButtons from "@/components/ContactButton";
 import { Roboto, Oswald, Merienda } from "next/font/google";
@@ -32,11 +34,13 @@ function App({ Component, pageProps }) {
   const router = useRouter();
 
   return (
+    <>
     <NextIntlClientProvider
       locale={router.pathname.startsWith('/ar') ? 'ar' : 'en'}
       messages={pageProps.messages}
     >
       <Head>
+
         {/* Font Awesome CDN */}
         <link
           rel="stylesheet"
@@ -49,11 +53,25 @@ function App({ Component, pageProps }) {
       <div className={`${roboto.variable} ${oswald.variable} ${merienda.variable}`}>
         <Header/>
         {/* <Navbar/> */}
+        <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17515105299"
+        strategy="afterInteractive"
+      />
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-17515105299');
+        `}
+      </Script>
         <Component {...pageProps} />
         <FloatingContactButtons/>
         <NoticePopup/>
       </div>
     </NextIntlClientProvider>
+    </>
+    
   );
 }
 

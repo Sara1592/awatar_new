@@ -39,7 +39,11 @@ const nextConfig = {
     unoptimized: true, // disables Next Image optimization (since cPanel won’t run the server)
   },
   trailingSlash: true,
-  
+  reactStrictMode: true,
+  swcMinify: true,
+  compiler: {
+    styledComponents: true,
+  },
 
 };
 

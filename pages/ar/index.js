@@ -330,7 +330,7 @@ const about1Ref = useRef(null);
       {/* Smoke PNG */}
       <Image
         ref={smokeRef}
-        src="/assets/images/bg_smoke1.png"
+        src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730224/bg_smoke1_ligfrw.png"
         alt="smoke"
         fill
          className="
@@ -343,6 +343,24 @@ const about1Ref = useRef(null);
     {t('ourMenu')}
     </h2>
 <FlipCardSlider/>
+</div>
+ <div className="relative w-full h-full overflow-hidden md:hidden block">
+      {/* Smoke PNG */}
+      <Image
+       
+        src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730224/bg_smoke1_ligfrw.png"
+        alt="smoke"
+        fill
+         className="
+   absolute top-0 left-0 w-full h-full object-cover opacity-40
+  "
+      />
+
+  <h2 className='text-center'>
+    Our Menu
+    {/* {t('someItems')} */}
+    </h2>
+<MobFlipCardSlider/>
 </div>
 </section>
 <section className=' mt-5 md:mt-10 md:mb-10 mb-5'>
@@ -363,7 +381,7 @@ const about1Ref = useRef(null);
       
     <div className="overflow-hidden">
       <Image
-        src="/assets/images/grid1.png"
+        src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730237/grid1_zyzugu.png"
         alt="item"
         width={640}
         height={350}
@@ -373,7 +391,7 @@ const about1Ref = useRef(null);
 
     <div className="overflow-hidden">
       <Image
-        src="/assets/images/grid2.png"
+        src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730237/grid2_bnezgo.png"
         alt="item"
         width={640}
         height={350}
@@ -383,7 +401,7 @@ const about1Ref = useRef(null);
 
     <div className="overflow-hidden">
       <Image
-        src="/assets/images/grid3.png"
+        src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730238/grid3_bvfa6b.png"
         alt="item"
         width={640}
         height={350}
@@ -393,7 +411,7 @@ const about1Ref = useRef(null);
 
     <div className="overflow-hidden">
       <Image
-        src="/assets/images/grid4.png"
+        src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730237/grid4_bhw1fm.png"
         alt="item"
         width={640}
         height={350}
@@ -403,7 +421,7 @@ const about1Ref = useRef(null);
 
     <div className="overflow-hidden">
       <Image
-        src="/assets/images/grid5.png"
+        src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730238/grid5_zdd0dp.png"
         alt="item"
         width={640}
         height={350}
@@ -413,7 +431,7 @@ const about1Ref = useRef(null);
 
     <div className="overflow-hidden">
       <Image
-        src="/assets/images/grid6.png"
+        src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730242/grid6_dier95.png"
         alt="item"
         width={640}
         height={350}
@@ -454,7 +472,8 @@ const about1Ref = useRef(null);
       loop
       playsInline
     >
-      <source src={t("videoSrc")} type="video/mp4" />
+      <source src="/assets/images/video/awtar-vedio.mp4" type="video/mp4" /> 
+      {/* <source src="https://res.cloudinary.com/dw1eguafc/video/upload/v1756800278/awtar-vedio_go2mwi.mp4" type="video/mp4" /> */}
       Your browser does not support the video tag.
     </video>
  <div className="absolute inset-0 bg-black/50"></div>

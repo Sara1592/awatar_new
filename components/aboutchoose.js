@@ -18,29 +18,29 @@ useEffect(() => {
 
     const ctx = gsap.context(() => {
       // Title
-      gsap.from(".why-title", {
-        y: 50,
-        opacity: 0,
-        duration: 1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".why-title",
-          start: "top 80%",
-        },
-      });
+      // gsap.from(".why-title", {
+      //   y: 50,
+      //   opacity: 0,
+      //   duration: 1,
+      //   ease: "power3.out",
+      //   scrollTrigger: {
+      //     trigger: ".why-title",
+      //     start: "top 80%",
+      //   },
+      // });
 
       
-      gsap.from(".why-text", {
-        y: 30,
-        opacity: 0,
-        duration: 1,
-        delay: 0.3,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: ".why-text",
-          start: "top 80%",
-        },
-      });
+      // gsap.from(".why-text", {
+      //   y: 30,
+      //   opacity: 0,
+      //   duration: 1,
+      //   delay: 0.3,
+      //   ease: "power2.out",
+      //   scrollTrigger: {
+      //     trigger: ".why-text",
+      //     start: "top 80%",
+      //   },
+      // });
 
       gsap.from(".why-image", {
         opacity: 0,
@@ -72,7 +72,7 @@ useEffect(() => {
    <div className="flex-1 flex flex-col gap-6">
        <div className="relative  overflow-hidden shadow-lg ">
         <Image
-          src="/assets/images/why_choose.png"
+          src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756817462/whychoose_jy6gkc.png"
           alt="choose"
           width={500}
           height={700}

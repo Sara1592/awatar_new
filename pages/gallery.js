@@ -35,7 +35,7 @@ const Gallery = () => {
   {/* Section CTA */}
   <section
     className="section kf-cta kf-parallax"
-    style={{ backgroundImage: "url(/assets/images/gall_bg.png)" }}
+    style={{ backgroundImage: "url(https://res.cloudinary.com/dw1eguafc/image/upload/v1756730236/gall_bg_rla8yh.png)" }}
   >
     <div className="container">
       <div className="row">

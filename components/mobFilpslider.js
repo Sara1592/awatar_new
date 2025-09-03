@@ -81,7 +81,7 @@ export default function MobFlipCardSlider() {
     { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756731158/mob_menu_1_f5bbiz.jpg" },
     { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756731161/mob_menu_4_lcvg3x.png" },
     { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756731174/mob_menu_1_zhnjnr.png" },
-    { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756731160/mob_menu_6_r7up16.png" },
+    // { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756731160/mob_menu_6_r7up16.png" },
     { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756731167/mob_menu_9_fupg64.png" }
   ];
 

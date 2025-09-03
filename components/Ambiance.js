@@ -13,11 +13,12 @@ const Ambiance = () => {
    const t = useTranslations("home");
    
 const slides = [
-  { image: t("ambimg1") },
-  { image: t("ambimg2")  },
-  { image: t("ambimg3")  },
-  { image: t("ambimg4")  },
-  { image: t("ambimg5")  },
+  { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730222/atom1_jkdb77.png"
+ },
+  { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730222/atom2_lvjupz.png"},
+  // { image:  "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730222/atom3_cx4rkm.png" },
+  { image:  "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730223/atom4_ekgv8m.png"},
+  { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730223/atom5_nc5erh.png"  },
 ];
   return (
     <div className="ambiance-container glass">

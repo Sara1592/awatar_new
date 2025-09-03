@@ -81,7 +81,7 @@ export default function FlipCardSlider() {
     { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730257/menu_8_qfpuce.png" },
     { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756732368/menu_9_ifqyu3.png" },
     { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730258/menu_10_a7nvdg.png" },
-    { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730258/menu_11_ncuyq8.png" },
+    // { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730258/menu_11_ncuyq8.png" },
     { image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730258/menu_12_yiuj3g.png" },
   ];
 

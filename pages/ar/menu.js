@@ -305,7 +305,7 @@ const fruitSaladRight = [
           {/* Smoke PNG */}
           <Image
             ref={smokeRef}
-            src="/assets/images/menubg.png"
+            src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730259/menubg_sk9pwg.png"
             alt="smoke"
             fill
             className="absolute top-0 left-0 w-full h-full object-cover opacity-40"
@@ -322,7 +322,7 @@ const fruitSaladRight = [
           {/* Smoke PNG */}
           <Image
 
-           src="/assets/images/menubg.png"
+           src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730259/menubg_sk9pwg.png"
             alt="smoke"
 
             fill
@@ -363,7 +363,7 @@ const fruitSaladRight = [
 
       {/* Left Column */}
       <div className="p-6 rounded-lg shadow">
-        <Image src="/assets/images/hotdrink1.jpg" alt="hotdrink" width={700} height={1100} />
+        <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730243/hotdrink1_lt5k69.png" alt="hotdrink" width={700} height={1100} />
       </div>
 
       {/* Right Column */}
@@ -538,7 +538,7 @@ const fruitSaladRight = [
 </div>
       {/* Left Column */}
       <div className="p-6 rounded-lg shadow">
-        <Image src="/assets/images/hotdrink2.jpg" alt="hotdrink" width={700} height={900} />
+        <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730243/hotdrink2_wrsc67.png" alt="hotdrink" width={700} height={900} />
       </div>
 
       {/* Right Column */}
@@ -552,7 +552,7 @@ const fruitSaladRight = [
 
       {/* Left Column */}
       <div className="p-6 rounded-lg shadow">
-        <Image src="/assets/images/hotdrink3.png" alt="hotdrink" width={700} height={1100} />
+        <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730244/hotdrink3_t2fbem.png" alt="hotdrink" width={700} height={1100} />
       </div>
 
       {/* Right Column */}
@@ -754,7 +754,7 @@ const fruitSaladRight = [
 </div>
       {/* Left Column */}
       <div className="p-6 rounded-lg shadow">
-        <Image src="/assets/images/hotdrink4.png" alt="hotdrink" width={700} height={900} />
+        <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730244/hotdrink4_glppqm.png" alt="hotdrink" width={700} height={900} />
       </div>
 
       {/* Right Column */}
@@ -792,7 +792,7 @@ const fruitSaladRight = [
 
       {/* Left Column */}
       <div className="p-6 rounded-lg shadow">
-        <Image src="/assets/images/jui2.png" alt="hotdrink" width={700} height={1100} />
+        <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730246/jui2_fchedz.png" alt="hotdrink" width={700} height={1100} />
       </div>
 
       {/* Right Column */}
@@ -1024,7 +1024,7 @@ const fruitSaladRight = [
 
 </div>
  <div className="py-6 rounded-lg shadow">
-        <Image src="/assets/images/jui1.png" alt="hotdrink" width={700} height={1200} />
+        <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730244/jui1_lw2bt4.png" alt="hotdrink" width={700} height={1200} />
       </div>
     </div>
 
@@ -1058,7 +1058,7 @@ const fruitSaladRight = [
 
       {/* Left Column */}
       <div className="p-6 rounded-lg shadow">
-        <Image src="/assets/images/mojito.png" alt="hotdrink" width={700} height={1100} />
+        <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730271/mojito_uoaeny.png" alt="hotdrink" width={700} height={1100} />
       </div>
 
       {/* Right Column */}
@@ -1308,7 +1308,7 @@ const fruitSaladRight = [
   
         {/* Right Column */}
           <div className="p-6 rounded-lg shadow">
-          <Image src="/assets/images/cold.png" alt="hotdrink" width={700} height={1100} />
+          <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730229/cold_aztj8m.png" alt="hotdrink" width={700} height={1100} />
         </div>
        
    
@@ -1318,7 +1318,7 @@ const fruitSaladRight = [
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
     {/* Left Column */}
     <div className="p-6 rounded-lg shadow">
-      <Image src="/assets/images/cold1.png" alt="hotdrink" width={700} height={1100} />
+      <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730230/cold1_jgzd9h.png" alt="hotdrink" width={700} height={1100} />
     </div>
   
     {/* Right Column */}
@@ -1417,7 +1417,7 @@ const fruitSaladRight = [
   
         {/* Right Column */}
           <div className="p-6 rounded-lg shadow">
-          <Image src="/assets/images/milk_1.png" alt="hotdrink" width={700} height={750} />
+          <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730263/milk1_pdxe0j.png" alt="hotdrink" width={700} height={750} />
         </div>
        
    
@@ -1427,7 +1427,7 @@ const fruitSaladRight = [
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
     {/* Left Column */}
     <div className="p-6 rounded-lg shadow">
-      <Image src="/assets/images/milk_2.png" alt="hotdrink" width={700} height={700} />
+      <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730263/milk_2_thjpey.png" alt="hotdrink" width={700} height={700} />
     </div>
   
     {/* Right Column */}
@@ -1519,7 +1519,7 @@ const fruitSaladRight = [
   
         {/* Right Column */}
           <div className="p-6 rounded-lg shadow">
-          <Image src="/assets/images/fruitsald.png" alt="hotdrink" width={700} height={600} />
+          <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730235/fruitsald_mwpj6t.png" alt="hotdrink" width={700} height={600} />
         </div>
        
    
@@ -1529,7 +1529,7 @@ const fruitSaladRight = [
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
     {/* Left Column */}
     <div className="p-6 rounded-lg shadow">
-      <Image src="/assets/images/fruitsald1.png" alt="hotdrink" width={700} height={400} />
+      <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730236/fruitsald1_ybauqe.png" alt="hotdrink" width={700} height={400} />
     </div>
   
     {/* Right Column */}
@@ -1618,7 +1618,7 @@ const fruitSaladRight = [
   
         {/* Right Column */}
           <div className="p-6 rounded-lg shadow">
-          <Image src="/assets/images/dessert.png" alt="hotdrink" width={700} height={500} />
+          <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730230/dessert_yssjv4.png" alt="hotdrink" width={700} height={500} />
            <h3 className="text-center">
             {/* CREPE */}
             {t('crepeTitle')}
@@ -1633,7 +1633,7 @@ const fruitSaladRight = [
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
     {/* Left Column */}
     <div className="p-6 rounded-lg shadow">
-      <Image src="/assets/images/dessert1.png" alt="hotdrink" width={700} height={600} />
+      <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730235/dessert1_ols9py.png" alt="hotdrink" width={700} height={600} />
        <h3 className="text-center">
         {/* CAKE */}
         {t('cakeTitle')}
@@ -1707,7 +1707,7 @@ const fruitSaladRight = [
   
         {/* Right Column */}
           <div className="p-6 rounded-lg shadow">
-          <Image src="/assets/images/waffle.png" alt="hotdrink" width={700} height={400} />
+          <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730280/waffle_zkbbro.png" alt="hotdrink" width={700} height={400} />
            <h3 className="text-center">
             {/* Waffle */}
             {t('waffleTitle')}
@@ -1722,7 +1722,7 @@ const fruitSaladRight = [
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
     {/* Left Column */}
     <div className="p-6 rounded-lg shadow">
-      <Image src="/assets/images/kunafa.png" alt="hotdrink" width={700} height={100} />
+      <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730249/kunafa_lodevs.png" alt="hotdrink" width={700} height={100} />
        {/* <h3 className="text-center">Kunafa</h3> */}
     </div>
   
@@ -1811,7 +1811,7 @@ const fruitSaladRight = [
   
         {/* Right Column */}
           <div className="p-6 rounded-lg shadow">
-          <Image src="/assets/images/bubble.png" alt="hotdrink" width={700} height={600} />
+          <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730228/bubble_olyz8b.png" alt="hotdrink" width={700} height={600} />
         </div>
        
    
@@ -1821,7 +1821,7 @@ const fruitSaladRight = [
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
     {/* Left Column */}
     <div className="p-6 rounded-lg shadow">
-      <Image src="/assets/images/bubble1.png" alt="hotdrink" width={700} height={400} />
+      <Image src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730229/bubble1_ti86e6.png" alt="hotdrink" width={700} height={400} />
     </div>
   
     {/* Right Column */}
@@ -1962,7 +1962,8 @@ const fruitSaladRight = [
       loop
       playsInline
     >
-      <source src="/assets/images/video/awtar-vedio.mp4" type="video/mp4" />
+      <source src="/assets/images/video/awtar-vedio.mp4" type="video/mp4" /> 
+      {/* <source src="https://res.cloudinary.com/dw1eguafc/video/upload/v1756800278/awtar-vedio_go2mwi.mp4" type="video/mp4" /> */}
       Your browser does not support the video tag.
     </video>
  <div className="absolute inset-0 bg-black/50"></div>

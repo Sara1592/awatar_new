@@ -90,26 +90,26 @@ export default function MenuTabs() {
 
   const menuItems = {
     "View All": [
-      { id: 1, img: "/assets/images/milk1.png", name: "MilkShake1" },
-      { id: 2, img: "/assets/images/hotdrink1.jpg", name: "HotDrink1" },
-      { id: 3, img: "/assets/images/gall_jui1.png", name: "Sandwich2" },
-      { id: 4, img: "/assets/images/gall_tab.png", name: "Juices" },
-      { id: 5, img: "/assets/images/hotdrink3.png", name: "HotDrink3" },
-      { id: 6, img: "/assets/images/hotdrink2.jpg", name: "HotDrink2" }
+      { id: 1, img: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730263/milk1_pdxe0j.png", name: "MilkShake1" },
+      { id: 2, img: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730243/hotdrink1_lt5k69.png", name: "HotDrink1" },
+      { id: 3, img: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730236/gall_jui1_g8pmbk.png", name: "Sandwich2" },
+      { id: 4, img: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730237/gall_tab_omefbi.png", name: "Juices" },
+      { id: 5, img: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730244/hotdrink3_t2fbem.png", name: "HotDrink3" },
+      { id: 6, img: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730243/hotdrink2_wrsc67.png", name: "HotDrink2" }
     ],
     Juices: [
-      { id: 1, img: "/assets/images/gall_tab.png", name: "Juices1" },
-      { id: 2, img: "/assets/images/gall_jui1.png", name: "Juices2" },
-      { id: 3, img: "/assets/images/gall_jui2.png", name: "Juices3" }
+      { id: 1, img: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730237/gall_tab_omefbi.png", name: "Juices1" },
+      { id: 2, img: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730236/gall_jui1_g8pmbk.png", name: "Juices2" },
+      { id: 3, img: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730236/gall_jui2_h4nyuy.png", name: "Juices3" }
     ],
     MilkShake: [
-      { id: 1, img: "/assets/images/milk1.png", name: "MilkShake1" },
-      { id: 2, img: "/assets/images/milk2.png", name: "MilkShake2" }
+      { id: 1, img: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730263/milk1_pdxe0j.png", name: "MilkShake1" },
+      { id: 2, img: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730264/milk2_ske0dy.png", name: "MilkShake2" }
     ],
     "Hot Drink": [
-      { id: 1, img: "/assets/images/hotdrink1.jpg", name: "HotDrink1" },
-      { id: 2, img: "/assets/images/hotdrink2.jpg", name: "HotDrink2" },
-      { id: 3, img: "/assets/images/hotdrink3.png", name: "HotDrink3" }
+      { id: 1, img: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730243/hotdrink1_lt5k69.png", name: "HotDrink1" },
+      { id: 2, img: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730243/hotdrink2_wrsc67.png", name: "HotDrink2" },
+      { id: 3, img: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730244/hotdrink3_t2fbem.png", name: "HotDrink3" }
     ]
   };
 

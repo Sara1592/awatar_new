@@ -18,29 +18,29 @@ useEffect(() => {
 
     const ctx = gsap.context(() => {
       // Title
-      gsap.from(".why-title", {
-        y: 50,
-        opacity: 0,
-        duration: 1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".why-title",
-          start: "top 80%",
-        },
-      });
+      // gsap.from(".why-title", {
+      //   y: 50,
+      //   opacity: 0,
+      //   duration: 1,
+      //   ease: "power3.out",
+      //   scrollTrigger: {
+      //     trigger: ".why-title",
+      //     start: "top 80%",
+      //   },
+      // });
 
       // Paragraphs
-      gsap.from(".why-text", {
-        y: 30,
-        opacity: 0,
-        duration: 1,
-        delay: 0.3,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: ".why-text",
-          start: "top 80%",
-        },
-      });
+      // gsap.from(".why-text", {
+      //   y: 30,
+      //   opacity: 0,
+      //   duration: 1,
+      //   delay: 0.3,
+      //   ease: "power2.out",
+      //   scrollTrigger: {
+      //     trigger: ".why-text",
+      //     start: "top 80%",
+      //   },
+      // });
 
       // Image animation
       gsap.from(".why-image", {
@@ -54,7 +54,8 @@ useEffect(() => {
           start: "top 85%",
         },
       });
-    }, sectionRef);
+    },
+     sectionRef);
 
     return () => ctx.revert();
   };
@@ -110,7 +111,7 @@ useEffect(() => {
   className="relative bg-gradient-to-r from-black via-[#352900] to-black text-white py-20 px-8 md:px-20 overflow-hidden"
 >
   {/* Optional smoke overlay */}
-  <div className="absolute inset-0 bg-[url('/assets/images/bg_smoke1.png')] bg-cover bg-center opacity-10 pointer-events-none"></div>
+  <div className="absolute inset-0 bg-[url('https://res.cloudinary.com/dw1eguafc/image/upload/v1756730224/bg_smoke1_ligfrw.png')] bg-cover bg-center opacity-10 pointer-events-none"></div>
 
   <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 z-10">
    
@@ -151,7 +152,7 @@ useEffect(() => {
     <div className="flex-1 flex flex-col gap-6">
        <div className="relative  overflow-hidden shadow-lg ">
         <Image
-          src="/assets/images/atom (17).png"
+          src="https://res.cloudinary.com/dw1eguafc/image/upload/v1756730222/atom_17_gjfahs.png"
           alt="choose"
           width={500}
           height={700}

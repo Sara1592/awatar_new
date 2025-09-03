@@ -14,28 +14,23 @@ import "swiper/css/parallax";
 export default function HeroSlider() {
     const t = useTranslations('home');
   const slides = [
-   
     {
-      // image: "assets/images/slider2.png",
-      // title: "Welcome to",
-      // subtitle: "Awtar Café",
-       image: t("slide1Image"),
-       title: t("slide1Title"),
-      subtitle: t("slide1Subtitle"),
-    //  navImg: "assets/images/nav1.png",
-    },
-     {
-             image: t("slide2Image"),
-
-      // image: "assets/images/slider1.png",
+            //  image: t("slide2Image"),
+      image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730281/slider1_k5teag.png",
       title: t("slide2Title"),
       subtitle: t("slide2Subtitle"),
     //   navImg: "assets/images/nav.png",
     },
+   
     {
-                   image: t("slide3Image"),
-
-      // image: "assets/images/slider3.png",
+      image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756809318/slider2_yi0f0t_1_bzptcc.png",
+       title: t("slide1Title"),
+      subtitle: t("slide1Subtitle"),
+    },
+     
+    {
+                  //  image: t("slide3Image"),
+      image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730281/slider3_hxyjtu.png",
      title: t("slide3Title"),
       subtitle: t("slide3Subtitle"),
 //    navImg: "assets/images/nav1.png",

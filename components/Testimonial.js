@@ -109,31 +109,31 @@ export default function Testimonials() {
  const t = useTranslations("home");
   const testimonials = [
     {
-      image: "/assets/images/rev1.jpg",
+      image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730278/rev1_orrbxh.jpg",
       stars: 5,
       text: t('review1'),
       name: t('name1'),
     },
     {
-      image: "/assets/images/rev2.jpg",
+      image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730278/rev2_u9asta.jpg",
       stars: 5,
       text: t('review2'),
       name: t('name2'),
     },
     {
-      image: "/assets/images/rev3.jpg",
+      image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730278/rev3_rxdh1t.jpg",
       stars: 5,
       text: t('review3'),
       name: t('name3'),
     },
     {
-      image: "/assets/images/rev1.jpg",
+      image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730278/rev1_orrbxh.jpg",
       stars: 5,
        text: t('review4'),
       name: t('name4'),
     },
     {
-      image: "/assets/images/rev2.jpg",
+      image: "https://res.cloudinary.com/dw1eguafc/image/upload/v1756730278/rev2_u9asta.jpg",
       stars: 5,
       text: t('review5'),
       name: t('name5'),
@@ -166,7 +166,7 @@ export default function Testimonials() {
                   height={96}
                   className="object-cover"
                 /> */}
-                <div className="absolute -top-12 w-24 h-24 rounded-full border-4 border-gold overflow-hidden relative">
+                <div className="-top-6 w-24 h-24 rounded-full border-4 border-gold overflow-hidden relative">
   <Image
     src={item.image}
     alt={item.name}

@@ -152,8 +152,7 @@ const titleRef = useRef(null);
       </section>  */}
 
       <section   className="section kf-category py-20"
-  style={{ backgroundImage: "url('assets/images/abt_bg.png')" }}
->
+ >
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left column */}
         <div>
@@ -172,7 +171,7 @@ const titleRef = useRef(null);
           <h3 className="text-lg text-gray-600 mb-6">
            Warm Flavors, Warmer Hearts Food & Drinks crafted with care, shared with joy.
           </h3>
-          <p ref={descRef} className=" mb-6 leading-relaxed">
+          <p  className=" mb-6 leading-relaxed">
             In the heart of Al Muraqqabat, Awtar Café brings people together
             over rich flavors and relaxing moments. Whether you’re sipping on
             traditional Arabic coffee, cooling off with fresh juices, or
@@ -216,7 +215,8 @@ const titleRef = useRef(null);
       loop
       playsInline
     >
-      <source src="/assets/images/video/awtar-vedio.mp4" type="video/mp4" />
+      <source src="/assets/images/video/awtar-vedio.mp4" type="video/mp4" /> 
+      {/* <source src="https://res.cloudinary.com/dw1eguafc/video/upload/v1756800278/awtar-vedio_go2mwi.mp4" type="video/mp4" /> */}
       Your browser does not support the video tag.
     </video>
  <div className="absolute inset-0 bg-black/50"></div>
